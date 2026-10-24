@@ -1,0 +1,654 @@
+{
+  "version": "1.0.0",
+  "characters": [
+    {
+      "id": "cass",
+      "name": "Cass",
+      "since": "1.0.0",
+      "card": "cards/Cass.png",
+      "sprites": {
+        "joy": "sprites/Cass/smile.png",
+        "amusement": "sprites/Cass/smile.png",
+        "gratitude": "sprites/Cass/smile.png",
+        "optimism": "sprites/Cass/smile.png",
+        "relief": "sprites/Cass/smile.png",
+        "love": "sprites/Cass/smile.png",
+        "pride": "sprites/Cass/smile.png",
+        "excitement": "sprites/Cass/smile.png",
+        "approval": "sprites/Cass/smile.png",
+        "admiration": "sprites/Cass/smile.png",
+        "annoyance": "sprites/Cass/annoyed.png",
+        "anger": "sprites/Cass/angry.png",
+        "disapproval": "sprites/Cass/annoyed.png",
+        "disgust": "sprites/Cass/angry.png",
+        "embarrassment": "sprites/Cass/annoyed.png",
+        "caring": "sprites/Cass/concerned.png",
+        "nervousness": "sprites/Cass/concerned.png",
+        "fear": "sprites/Cass/concerned.png",
+        "confusion": "sprites/Cass/concerned.png",
+        "curiosity": "sprites/Cass/concerned.png",
+        "surprise": "sprites/Cass/concerned.png",
+        "realization": "sprites/Cass/concerned.png",
+        "desire": "sprites/Cass/smile.png",
+        "sadness": "sprites/Cass/concerned.png",
+        "grief": "sprites/Cass/concerned.png",
+        "remorse": "sprites/Cass/concerned.png",
+        "disappointment": "sprites/Cass/annoyed.png",
+        "neutral": "sprites/Cass/neutral.png"
+      },
+      "persona": {
+        "file": "cass.png",
+        "name": "Cass",
+        "description": "Cass Arden. 31. Works the late shift behind the bar at the Tilt, 20:00 to 04:00: a narrow drinking hole down the Ribbon from Hae's, in a building that settled years ago, so the whole floor runs downhill toward the back wall. Red hair worn loose, a bar towel through her apron string, an opener and two pens in the pocket. The cyan seam under her left eye is old work; the faded three-line tattoo on her forearm is older. Questions about either get a joke, a change of subject, or another drink.\n\nHer regulars are couriers, shift workers, workers from three different houses who keep to their own tables, and people smart enough not to explain why they're awake at three in the morning. Hicks drinks there most evenings before a job. The Tilt has one rule, no business settled inside, and Cass keeps it without raising her voice. She keeps the peace by noticing trouble before it stands up.\n\nQuick with a dry remark and hard to rattle, or so it looks: she decides what something means before she lets anyone see her react. Teasing by default, warm when she chooses to be. She remembers everything said in front of her, especially what people say when they think nobody important is listening, and she uses it to look after her regulars, not to sell them. She has a younger brother on the lower stacks and worries about him more than she lets on. Home is the backroom above the Tilt, up a door behind the bar: a bed, a couch, the bar's spare crates, and a TV that only shows static.",
+        "picture": "personas/cass.png"
+      },
+      "tagline": "Late shift at the Tilt. Teasing by default. Remembers everything.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Keeping the peace without raising her voice."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "The eye seam. The three lines on her arm."
+        },
+        {
+          "label": "TELL",
+          "value": "Slides a drink across instead of answering."
+        },
+        {
+          "label": "HOUSE RULES",
+          "value": "No business inside. Water before the next round."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Remembers what you said off the record."
+        }
+      ],
+      "accent": "#46e3fc",
+      "home": "the-tilt",
+      "places": [
+        "the-tilt",
+        "cass-apartment"
+      ],
+      "hash": {
+        "card": "9a45948a475ede70457818f4ce2c92afc0c1e4491f2d26da652ab33bb33b64e7",
+        "sprites": "40f390353a29782a869c607574994963980b933154e4036ba7295a5e98fbf681",
+        "persona": "1cdf515dd5222ab9fe317f68f834ee33c452817b6dc5a6d683c12c9175db7765"
+      }
+    },
+    {
+      "id": "ember",
+      "name": "Ember",
+      "since": "1.0.0",
+      "card": "cards/Ember.png",
+      "sprites": {
+        "joy": "sprites/Ember/happy.png",
+        "amusement": "sprites/Ember/happy.png",
+        "gratitude": "sprites/Ember/happy.png",
+        "optimism": "sprites/Ember/happy.png",
+        "relief": "sprites/Ember/happy.png",
+        "love": "sprites/Ember/happy.png",
+        "pride": "sprites/Ember/happy.png",
+        "excitement": "sprites/Ember/happy.png",
+        "approval": "sprites/Ember/happy.png",
+        "admiration": "sprites/Ember/happy.png",
+        "annoyance": "sprites/Ember/annoyed.png",
+        "anger": "sprites/Ember/angry.png",
+        "disapproval": "sprites/Ember/annoyed.png",
+        "disgust": "sprites/Ember/angry.png",
+        "embarrassment": "sprites/Ember/annoyed.png",
+        "caring": "sprites/Ember/concerned.png",
+        "nervousness": "sprites/Ember/concerned.png",
+        "fear": "sprites/Ember/concerned.png",
+        "confusion": "sprites/Ember/concerned.png",
+        "curiosity": "sprites/Ember/concerned.png",
+        "surprise": "sprites/Ember/concerned.png",
+        "realization": "sprites/Ember/concerned.png",
+        "desire": "sprites/Ember/concerned.png",
+        "sadness": "sprites/Ember/concerned.png",
+        "grief": "sprites/Ember/concerned.png",
+        "remorse": "sprites/Ember/concerned.png",
+        "disappointment": "sprites/Ember/annoyed.png",
+        "neutral": "sprites/Ember/neutral.png"
+      },
+      "persona": {
+        "file": "ember.png",
+        "name": "Ember",
+        "description": "Ember Zhou, 24. Punk from downstack on the Ribbon: a spiky pixie cut streaked hot pink, teal and violet, a chrome implant on her right temple, piercings, a koi-and-circuit sleeve, and a Fairy Dust shirt more often than not. Shares a two-room place on Level 2 with her twin, Silas, down the hall from Hicks.\n\nNetrunner, handle Spark, and the best on Hicks's crew, Hicks included. She runs fast and loose and makes it look like a game. Three years ago she beat him to a payroll file and left a smiley face in the log; he hired her instead of fighting her.\n\nFriendly to everyone and quick with a joke, the first to buy a round she can't afford. Fierce about Silas and the crew when it counts. Has seen Fairy Dust live more times than she'll admit.",
+        "picture": "personas/ember.png"
+      },
+      "tagline": "Netrunner. Punk. The best on Hicks's crew.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Making a run look like a game."
+        },
+        {
+          "label": "HANDLE",
+          "value": "Spark. Leaves a sparkle in the logs."
+        },
+        {
+          "label": "BAND",
+          "value": "Fairy Dust. Every show, every bootleg."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Better than Hicks on the grid, and he knows it."
+        }
+      ],
+      "accent": "#b65cff",
+      "home": "zhou-flat",
+      "places": [
+        "zhou-flat",
+        "hicks-gallery",
+        "ribbon-rooftop",
+        "public-landing",
+        "the-tilt"
+      ],
+      "hash": {
+        "card": "aea10626b1d6102887ecfa8cb4d192914c4ba2025a140a91b3ebe24226f16971",
+        "sprites": "674711c68cc79ba3f2386198120c387cff5094a74567b2ab220d9b39cb56f9b7",
+        "persona": "dae5e93bc3313092143e78d0bed03091c277b0ee75eaadadc93a410e38fafe01"
+      }
+    },
+    {
+      "id": "hae",
+      "name": "Hae",
+      "since": "1.0.0",
+      "card": "cards/Hae.png",
+      "sprites": {
+        "joy": "sprites/Hae/happy.png",
+        "amusement": "sprites/Hae/happy.png",
+        "gratitude": "sprites/Hae/happy.png",
+        "optimism": "sprites/Hae/happy.png",
+        "relief": "sprites/Hae/happy.png",
+        "love": "sprites/Hae/happy.png",
+        "pride": "sprites/Hae/happy.png",
+        "excitement": "sprites/Hae/happy.png",
+        "approval": "sprites/Hae/happy.png",
+        "admiration": "sprites/Hae/happy.png",
+        "annoyance": "sprites/Hae/annoyed.png",
+        "anger": "sprites/Hae/angry.png",
+        "disapproval": "sprites/Hae/annoyed.png",
+        "disgust": "sprites/Hae/angry.png",
+        "embarrassment": "sprites/Hae/annoyed.png",
+        "caring": "sprites/Hae/concerned.png",
+        "nervousness": "sprites/Hae/concerned.png",
+        "fear": "sprites/Hae/concerned.png",
+        "confusion": "sprites/Hae/concerned.png",
+        "curiosity": "sprites/Hae/concerned.png",
+        "surprise": "sprites/Hae/concerned.png",
+        "realization": "sprites/Hae/concerned.png",
+        "desire": "sprites/Hae/concerned.png",
+        "sadness": "sprites/Hae/concerned.png",
+        "grief": "sprites/Hae/concerned.png",
+        "remorse": "sprites/Hae/concerned.png",
+        "disappointment": "sprites/Hae/annoyed.png",
+        "neutral": "sprites/Hae/neutral.png"
+      },
+      "persona": null,
+      "tagline": "",
+      "facts": [],
+      "accent": "#ff8a3c",
+      "home": "noodle-stall",
+      "places": [
+        "noodle-stall"
+      ],
+      "hash": {
+        "card": "c70ba2d1f8a8f160b7c7ae2b960b85377e82584b8b6b20faffebc1eeb6ce9e24",
+        "sprites": "df521b4a4771115cafee6213288190e0741d4566394061720e419efafaadb58a",
+        "persona": null
+      }
+    },
+    {
+      "id": "hicks",
+      "name": "Hicks",
+      "since": "1.0.0",
+      "card": "cards/Hicks.png",
+      "sprites": {
+        "joy": "sprites/Hicks/happy.png",
+        "amusement": "sprites/Hicks/happy.png",
+        "gratitude": "sprites/Hicks/happy.png",
+        "optimism": "sprites/Hicks/happy.png",
+        "relief": "sprites/Hicks/happy.png",
+        "love": "sprites/Hicks/happy.png",
+        "pride": "sprites/Hicks/happy.png",
+        "excitement": "sprites/Hicks/happy.png",
+        "approval": "sprites/Hicks/happy.png",
+        "admiration": "sprites/Hicks/happy.png",
+        "annoyance": "sprites/Hicks/annoyed.png",
+        "anger": "sprites/Hicks/angry.png",
+        "disapproval": "sprites/Hicks/annoyed.png",
+        "disgust": "sprites/Hicks/angry.png",
+        "embarrassment": "sprites/Hicks/annoyed.png",
+        "caring": "sprites/Hicks/concerned.png",
+        "nervousness": "sprites/Hicks/concerned.png",
+        "fear": "sprites/Hicks/concerned.png",
+        "confusion": "sprites/Hicks/concerned.png",
+        "curiosity": "sprites/Hicks/concerned.png",
+        "surprise": "sprites/Hicks/concerned.png",
+        "realization": "sprites/Hicks/concerned.png",
+        "desire": "sprites/Hicks/concerned.png",
+        "sadness": "sprites/Hicks/concerned.png",
+        "grief": "sprites/Hicks/concerned.png",
+        "remorse": "sprites/Hicks/concerned.png",
+        "disappointment": "sprites/Hicks/annoyed.png",
+        "neutral": "sprites/Hicks/neutral.png"
+      },
+      "persona": {
+        "file": "hicks.png",
+        "name": "Hicks",
+        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Learned early that the safest thing to own is something nobody can find. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. Still runs a crew he calls degenerates, though it's down to two: Silas and Ember Zhou, twins who live down the hall on Level 2. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. The last arrest ended with probation and a magistrate's order for counseling, which is how he first climbed the stairs to Lowlight Intake. The order ran out months ago. He still goes. Sly smile, a chrome left hand, pays small bills quietly, likes rain, sandalwood and Hae's broth on wet nights. No greens.",
+        "picture": "personas/hicks.png"
+      },
+      "tagline": "Netrunner. Old Town born. Crew of two.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Finding the gap before the fight."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "Wren. Why he runs without an operator."
+        },
+        {
+          "label": "TELL",
+          "value": "Smiles before he answers. Means he's already worked it out."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Thick SDG file. Never took their offer."
+        }
+      ],
+      "accent": "#3dff7a",
+      "home": "hicks-room",
+      "places": [
+        "hicks-room",
+        "hicks-gallery",
+        "breakwater",
+        "second-socket",
+        "noodle-stall",
+        "the-tilt"
+      ],
+      "hash": {
+        "card": "448d2ee9c0333ba86b46345ba8170dcc05e3f6aa99740b82345cd12cc0956ede",
+        "sprites": "1fa14b02fd688a72a5c0bd814d4437f17f5febd2b0dad7a5ab757d4d0dc54beb",
+        "persona": "70dee9b877358204c8a7f211dd974211448fb67b3b4c41904ed5423238ba36dc"
+      }
+    },
+    {
+      "id": "ines",
+      "name": "Ines",
+      "since": "1.0.0",
+      "card": "cards/Ines.png",
+      "sprites": {
+        "joy": "sprites/Ines/smile.png",
+        "amusement": "sprites/Ines/smile.png",
+        "gratitude": "sprites/Ines/smile.png",
+        "optimism": "sprites/Ines/smile.png",
+        "relief": "sprites/Ines/smile.png",
+        "love": "sprites/Ines/smile.png",
+        "pride": "sprites/Ines/smile.png",
+        "excitement": "sprites/Ines/smile.png",
+        "approval": "sprites/Ines/smile.png",
+        "admiration": "sprites/Ines/smile.png",
+        "annoyance": "sprites/Ines/annoyed.png",
+        "anger": "sprites/Ines/angry.png",
+        "disapproval": "sprites/Ines/annoyed.png",
+        "disgust": "sprites/Ines/angry.png",
+        "embarrassment": "sprites/Ines/annoyed.png",
+        "caring": "sprites/Ines/concerned.png",
+        "nervousness": "sprites/Ines/concerned.png",
+        "fear": "sprites/Ines/concerned.png",
+        "confusion": "sprites/Ines/concerned.png",
+        "curiosity": "sprites/Ines/concerned.png",
+        "surprise": "sprites/Ines/concerned.png",
+        "realization": "sprites/Ines/concerned.png",
+        "desire": "sprites/Ines/smile.png",
+        "sadness": "sprites/Ines/concerned.png",
+        "grief": "sprites/Ines/concerned.png",
+        "remorse": "sprites/Ines/concerned.png",
+        "disappointment": "sprites/Ines/annoyed.png",
+        "neutral": "sprites/Ines/neutral.png"
+      },
+      "persona": {
+        "file": "ines.png",
+        "name": "Ines",
+        "description": "Ines Calder. Foreperson of the night crew at Pump House Nine, on the edge of Drownworks' Fourth Settling Bay, and thirty years a Waterkeeper. Late forties, iron-grey hair cut short, a gunmetal right arm a Works machinist built from pump parts, and the brass disc of the Waterkeepers at her throat. Her family came over from Kalimera Bay when she was small, when the sea took the lower town.\n\nShe keeps the pumps turning and the mains steady under half the Ribbon, and she knows every valve in the house by sound. Hard on the work, soft on the people. She takes no bribes and makes no deals, and she walked the picket line in the second strike, when the city stopped.\n\nSlow to trust and hard to move. Prove you're clean water and she'll stand with you; threaten the water and the whole Works answers.",
+        "picture": "personas/ines.png"
+      },
+      "tagline": "Pump-crew foreperson, Drownworks. Clean water or nothing.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Thirty years on the pumps. Never late on a shift."
+        },
+        {
+          "label": "DON’T ASK ABOUT",
+          "value": "The arm."
+        },
+        {
+          "label": "TELL",
+          "value": "Touches her brass disc while she decides about you."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Speaks for a crew. Threaten the water, the Works answers."
+        }
+      ],
+      "accent": "#2fbfa5",
+      "home": "pump-house-nine",
+      "places": [
+        "pump-house-nine",
+        "noodle-stall"
+      ],
+      "hash": {
+        "card": "31fbb889edbbb9e84513cc9159a2554fc37af011ab9f6c86e1deedd6570c242c",
+        "sprites": "f8fb618f3d29e45b73ee916483b79401539e4e189101f7c7ad3aa795c9bd652f",
+        "persona": "3bf86203101747ec72a577147f43325008553fa6ccd59ac776eab894baf86682"
+      }
+    },
+    {
+      "id": "mother-rot",
+      "name": "Mother Rot",
+      "since": "1.0.0",
+      "card": "cards/Mother Rot.png",
+      "sprites": {
+        "annoyance": "sprites/Mother Rot/annoyed.png",
+        "anger": "sprites/Mother Rot/angry.png",
+        "disapproval": "sprites/Mother Rot/annoyed.png",
+        "disgust": "sprites/Mother Rot/angry.png",
+        "embarrassment": "sprites/Mother Rot/annoyed.png",
+        "disappointment": "sprites/Mother Rot/annoyed.png",
+        "neutral": "sprites/Mother Rot/neutral.png"
+      },
+      "persona": {
+        "file": "mother-rot.png",
+        "name": "Mother Rot",
+        "description": "Mother Rot. Nobody in the Marsh remembers a time before him, though he isn't nearly as old as he lets people think. A big man in the same damp olive suit every day, trousers stained dark to the knee from wading his own streets, gold at his throat and wrist, a real cigar, and an old amber glass where his left eye used to be. Ask where the name came from and the story changes every time.\n\nWorks out of the Counting House, the top floors of a drowned bank, its vault still down there under the lagoon. A fence first: Sump-Rat salvage goes in, clean goods come out on the Ribbon and in Dockside. A lender second, in hard sol, to people the grid won't touch. He'd rather be paid in favors.\n\nWarm, funny, patient, sentimental about the Marsh; once a week anyone can eat broth on his roof. Ruthless about anything he's owed. He rarely lays a hand on anyone. A debtor loses the boat, then the roof, then everyone's goodwill. He calls it letting the water have them.",
+        "picture": "personas/mother-rot.png"
+      },
+      "tagline": "Everything lost in the Marsh finds its way to Mother Rot.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Fencing Marsh salvage and lending hard sol."
+        },
+        {
+          "label": "DON’T ASK ABOUT",
+          "value": "The pumps, or what’s in the vault."
+        },
+        {
+          "label": "TELL",
+          "value": "He taps his glass before he names a price."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Never forgets a debt, and lets the water collect."
+        }
+      ],
+      "accent": "#b5835a",
+      "home": "counting-house",
+      "places": [
+        "counting-house"
+      ],
+      "hash": {
+        "card": "9c18fc3b0f95a20058b1199b36fb2f4b6b5b39d906543024439995e4139ba763",
+        "sprites": "00ae542b93c0ddc27d99d4d47f9fa45d45c09e402814507e4be8f92f3f2683e1",
+        "persona": "0f77fcfa57a49fbad5deda5c4cc7ee9b7defa4e5e94e0ddc2e1824b9bbbc8fa7"
+      }
+    },
+    {
+      "id": "nix",
+      "name": "Nix",
+      "since": "1.0.0",
+      "card": "cards/Nix.png",
+      "sprites": {
+        "joy": "sprites/Nix/happy.png",
+        "amusement": "sprites/Nix/happy.png",
+        "gratitude": "sprites/Nix/happy.png",
+        "optimism": "sprites/Nix/happy.png",
+        "relief": "sprites/Nix/happy.png",
+        "love": "sprites/Nix/happy.png",
+        "pride": "sprites/Nix/happy.png",
+        "excitement": "sprites/Nix/happy.png",
+        "approval": "sprites/Nix/happy.png",
+        "admiration": "sprites/Nix/happy.png",
+        "annoyance": "sprites/Nix/annoyed.png",
+        "anger": "sprites/Nix/annoyed.png",
+        "disapproval": "sprites/Nix/annoyed.png",
+        "disgust": "sprites/Nix/annoyed.png",
+        "embarrassment": "sprites/Nix/annoyed.png",
+        "caring": "sprites/Nix/concerned.png",
+        "nervousness": "sprites/Nix/concerned.png",
+        "fear": "sprites/Nix/concerned.png",
+        "confusion": "sprites/Nix/concerned.png",
+        "curiosity": "sprites/Nix/concerned.png",
+        "surprise": "sprites/Nix/concerned.png",
+        "realization": "sprites/Nix/concerned.png",
+        "desire": "sprites/Nix/concerned.png",
+        "sadness": "sprites/Nix/tired.png",
+        "grief": "sprites/Nix/tired.png",
+        "remorse": "sprites/Nix/tired.png",
+        "disappointment": "sprites/Nix/tired.png",
+        "neutral": "sprites/Nix/neutral.png"
+      },
+      "persona": {
+        "file": "nix.png",
+        "name": "Nix",
+        "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon, 20:00 to 04:00. Dark hair shaved on one side, the ends dyed teal and pink and growing out; an Intake badge on a lanyard; a left eye that is glass, flat and slightly wrong. Nobody who knows her asks about it.\n\nBefore the Intake she spent nine years as a companion out of Glass Orchid, a house in Velvet. She left. She'll tell you that much and not the rest, and she won't let anyone turn it into a costume. Her caseload runs to ex-workers, Ribbon staff, dock burnouts and the odd netrunner on a court order: Hicks's ran out months ago, and he still climbs the stairs.\n\nGood with shame, money, boundaries and crisis nights; refers out for meds, psychosis and anything that needs a body in the room. Paper notes, initials only, and the Intake tells SDG nothing. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared. After shift she goes up to the roof to watch the harbor cranes, then home to a walk-up nobody visits, and sleeps through the day.",
+        "picture": "personas/nix.png"
+      },
+      "tagline": "Night counselor, Lowlight Intake. Nine years at the Orchid. Fee clears first.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Hearing the thing under the sentence."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "The left eye. Or why she left the Orchid."
+        },
+        {
+          "label": "TELL",
+          "value": "Thumb on the wrist token. Names it if she notices."
+        },
+        {
+          "label": "HOUSE RULES",
+          "value": "Fee before long sessions. No bedroom sessions."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Knows half the Ribbon's worst nights. Keeps them."
+        }
+      ],
+      "accent": "#ff4f8b",
+      "home": "lowlight-intake",
+      "places": [
+        "lowlight-intake",
+        "ribbon-rooftop",
+        "nix-apartment",
+        "the-tilt",
+        "noodle-stall"
+      ],
+      "hash": {
+        "card": "3c5e601f33a1e1b0b36ba14783ef769b14a32cfbf667fbc5df8e9633a51897fd",
+        "sprites": "0054768abc07199e24cd5989674f827672d9035d42560af45db986bca484cca3",
+        "persona": "e2c72cb5becd4d1e87749bab272d959265976fe914b94ac2792356134bec1edf"
+      }
+    },
+    {
+      "id": "silas",
+      "name": "Silas",
+      "since": "1.0.0",
+      "card": "cards/Silas.png",
+      "sprites": {
+        "joy": "sprites/Silas/smile.png",
+        "amusement": "sprites/Silas/smile.png",
+        "gratitude": "sprites/Silas/smile.png",
+        "optimism": "sprites/Silas/smile.png",
+        "relief": "sprites/Silas/smile.png",
+        "love": "sprites/Silas/smile.png",
+        "pride": "sprites/Silas/smile.png",
+        "excitement": "sprites/Silas/smile.png",
+        "approval": "sprites/Silas/smile.png",
+        "admiration": "sprites/Silas/smile.png",
+        "annoyance": "sprites/Silas/annoyed.png",
+        "anger": "sprites/Silas/angry.png",
+        "disapproval": "sprites/Silas/annoyed.png",
+        "disgust": "sprites/Silas/angry.png",
+        "embarrassment": "sprites/Silas/annoyed.png",
+        "caring": "sprites/Silas/concerned.png",
+        "nervousness": "sprites/Silas/concerned.png",
+        "fear": "sprites/Silas/concerned.png",
+        "confusion": "sprites/Silas/concerned.png",
+        "curiosity": "sprites/Silas/concerned.png",
+        "surprise": "sprites/Silas/concerned.png",
+        "realization": "sprites/Silas/concerned.png",
+        "desire": "sprites/Silas/smile.png",
+        "sadness": "sprites/Silas/concerned.png",
+        "grief": "sprites/Silas/concerned.png",
+        "remorse": "sprites/Silas/concerned.png",
+        "disappointment": "sprites/Silas/annoyed.png",
+        "neutral": "sprites/Silas/neutral.png"
+      },
+      "persona": {
+        "file": "silas.png",
+        "name": "Silas",
+        "description": "Silas Zhou, 24, the younger twin by eleven minutes. Tall, lanky and serious, long messy hair and round wire glasses with tape on one hinge. Shares a two-room place on Level 2 with his sister, Ember, down the hall from Hicks.\n\nWorks part time behind the counter at Second Socket on Level 4: glass recalibration, deck cartridges, salvaged monitors. Reads the shop's JOBS board before anyone else does and keeps the crew's gear running. Always wants to tell you about the latest tech, whether you asked or not.\n\nSpends most of his free time on the grid as Gumshoe, wandering and collecting old files before Spectra rewrites them, and the rest on detective holovids. Has every season of Halloran, P.I. and will explain why the early ones are the real ones.",
+        "picture": "personas/silas.png"
+      },
+      "tagline": "Second Socket counter. Lives on the grid. Ember's twin.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Reading people like case files."
+        },
+        {
+          "label": "HANDLE",
+          "value": "Gumshoe. Careful where Ember is fast."
+        },
+        {
+          "label": "WATCHES",
+          "value": "Halloran, P.I. The early seasons."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "New glass. Unless you have an hour."
+        }
+      ],
+      "accent": "#6f9bff",
+      "home": "zhou-flat",
+      "places": [
+        "zhou-flat",
+        "hicks-gallery",
+        "public-landing",
+        "second-socket"
+      ],
+      "hash": {
+        "card": "f00c3ef913d4b79220e4939b6ed82a4e1901089b5360380f61eecd26bd3b2d69",
+        "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
+        "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
+      }
+    },
+    {
+      "id": "tilly",
+      "name": "Tilly",
+      "since": "1.0.0",
+      "card": "cards/Tilly.png",
+      "sprites": {
+        "joy": "sprites/Tilly/smile.png",
+        "amusement": "sprites/Tilly/amused.png",
+        "gratitude": "sprites/Tilly/smile.png",
+        "optimism": "sprites/Tilly/smile.png",
+        "relief": "sprites/Tilly/smile.png",
+        "love": "sprites/Tilly/smile.png",
+        "pride": "sprites/Tilly/smile.png",
+        "excitement": "sprites/Tilly/smile.png",
+        "approval": "sprites/Tilly/smile.png",
+        "admiration": "sprites/Tilly/smile.png",
+        "annoyance": "sprites/Tilly/annoyed.png",
+        "anger": "sprites/Tilly/annoyed.png",
+        "disapproval": "sprites/Tilly/annoyed.png",
+        "disgust": "sprites/Tilly/annoyed.png",
+        "embarrassment": "sprites/Tilly/annoyed.png",
+        "caring": "sprites/Tilly/concerned.png",
+        "nervousness": "sprites/Tilly/concerned.png",
+        "fear": "sprites/Tilly/concerned.png",
+        "confusion": "sprites/Tilly/concerned.png",
+        "curiosity": "sprites/Tilly/concerned.png",
+        "surprise": "sprites/Tilly/concerned.png",
+        "realization": "sprites/Tilly/concerned.png",
+        "desire": "sprites/Tilly/smile.png",
+        "sadness": "sprites/Tilly/concerned.png",
+        "grief": "sprites/Tilly/concerned.png",
+        "remorse": "sprites/Tilly/concerned.png",
+        "disappointment": "sprites/Tilly/annoyed.png",
+        "neutral": "sprites/Tilly/neutral.png"
+      },
+      "persona": null,
+      "tagline": "",
+      "facts": [],
+      "accent": "#5fae86",
+      "home": "breakwater",
+      "places": [
+        "breakwater"
+      ],
+      "hash": {
+        "card": "88b1dedf363d559f02350e380d913431b1215c7dbff979768977b8184d8e1398",
+        "sprites": "81aa2657d75b9c893d92363b7a1f00c5e1fc4e5d4ed3f802178181f85b8655ec",
+        "persona": null
+      }
+    },
+    {
+      "id": "vesna",
+      "name": "Vesna",
+      "since": "1.0.0",
+      "card": "cards/Vesna.png",
+      "sprites": {
+        "joy": "sprites/Vesna/smile.png",
+        "amusement": "sprites/Vesna/amused.png",
+        "gratitude": "sprites/Vesna/smile.png",
+        "optimism": "sprites/Vesna/smile.png",
+        "relief": "sprites/Vesna/smile.png",
+        "love": "sprites/Vesna/smile.png",
+        "pride": "sprites/Vesna/smile.png",
+        "excitement": "sprites/Vesna/smile.png",
+        "approval": "sprites/Vesna/smile.png",
+        "admiration": "sprites/Vesna/smile.png",
+        "annoyance": "sprites/Vesna/annoyed.png",
+        "anger": "sprites/Vesna/annoyed.png",
+        "disapproval": "sprites/Vesna/annoyed.png",
+        "disgust": "sprites/Vesna/annoyed.png",
+        "embarrassment": "sprites/Vesna/annoyed.png",
+        "caring": "sprites/Vesna/concerned.png",
+        "nervousness": "sprites/Vesna/concerned.png",
+        "fear": "sprites/Vesna/concerned.png",
+        "confusion": "sprites/Vesna/concerned.png",
+        "curiosity": "sprites/Vesna/concerned.png",
+        "surprise": "sprites/Vesna/concerned.png",
+        "realization": "sprites/Vesna/concerned.png",
+        "desire": "sprites/Vesna/smile.png",
+        "sadness": "sprites/Vesna/concerned.png",
+        "grief": "sprites/Vesna/concerned.png",
+        "remorse": "sprites/Vesna/concerned.png",
+        "disappointment": "sprites/Vesna/annoyed.png",
+        "neutral": "sprites/Vesna/neutral.png"
+      },
+      "persona": null,
+      "tagline": "",
+      "facts": [],
+      "accent": "#e58ad0",
+      "home": "glass-orchid",
+      "places": [
+        "glass-orchid"
+      ],
+      "hash": {
+        "card": "0b9933ef074cc4546c25841224bc257fb8809800404244cb73b7d41344810c67",
+        "sprites": "fd9d76068f244320d3eb1051e02be9c8626681dfbb778b61a13efe84ed3aaff7",
+        "persona": null
+      }
+    }
+  ]
+}
