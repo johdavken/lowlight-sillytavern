@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.4 · 2026-10-29
+- The select's contact grid leaves out Lowlight's residents (Hae, Tilly, Vesna, Oksana, Garro); [A] still shows everyone
+
 ## 1.1.3 · 2026-10-29
 - Character pictures update with the package: a new picture now counts as a card update (SYS → CAST offers it)
 

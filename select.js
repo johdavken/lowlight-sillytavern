@@ -71,7 +71,8 @@ export function mountSelect({ cast, rooms, current, goTo, cue, menu = () => {} }
         about: descriptions[file]?.description ?? '',
       }));
     // Without cast.json there's no cast to keep to: everyone shows.
-    const keep = (ch) => showAll || info.size === 0 || info.has(ch.name);
+    // The game's residents (Hae at her stall) aren't contacts you call: off the grid unless [A] shows everyone.
+    const keep = (ch) => showAll || info.size === 0 || (info.has(ch.name) && !info.get(ch.name).resident);
     roster.p2 = c.characters.map((ch, i) => ({ ch, i })).filter(({ ch }) => keep(ch)).map(({ ch, i }) => ({
       name: ch.name,
       index: i,
