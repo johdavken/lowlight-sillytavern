@@ -308,8 +308,9 @@ body.lowlight-chat #chat .mes.ll-pre-tool { display: none; }
 body.lowlight-chat .ll-continue:not([hidden]) {
   display: block;
   position: fixed;
-  right: 140px;
-  bottom: 14px;
+  /* Above SillyTavern's message box, at the band's right edge: clear of its send button. */
+  right: 170px;
+  bottom: 52px;
   z-index: 31;
   background: none;
   border: none;

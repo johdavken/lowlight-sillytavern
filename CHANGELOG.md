@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.1 · 2026-10-29
+- CONTINUE sits above the message box, clear of the send button
+
 ## 1.2.0 · 2026-10-29
 - The dialogue box pages a long line ([CONTINUE ▸ n/N]: click, Page Down, or Enter/Space in an empty box), and Page Up opens the whole chat as history (Escape closes it), as in Lowlight
 
