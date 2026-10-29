@@ -34,7 +34,7 @@ To update, use **Extensions → Manage extensions → Update**. New characters i
 
 ## Licenses
 
-- **Code:** GPL-3.0-or-later (`LICENSE`).
+- **Code:** GPL-3.0-or-later (`LICENSE`). The source is Lowlight's open-source repository: https://github.com/johdavken/lowlight
 - **Lowlight's writing, art and songs:** CC BY-NC-SA 4.0 (`CONTENT-LICENSE`). Share and remix them for free, with credit, but not commercially.
 - **Third-party parts:** see `CREDITS.md` and `THIRD-PARTY-LICENSES.md`.
 

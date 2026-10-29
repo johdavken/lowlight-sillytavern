@@ -18,4 +18,4 @@ The rain is synthesized, the light hums too. No recorded sounds yet beyond the s
 
 ## Code
 
-Lowlight's renderer, map and audio (GPL-3.0-or-later), built with PixiJS, pixi-filters, zod and others. Their notices are in `THIRD-PARTY-LICENSES.md`.
+Lowlight's renderer, map and audio (GPL-3.0-or-later), built with PixiJS, pixi-filters, zod and others. Their source is https://github.com/johdavken/lowlight; their notices are in `THIRD-PARTY-LICENSES.md`.
