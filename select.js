@@ -1,7 +1,7 @@
 // Lowlight's character select over SillyTavern: 1P picks who you are (a persona), CPU picks your contact (a
 // character), then //JACK IN switches persona and opens that chat. Built on a 1600×900 stage scaled to the window,
 // as Lowlight's is; the live room behind it shows the skyline, and each contact's own room while the cursor rests.
-import { getUserAvatar, setUserAvatar, user_avatar } from '../../../personas.js';
+import { getUserAvatar, setPersonaLockState, setUserAvatar, user_avatar } from '../../../personas.js';
 
 const COLUMNS = 6;
 const STAGE_W = 1600;
@@ -243,8 +243,11 @@ export function mountSelect({ cast, rooms, current, goTo, cue, menu = () => {} }
     cue('confirm');
     close(false);
     const c = SillyTavern.getContext();
-    if (p1.file !== user_avatar) await setUserAvatar(p1.file, { toastPersonaNameChange: false });
+    // The chat first: opening it applies its locked persona, else the default one, which would undo the pick. Then
+    // the persona, locked to this chat so reloads and later visits keep it (no "temporary persona" warning).
     if (String(c.characterId) !== String(p2.index)) await c.selectCharacterById(p2.index);
+    if (p1.file !== user_avatar) await setUserAvatar(p1.file, { toastPersonaNameChange: false });
+    await setPersonaLockState(true, 'chat');
   }
 
   function fit() {

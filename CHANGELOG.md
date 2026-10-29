@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.5 · 2026-10-29
+- Jacking in keeps the persona you picked: it's locked to the chat, so your default persona no longer takes over (no more 'Temporary Persona')
+
 ## 1.1.4 · 2026-10-29
 - The select's contact grid leaves out Lowlight's residents (Hae, Tilly, Vesna, Oksana, Garro); [A] still shows everyone
 
