@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.2 · 2026-10-29
+- CONTINUE sits under the line it pages, in the space the page leaves free
+
 ## 1.2.1 · 2026-10-29
 - CONTINUE sits above the message box, clear of the send button
 

@@ -12,7 +12,6 @@ export function mountSubtitles() {
   const btn = document.createElement('button');
   btn.className = 'll-continue';
   btn.hidden = true;
-  document.body.append(btn);
 
   /** The line being paged (its .mes_text), its page, and how many it has. */
   let current = null;
@@ -61,8 +60,12 @@ export function mountSubtitles() {
     text.style.maxHeight = `${pageHeight}px`;
     text.style.overflow = 'hidden';
     text.scrollTop = page * pageHeight;
+    // Under the text, in the line the page leaves free (as in Lowlight's box). Only real changes touch the page:
+    // the chat's own observer would otherwise see this and lay out again, forever.
+    if (btn.previousElementSibling !== text) text.after(btn);
     btn.hidden = false;
-    btn.textContent = `[CONTINUE ▸ ${page + 1}/${pages}]`;
+    const label = `[CONTINUE ▸ ${page + 1}/${pages}]`;
+    if (btn.textContent !== label) btn.textContent = label;
   }
 
   const canTurn = () => lowChat() && !historyOpen() && !btn.hidden && page < pages - 1;
