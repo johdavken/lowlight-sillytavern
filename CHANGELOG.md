@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.6 · 2026-10-29
+- Lowlight only in its own chats, ST's look on small screens, wearing on cards and personas
+
 ## 1.2.5 · 2026-10-29
 - Lowlight's fixed 16:9 stage: the band, figures, Keys bar and map keep their place on the room at any window shape
 

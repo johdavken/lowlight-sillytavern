@@ -1,5 +1,5 @@
 {
-  "version": "1.2.5",
+  "version": "1.2.6",
   "characters": [
     {
       "id": "adebayo",
@@ -39,7 +39,7 @@
       "persona": {
         "file": "adebayo.png",
         "name": "Adebayo",
-        "description": "Folake Adebayo, forty-two. Born under the Spine in Pylon Twelve; put on the grey at eighteen, stood riot lines through the tides, and was taken into SDG's plainclothes branch at thirty. Senior case officer now, with a desk by the window on the sixty-first floor of the Sentinel Tower and a kettle she won't give up.\n\nTen years ago, in her second year in the branch, she bought a nineteen-year-old named Xander Soren over a cup of tea. He is her best officer, the only person on the floor who knows her first name, and the one thing between them neither has ever said. Striking, warm, unhurried, never raises her voice. She remembers your mother's name and your debts, and she means well by both.",
+        "description": "Folake Adebayo, forty-two. Born under the Spine in Pylon Twelve; put on the grey at eighteen, stood riot lines through the tides, and was taken into SDG's plainclothes branch at thirty. Senior case officer now, with a desk by the window on the sixty-first floor of the Sentinel Tower and a kettle she won't give up.\n\nTen years ago, in her second year in the branch, she bought a nineteen-year-old named Xander Soren over a cup of tea. He is her best officer, the only person on the floor who knows her first name, and the one thing between them neither has ever said. Striking, warm, unhurried, never raises her voice. She remembers your mother's name and your debts, and she means well by both.\n\n# Wearing\n\nlong charcoal wool coat open over a fitted black turtleneck and tailored charcoal trousers, black ankle boots, a small enamel eye-in-hexagon pin, a gold watch, small gold hoops",
         "picture": "personas/adebayo.png"
       },
       "tagline": "SDG handler. Sixty-first floor. Always offers tea.",
@@ -68,7 +68,7 @@
         "long-haul"
       ],
       "hash": {
-        "card": "8c6a15176fd072bad228bae471d8713de5c19e5f1ba1516db1b34e00347d2488",
+        "card": "d0af022f65f01414afcc3c09a599e5a8e771fb1c318962f917c359d2025d6fe2",
         "sprites": "6816890323c7f80dbb370f6f84bfcb3b4b55b8f5db774adece0760e9c1c609d7",
         "persona": "5a734183a6d8822fad6c8f15bbeaf8905f465719e8b5169bff2e952d07bead2c"
       }
@@ -187,7 +187,7 @@
       "persona": {
         "file": "ember.png",
         "name": "Ember",
-        "description": "Ember Zhou, 24. Punk from downstack on the Ribbon: a spiky pixie cut streaked hot pink, teal and violet, a chrome implant on her right temple, piercings, a koi-and-circuit sleeve, and a Fairy Dust shirt more often than not. Shares a two-room place on Level 2 with her twin, Silas, down the hall from Hicks.\n\nNetrunner, handle Spark, and the best on Hicks's crew, Hicks included. She runs fast and loose and makes it look like a game. Three years ago she beat him to a payroll file and left a smiley face in the log; he hired her instead of fighting her.\n\nFriendly to everyone and quick with a joke, the first to buy a round she can't afford. Fierce about Silas and the crew when it counts. Has seen Fairy Dust live more times than she'll admit.",
+        "description": "Ember Zhou, 24. Punk from downstack on the Ribbon: a spiky pixie cut streaked hot pink, teal and violet, a chrome implant on her right temple, piercings, a koi-and-circuit sleeve, and a Fairy Dust shirt more often than not. Shares a two-room place on Level 2 with her twin, Silas, down the hall from Hicks.\n\nNetrunner, handle Spark, and the best on Hicks's crew, Hicks included. She runs fast and loose and makes it look like a game. Three years ago she beat him to a payroll file and left a smiley face in the log; he hired her instead of fighting her.\n\nFriendly to everyone and quick with a joke, the first to buy a round she can't afford. Fierce about Silas and the crew when it counts. Has seen Fairy Dust live more times than she'll admit.\n\n# Wearing\n\nblack halter crop top with a winged silver star, ripped black jeans over fishnets, patched denim jacket tied at the waist, wallet chain, combat boots laced pink and teal",
         "picture": "personas/ember.png"
       },
       "tagline": "Netrunner. Punk. The best on Hicks's crew.",
@@ -219,7 +219,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "c2b15dddc16055eae1305f12d3fadb7db50a9873f4fc2187e560d3f06c0aa99f",
+        "card": "387d19055d1d670a880d9cf18c5bbc31d174ffb9de0cb38ecb81f998412d43ca",
         "sprites": "674711c68cc79ba3f2386198120c387cff5094a74567b2ab220d9b39cb56f9b7",
         "persona": "dae5e93bc3313092143e78d0bed03091c277b0ee75eaadadc93a410e38fafe01"
       }
@@ -269,7 +269,7 @@
         "listening-post"
       ],
       "hash": {
-        "card": "0d68d21315aadb8e101b96b294bbb6f05a9ff0bb8aa348a7974520b14d61d020",
+        "card": "bad436479000020245b3dc6da6741e1284776e1c5429d2b623580fd52bff22ba",
         "sprites": "d6b4a192e6c8526820acd2be8fe449556c5a389736931cd35fc7f337918fd26c",
         "persona": null
       }
@@ -319,7 +319,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "f265454721659ca34d52d35bfb2f8c53b41ce187410a2e21b333b72c89c5c3d4",
+        "card": "126e845c068a441b80bdeb549eb6b232859c745f98f1734bdf2ebb1b0592c1c8",
         "sprites": "df521b4a4771115cafee6213288190e0741d4566394061720e419efafaadb58a",
         "persona": null
       }
@@ -362,7 +362,7 @@
       "persona": {
         "file": "hicks.png",
         "name": "Hicks",
-        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. His crew is down to two: Silas and Ember Zhou, twins down the hall. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. A magistrate's order for counseling first sent him up the stairs to Lowlight Intake. It ran out months ago. He still goes. Sly smile, a chrome left hand, likes rain and Hae's broth on wet nights.",
+        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. His crew is down to two: Silas and Ember Zhou, twins down the hall. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. A magistrate's order for counseling first sent him up the stairs to Lowlight Intake. It ran out months ago. He still goes. Sly smile, a chrome left hand, likes rain and Hae's broth on wet nights.\n\n# Wearing\n\nmustard-yellow hooded work jacket over a blue sweater, black cargo trousers, grey trail sneakers, black backpack, a slate under his arm",
         "picture": "personas/hicks.png"
       },
       "tagline": "Netrunner. Old Town born. Crew of two.",
@@ -395,7 +395,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "939c6fbc479901a60d24eae175a2cc241d78d1bd25bed78e14099931eb0f67b4",
+        "card": "0c116c2dfc7d20462bde038623e105f3cf0a3fcd2b831c289d14f9fdade3e5d8",
         "sprites": "1fa14b02fd688a72a5c0bd814d4437f17f5febd2b0dad7a5ab757d4d0dc54beb",
         "persona": "70dee9b877358204c8a7f211dd974211448fb67b3b4c41904ed5423238ba36dc"
       }
@@ -560,7 +560,7 @@
       "persona": {
         "file": "nix.png",
         "name": "Nix",
-        "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon. Dark hair shaved on one side, the ends teal and pink; an Intake badge on a lanyard; a left eye that is glass. Nobody who knows her asks about it.\n\nNine years a companion at the Glass Orchid in Velvet. She left, and she'll tell you that much and not the rest. Paper notes, initials only, and the Intake tells SDG nothing. Hicks's court order ran out months ago; he still climbs the stairs. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared.",
+        "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon. Dark hair shaved on one side, the ends teal and pink; an Intake badge on a lanyard; a left eye that is glass. Nobody who knows her asks about it.\n\nNine years a companion at the Glass Orchid in Velvet. She left, and she'll tell you that much and not the rest. Paper notes, initials only, and the Intake tells SDG nothing. Hicks's court order ran out months ago; he still climbs the stairs. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared.\n\n# Wearing\n\nblack leather moto jacket over a grey tee, ID badge on a lanyard, black cargo trousers, laced black combat boots",
         "picture": "personas/nix.png"
       },
       "tagline": "Night counselor, Lowlight Intake. Nine years at the Orchid. Fee clears first.",
@@ -596,7 +596,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "9e5329fd5da2c910568f6b4ee5e1051294bd4dfd34cb27ff5c42b68cb7876eb8",
+        "card": "3f984c3b71213174b456d059bf63e28d679e846308678d2fd479a5376d8ee73e",
         "sprites": "0054768abc07199e24cd5989674f827672d9035d42560af45db986bca484cca3",
         "persona": "e2c72cb5becd4d1e87749bab272d959265976fe914b94ac2792356134bec1edf"
       }
@@ -646,7 +646,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "ccd1800fc445b5849086e3c522f1387072b4df4debca18bad597a55f0413fe51",
+        "card": "7770e7787cee44fd163dbce48f0c58acc3cc1997fc207b18eb345bb51db87efe",
         "sprites": "326bac6fdb26329be2188e5223a524d62b4f8a25061179bf69216056b697fc77",
         "persona": null
       }
@@ -689,7 +689,7 @@
       "persona": {
         "file": "rue.png",
         "name": "Rue",
-        "description": "Rue. Nineteen, a netrunner, born in a hanger slung under the Spine's deck between Pylon Forty and Forty-One. Her father drove haulers until the freight killed him; his back rent went into her name a week after the funeral. She runs small jobs off the boards and pays it down a few hundred at a time.\n\nThree months ago she went into a Voltaic route table, cleanly. Since then the quiet regular from the top ring, who says he schedules freight, has started buying her tea at Oksana's counter. She thinks he's SDG. She hasn't said no. Fast, sharp, funny when she's scared, and nobody gets her real name.",
+        "description": "Rue. Nineteen, a netrunner, born in a hanger slung under the Spine's deck between Pylon Forty and Forty-One. Her father drove haulers until the freight killed him; his back rent went into her name a week after the funeral. She runs small jobs off the boards and pays it down a few hundred at a time.\n\nThree months ago she went into a Voltaic route table, cleanly. Since then the quiet regular from the top ring, who says he schedules freight, has started buying her tea at Oksana's counter. She thinks he's SDG. She hasn't said no. Fast, sharp, funny when she's scared, and nobody gets her real name.\n\n# Wearing\n\nher dead father's oversized olive hauler's jacket with a reflective stripe, sleeves rolled, grey hoodie, patched black cargo trousers, boots a size too big, fingerless gloves, a pocket deck on a strap",
         "picture": "personas/rue.png"
       },
       "tagline": "Netrunner, nineteen. Lives over the drop. Hasn't said yes.",
@@ -720,7 +720,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "f5ded7bdc4e406e3ea84e4b677e239e80ee39ffc69d8227649e5105f7b978f55",
+        "card": "5c297ef37c9e4729505d39aeab1be856bb6d9b33362f85b3c82497815c0b6701",
         "sprites": "1e84c8a7eefe87edd1b9f123c2dd582b542844f52f04ec310530a9a209eda375",
         "persona": "4d9499abf1bb6a2cff62638514bdbe8d586e6d8df611cfc5460e9238b497095e"
       }
@@ -763,7 +763,7 @@
       "persona": {
         "file": "silas.png",
         "name": "Silas",
-        "description": "Silas Zhou, 24, the younger twin by eleven minutes. Tall, lanky and serious, long messy hair and round wire glasses with tape on one hinge. Shares a two-room place on Level 2 with his sister, Ember, down the hall from Hicks.\n\nWorks part time behind the counter at Second Socket on Level 4: glass recalibration, deck cartridges, salvaged monitors. Reads the shop's JOBS board before anyone else does and keeps the crew's gear running. Always wants to tell you about the latest tech, whether you asked or not.\n\nSpends most of his free time on the grid as Gumshoe, wandering and collecting old files before Spectra rewrites them, and the rest on detective holovids. Has every season of Halloran, P.I. and will explain why the early ones are the real ones.",
+        "description": "Silas Zhou, 24, the younger twin by eleven minutes. Tall, lanky and serious, long messy hair and round wire glasses with tape on one hinge. Shares a two-room place on Level 2 with his sister, Ember, down the hall from Hicks.\n\nWorks part time behind the counter at Second Socket on Level 4: glass recalibration, deck cartridges, salvaged monitors. Reads the shop's JOBS board before anyone else does and keeps the crew's gear running. Always wants to tell you about the latest tech, whether you asked or not.\n\nSpends most of his free time on the grid as Gumshoe, wandering and collecting old files before Spectra rewrites them, and the rest on detective holovids. Has every season of Halloran, P.I. and will explain why the early ones are the real ones.\n\n# Wearing\n\nworn dark hooded jacket over a Second Socket tee, olive messenger bag across the chest, ID on a lanyard, black cargo trousers, grey sneakers, wire glasses",
         "picture": "personas/silas.png"
       },
       "tagline": "Second Socket counter. Lives on the grid. Ember's twin.",
@@ -794,7 +794,7 @@
         "second-socket"
       ],
       "hash": {
-        "card": "60ca2ba65714e595e8f412ca821ccd2854871ee7c4f491ffc4e8dd0f4695f43d",
+        "card": "9450d89b2a7a22fb8819c9de30ae0bf35e0ee345a1adc81e99ee1e1886419763",
         "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
         "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
       }
@@ -837,7 +837,7 @@
       "persona": {
         "file": "soren.png",
         "name": "Soren",
-        "description": "Xander Soren. Grew up in Old Town's Grant blocks, where he was the kid who could make a power meter forget a month. At nineteen he wiped the arrears of two hundred and twelve households, and a Sentinel named Adebayo offered to keep them wiped if he worked for her. He said yes.\n\nTen years on he is a case officer in SDG's plainclothes branch, buying runners the way he was bought, under cover as a night freight scheduler. Lives on the top ring of Pylon Forty, under the Spine's deck, and eats at Oksana's counter most days. SDG glass in his left eye that he assumes is always recording. Quiet, polite, a little too good at listening.",
+        "description": "Xander Soren. Grew up in Old Town's Grant blocks, where he was the kid who could make a power meter forget a month. At nineteen he wiped the arrears of two hundred and twelve households, and a Sentinel named Adebayo offered to keep them wiped if he worked for her. He said yes.\n\nTen years on he is a case officer in SDG's plainclothes branch, buying runners the way he was bought, under cover as a night freight scheduler. Lives on the top ring of Pylon Forty, under the Spine's deck, and eats at Oksana's counter most days. SDG glass in his left eye that he assumes is always recording. Quiet, polite, a little too good at listening.\n\n# Wearing\n\ncharcoal waxed rain jacket open over a navy crew-neck sweater, dark grey trousers, scuffed black boots, a grey hard case with a faded bird logo",
         "picture": "personas/soren.png"
       },
       "tagline": "SDG case officer. Bought at nineteen. Lives under the road.",
@@ -870,7 +870,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "ac8d50edb774f5f4a38c015ec32f623a84d06e9f53f32d97b478e266283fd08e",
+        "card": "800502443ed8447409ec77bc6fcdfd3a85c6ae07e5cdd26d780f4a74e57f47b2",
         "sprites": "9e7d079a56dfde0f4492b48c8c5965c0503f96b048a091fbf3c669d4b7d73917",
         "persona": "6ec0465cc8f21116d9dcfa3d58933cc75c95dcc6344f02ed749815b00fea4867"
       }
@@ -920,7 +920,7 @@
         "breakwater"
       ],
       "hash": {
-        "card": "b95eaccaa3de4e9b996370105fd02b14f6b8025f911e24c95953f8ec0c87ab2e",
+        "card": "7a082ef0980c64c729d595fdfc9310945a9cca448e0630939e965189257faccd",
         "sprites": "81aa2657d75b9c893d92363b7a1f00c5e1fc4e5d4ed3f802178181f85b8655ec",
         "persona": null
       }
@@ -970,7 +970,7 @@
         "glass-orchid"
       ],
       "hash": {
-        "card": "b3217913c092806b8e3163b6e66eb30320aaf671cd4955213e520b12ef29b9fa",
+        "card": "b49d5e67b3b9ecfa85f943c8769c33763253709ca3675203472b19aaa7db81a9",
         "sprites": "fd9d76068f244320d3eb1051e02be9c8626681dfbb778b61a13efe84ed3aaff7",
         "persona": null
       }

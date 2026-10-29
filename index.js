@@ -6,8 +6,8 @@ import { mountHud } from './hud.js';
 import { mountSelect } from './select.js';
 import { mountSubtitles } from './subtitles.js';
 import { mountRoomTools } from './room-tools.js';
-import { planInstall, planSettings, stageRect } from './lowlight-room.js';
-import { runInstall, updateCards, lowlightSettings } from './installer.js';
+import { planInstall, planSettings, stageRect, GREET_INSTRUCTIONS } from './lowlight-room.js';
+import { runInstall, updateCards, lowlightSettings, addPersonaWearing } from './installer.js';
 import { showNotice, showWelcome } from './welcome.js';
 
 const BASE = new URL('./rooms/', import.meta.url).href;
@@ -47,7 +47,6 @@ const META = await fetch(new URL('./rooms-meta.json', import.meta.url)).then((r)
 const host = document.createElement('div');
 host.id = 'lowlight-room';
 document.getElementById('bg1').after(host);
-document.body.classList.add('lowlight-room-on');
 
 // The speaker in the top bar (Lowlight's HUD speaker): click mutes, scroll sets the volume.
 const speaker = document.createElement('div');
@@ -86,8 +85,7 @@ youImg.alt = '';
 you.append(youImg);
 document.body.append(you);
 function showYou() {
-  const inChat = SillyTavern.getContext().characterId !== undefined;
-  youImg.src = inChat && user_avatar ? getUserAvatar(user_avatar) : '';
+  youImg.src = roomTools.ours() && user_avatar ? getUserAvatar(user_avatar) : '';
   you.hidden = !youImg.src;
 }
 
@@ -113,7 +111,8 @@ function goTo(folder) {
   return goChain;
 }
 
-// The travel note (Lowlight's [travel] line): her next reply is told you both just arrived. Cleared once she has answered.
+// The one-time note for her next reply: Lowlight's [travel] line (you both just arrived) or her greeting's [arrival]
+// line. Cleared once she has answered.
 const TRAVEL_KEY = 'lowlight-travel';
 function travelNote(text) {
   const c = SillyTavern.getContext();
@@ -146,12 +145,16 @@ const select = mountSelect({
   rooms: ROOMS,
   current: () => current,
   goTo,
-  menu: (on) => room.menu(on),
+  menu: (on) => {
+    room.menu(on);
+    applyHere();
+  },
   // A cue this build doesn't have stays silent (the public package: until CC0 cues are picked).
   cue: (name) => {
     const file = SOUND_MAP ? SOUND_MAP.cues[name] : `ui/${name}.ogg`;
     if (file) room.audio.cue(new URL(`./sound/${file}`, import.meta.url).href, CUES[name] * 0.25);
   },
+  jackedIn: () => void greetIfNew(),
 });
 window.lowlightSelect = select;
 // Lowlight's Keys bar in place of SillyTavern's top bar (with /lowchat on).
@@ -161,6 +164,9 @@ const settings = () => {
   es.lowlight ??= {};
   return es.lowlight;
 };
+// Ahead of the room tools' own listener (SillyTavern awaits listeners in order): a Lowlight chat wakes the paused room
+// first, or her room's restore would wait forever on a fade nobody is drawing.
+SillyTavern.getContext().eventSource.on(SillyTavern.getContext().eventTypes.CHAT_CHANGED, () => chatChanged());
 const roomTools = mountRoomTools({ room, cast, rooms: ROOMS, meta: META, current: () => current, goTo, idle: () => goChain });
 roomTools.setEnabled(settings().tools !== false);
 window.lowlightRoomTools = roomTools;
@@ -185,7 +191,7 @@ mapBtn.tabIndex = 0;
 mapBtn.addEventListener('click', toggleMap);
 document.getElementById('top-settings-holder')?.append(mapBtn, speaker);
 window.addEventListener('keydown', (e) => {
-  if (e.altKey && !e.ctrlKey && !e.metaKey && e.code === 'KeyM') {
+  if (e.altKey && !e.ctrlKey && !e.metaKey && e.code === 'KeyM' && here()) {
     e.preventDefault();
     toggleMap();
   }
@@ -206,6 +212,7 @@ if (!IS_PACKAGE) try {
     added++;
   }
   if (added) SillyTavern.getContext().saveSettingsDebounced();
+  addPersonaWearing(cast);
 } catch {
   // No cast.json yet (st-cast hasn't run): nothing to add.
 }
@@ -215,6 +222,26 @@ eventSource.on(eventTypes.PERSONA_CHANGED, showYou);
 eventSource.on(eventTypes.MESSAGE_RECEIVED, () => travelNote(''));
 eventSource.on(eventTypes.CHAT_CHANGED, () => travelNote(''));
 showYou();
+
+// Her greeting, as Lowlight's greet turn: a chat where nothing has been said yet opens on her, written live with the
+// game's own greeting instructions, once her room is back and (after //JACK IN) your persona is set. An older card's
+// fixed first message (cards no longer carry one) gives way to it.
+async function greetIfNew() {
+  const c = SillyTavern.getContext();
+  if (!roomTools.ours()) return;
+  const chatId = c.getCurrentChatId();
+  const first = c.chat[0];
+  const fixed = c.chat.length === 1 && !first.is_user && (first.swipes?.length ?? 1) <= 1 && first.mes === c.characters[c.characterId]?.first_mes;
+  if (c.chat.length > 0 && !fixed) return;
+  await roomTools.settled();
+  if (c.getCurrentChatId() !== chatId) return;
+  if (fixed) await c.deleteMessage(0);
+  travelNote(`[arrival: first meeting]\n\n${GREET_INSTRUCTIONS}`);
+  await c.executeSlashCommandsWithOptions('/trigger');
+}
+eventSource.on(eventTypes.CHAT_CHANGED, () => {
+  if (!select.jacking) void greetIfNew();
+});
 
 SlashCommandParser.addCommandObject(SlashCommand.fromProps({
   name: 'room',
@@ -229,15 +256,43 @@ SlashCommandParser.addCommandObject(SlashCommand.fromProps({
   },
 }));
 
-// Lowlight's subtitle chat look; remembered per browser.
+// Lowlight's subtitle chat look; the choice is remembered per browser.
 const CHAT_KEY = 'lowlight-chat';
-function setLowChat(on) {
-  document.body.classList.toggle('lowlight-chat', on);
-  try { localStorage.setItem(CHAT_KEY, on ? '1' : '0'); } catch { /* private window */ }
-}
 let lowChat = true;
 try { lowChat = localStorage.getItem(CHAT_KEY) !== '0'; } catch { /* private window */ }
-setLowChat(lowChat);
+function setLowChat(on) {
+  lowChat = on;
+  try { localStorage.setItem(CHAT_KEY, on ? '1' : '0'); } catch { /* private window */ }
+  applyHere();
+}
+/** Below this stage zoom (a phone, a small window) the dialogue would read under ~10px: SillyTavern's own look instead. */
+const MIN_STAGE_SCALE = 0.6;
+const roomy = () => stageRect(window.innerWidth, window.innerHeight).scale >= MIN_STAGE_SCALE;
+/** Lowlight is here: a chat with one of its cast, or the select screen. Anywhere else (your own characters, a group,
+ * SillyTavern's welcome) SillyTavern stays as it is: no room or sound, no look, and no room line, tools or greeting. */
+const here = () => roomTools.ours() || select.isOpen;
+function applyHere() {
+  const on = here();
+  document.body.classList.toggle('lowlight-room-on', on);
+  document.body.classList.toggle('lowlight-chat', on && lowChat && roomy());
+  room.away(!on);
+}
+applyHere();
+window.addEventListener('resize', applyHere);
+// Which kind of chat you were last in: the select stands in for SillyTavern's welcome only after a Lowlight one.
+const LAST_KEY = 'lowlight-last';
+function chatChanged() {
+  const c = SillyTavern.getContext();
+  if (c.characterId !== undefined || c.groupId) try { localStorage.setItem(LAST_KEY, roomTools.ours() ? '1' : '0'); } catch { /* private window */ }
+  applyHere();
+}
+const lastWasLowlight = () => {
+  try {
+    return localStorage.getItem(LAST_KEY) !== '0';
+  } catch {
+    return true;
+  }
+};
 // The dialogue box's paging and Page Up history (with /lowchat on).
 window.lowlightSubtitles = mountSubtitles();
 
@@ -245,7 +300,7 @@ SlashCommandParser.addCommandObject(SlashCommand.fromProps({
   name: 'lowchat',
   helpString: 'Lowlight subtitle chat on/off (off shows the whole log).',
   callback: () => {
-    setLowChat(!document.body.classList.contains('lowlight-chat'));
+    setLowChat(!lowChat);
     return '';
   },
 }));
@@ -282,7 +337,14 @@ async function installNow() {
   else if (firstVersion && result.done.length) lines.push(`INSTALLED: ${result.done.length} CHARACTERS`);
   if (plan.skip.length) lines.push(`KEPT YOUR OWN: ${namesOf(plan.skip.map((k) => k.id))}`);
   if (result.failed.length) lines.push(`COULDN'T INSTALL: ${namesOf(result.failed.map((f) => f.id))} (they'll try again next time)`);
-  if (s.version && s.version !== cast.version) lines.push(await latestChange());
+  const wearing = addPersonaWearing(cast);
+  if (wearing.length) lines.push(`PERSONAS UPDATED: ${wearing.map((n) => n.toUpperCase()).join(', ')} (WHAT YOU WEAR)`);
+  if (s.version && s.version !== cast.version) {
+    lines.push(await latestChange());
+    // UPDATE CARDS is the player's call (a card they've edited would lose it), so an update says which are waiting.
+    const waiting = castPlan().cardUpdates;
+    if (waiting.length) lines.push(`CARD UPDATES: ${namesOf(waiting)} · SYS → CAST → UPDATE CARDS`);
+  }
   // The version is only recorded once everything went in, so a failure tries again on the next load.
   if (!result.failed.length) s.version = cast.version;
   SillyTavern.getContext().saveSettingsDebounced();
@@ -350,11 +412,14 @@ window.lowlightCast = {
   },
 };
 
-// No chat open (SillyTavern's welcome screen): the select stands in for it, with the Lowlight look on, once the
-// package's welcome (if any) is answered.
+// No chat open (SillyTavern's welcome screen): the select stands in for it once you've said yes to the cast, when
+// your last chat was a Lowlight one, with the Lowlight look on and room for it. Otherwise SillyTavern's own welcome.
 const selectIfNoChat = async () => {
   await castReady;
-  if (document.body.classList.contains('lowlight-chat') && SillyTavern.getContext().characterId === undefined) select.open();
+  const c = SillyTavern.getContext();
+  if (c.characterId !== undefined || c.groupId || !lowChat || !roomy() || !lastWasLowlight()) return;
+  if (IS_PACKAGE && !lowlightSettings().accepted) return;
+  select.open();
 };
 eventSource.on(eventTypes.CHAT_CHANGED, selectIfNoChat);
 // On load, only once SillyTavern has had its chance to reopen your last chat (this can finish before it does).

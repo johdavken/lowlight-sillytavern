@@ -12,6 +12,9 @@
 }
 #lowlight-room canvas { width: 100% !important; height: 100% !important; display: block; }
 body.lowlight-room-on #bg1, body.lowlight-room-on #bg_custom { display: none; }
+/* Another character's chat (index.js applyHere): SillyTavern's own background and top bar, no room. */
+body:not(.lowlight-room-on) #lowlight-room { visibility: hidden; }
+body:not(.lowlight-room-on) :is(#lowlight-map-button, #lowlight-sound) { display: none; }
 
 /* ── Lowlight chat (/lowchat): the subtitle band from Lowlight's stage, over SillyTavern's chat ──
    No frame: the current line sits low over a dark scrim, names in spaced capitals, Plex Mono.
