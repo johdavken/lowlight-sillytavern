@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.0 · 2026-10-29
+- The dialogue box pages a long line ([CONTINUE ▸ n/N]: click, Page Down, or Enter/Space in an empty box), and Page Up opens the whole chat as history (Escape closes it), as in Lowlight
+
 ## 1.1.6 · 2026-10-29
 - Jacking in waits for the chat to load before setting and locking your persona
 
