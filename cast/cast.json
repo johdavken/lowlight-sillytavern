@@ -1,5 +1,5 @@
 {
-  "version": "1.1.2",
+  "version": "1.1.3",
   "characters": [
     {
       "id": "adebayo",
@@ -68,7 +68,7 @@
         "long-haul"
       ],
       "hash": {
-        "card": "39e0a973b76f72ccd6a19d43dfe5d289f46429d352e5f2d22733a9ad52400dbc",
+        "card": "8c6a15176fd072bad228bae471d8713de5c19e5f1ba1516db1b34e00347d2488",
         "sprites": "6816890323c7f80dbb370f6f84bfcb3b4b55b8f5db774adece0760e9c1c609d7",
         "persona": "5a734183a6d8822fad6c8f15bbeaf8905f465719e8b5169bff2e952d07bead2c"
       }
@@ -144,7 +144,7 @@
         "cass-apartment"
       ],
       "hash": {
-        "card": "9a45948a475ede70457818f4ce2c92afc0c1e4491f2d26da652ab33bb33b64e7",
+        "card": "1f997e2521e86fe12fe3b75636378952c3bd742b6b2a99de450928160a252363",
         "sprites": "40f390353a29782a869c607574994963980b933154e4036ba7295a5e98fbf681",
         "persona": "1cdf515dd5222ab9fe317f68f834ee33c452817b6dc5a6d683c12c9175db7765"
       }
@@ -219,7 +219,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "aea10626b1d6102887ecfa8cb4d192914c4ba2025a140a91b3ebe24226f16971",
+        "card": "43069a1fa8140df38f7925441a1a00832305f039f5e0016078fc5ea76fa6c296",
         "sprites": "674711c68cc79ba3f2386198120c387cff5094a74567b2ab220d9b39cb56f9b7",
         "persona": "dae5e93bc3313092143e78d0bed03091c277b0ee75eaadadc93a410e38fafe01"
       }
@@ -268,7 +268,7 @@
         "listening-post"
       ],
       "hash": {
-        "card": "e8c0cb218b5d94e63785ba1664e5b99271f9b50038be06cfe67068d72f12e3bb",
+        "card": "0d68d21315aadb8e101b96b294bbb6f05a9ff0bb8aa348a7974520b14d61d020",
         "sprites": "d6b4a192e6c8526820acd2be8fe449556c5a389736931cd35fc7f337918fd26c",
         "persona": null
       }
@@ -317,7 +317,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "c70ba2d1f8a8f160b7c7ae2b960b85377e82584b8b6b20faffebc1eeb6ce9e24",
+        "card": "f265454721659ca34d52d35bfb2f8c53b41ce187410a2e21b333b72c89c5c3d4",
         "sprites": "df521b4a4771115cafee6213288190e0741d4566394061720e419efafaadb58a",
         "persona": null
       }
@@ -393,7 +393,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "448d2ee9c0333ba86b46345ba8170dcc05e3f6aa99740b82345cd12cc0956ede",
+        "card": "939c6fbc479901a60d24eae175a2cc241d78d1bd25bed78e14099931eb0f67b4",
         "sprites": "1fa14b02fd688a72a5c0bd814d4437f17f5febd2b0dad7a5ab757d4d0dc54beb",
         "persona": "70dee9b877358204c8a7f211dd974211448fb67b3b4c41904ed5423238ba36dc"
       }
@@ -465,7 +465,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "31fbb889edbbb9e84513cc9159a2554fc37af011ab9f6c86e1deedd6570c242c",
+        "card": "ed019f932babcc4ebc578a9b592dd1ad98432e84b6d00d8ef04703a0a4b968b1",
         "sprites": "f8fb618f3d29e45b73ee916483b79401539e4e189101f7c7ad3aa795c9bd652f",
         "persona": "3bf86203101747ec72a577147f43325008553fa6ccd59ac776eab894baf86682"
       }
@@ -515,7 +515,7 @@
         "counting-house"
       ],
       "hash": {
-        "card": "9c18fc3b0f95a20058b1199b36fb2f4b6b5b39d906543024439995e4139ba763",
+        "card": "0b40bd9aee018cf957e6b60b0bac68b70943620b819238a4e5eb76fcce6d23ac",
         "sprites": "00ae542b93c0ddc27d99d4d47f9fa45d45c09e402814507e4be8f92f3f2683e1",
         "persona": "0f77fcfa57a49fbad5deda5c4cc7ee9b7defa4e5e94e0ddc2e1824b9bbbc8fa7"
       }
@@ -594,7 +594,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "1d1b38270831c6fe49627efffb992c3e763b0f42fba01425e970a0d1da546564",
+        "card": "9e5329fd5da2c910568f6b4ee5e1051294bd4dfd34cb27ff5c42b68cb7876eb8",
         "sprites": "0054768abc07199e24cd5989674f827672d9035d42560af45db986bca484cca3",
         "persona": "e2c72cb5becd4d1e87749bab272d959265976fe914b94ac2792356134bec1edf"
       }
@@ -643,7 +643,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "640f9a1f280b14a1432b4fa63657ba4071439c1daac75f8338c2a27dad177fac",
+        "card": "ccd1800fc445b5849086e3c522f1387072b4df4debca18bad597a55f0413fe51",
         "sprites": "326bac6fdb26329be2188e5223a524d62b4f8a25061179bf69216056b697fc77",
         "persona": null
       }
@@ -717,7 +717,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "3baf46efad36c477308154027013227c6614f650c7ca42b40b77dcdc587216d4",
+        "card": "f5ded7bdc4e406e3ea84e4b677e239e80ee39ffc69d8227649e5105f7b978f55",
         "sprites": "1e84c8a7eefe87edd1b9f123c2dd582b542844f52f04ec310530a9a209eda375",
         "persona": "4d9499abf1bb6a2cff62638514bdbe8d586e6d8df611cfc5460e9238b497095e"
       }
@@ -791,7 +791,7 @@
         "second-socket"
       ],
       "hash": {
-        "card": "f00c3ef913d4b79220e4939b6ed82a4e1901089b5360380f61eecd26bd3b2d69",
+        "card": "a4056374c61024ca61aadb27cd10013e04f77bfeee7841037d1ca406560f02a2",
         "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
         "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
       }
@@ -867,7 +867,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "0864c90920162d128b18b3bc110faf5b3c7651c9511b9e2f312c17527012c24e",
+        "card": "ac8d50edb774f5f4a38c015ec32f623a84d06e9f53f32d97b478e266283fd08e",
         "sprites": "9e7d079a56dfde0f4492b48c8c5965c0503f96b048a091fbf3c669d4b7d73917",
         "persona": "6ec0465cc8f21116d9dcfa3d58933cc75c95dcc6344f02ed749815b00fea4867"
       }
@@ -916,7 +916,7 @@
         "breakwater"
       ],
       "hash": {
-        "card": "88b1dedf363d559f02350e380d913431b1215c7dbff979768977b8184d8e1398",
+        "card": "b95eaccaa3de4e9b996370105fd02b14f6b8025f911e24c95953f8ec0c87ab2e",
         "sprites": "81aa2657d75b9c893d92363b7a1f00c5e1fc4e5d4ed3f802178181f85b8655ec",
         "persona": null
       }
@@ -965,7 +965,7 @@
         "glass-orchid"
       ],
       "hash": {
-        "card": "0b9933ef074cc4546c25841224bc257fb8809800404244cb73b7d41344810c67",
+        "card": "b3217913c092806b8e3163b6e66eb30320aaf671cd4955213e520b12ef29b9fa",
         "sprites": "fd9d76068f244320d3eb1051e02be9c8626681dfbb778b61a13efe84ed3aaff7",
         "persona": null
       }
