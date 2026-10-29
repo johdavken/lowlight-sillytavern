@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.3.0 · 2026-10-29
+- Her Residual: after each reply one quiet call keeps her notes, a recap and the lights she forgot (/ledger); each persona keeps its own chat
+
 ## 1.2.8 · 2026-10-29
 - /lowcast installs the cast after NOT NOW; the welcome says so
 
