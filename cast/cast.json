@@ -1,5 +1,5 @@
 {
-  "version": "1.2.3",
+  "version": "1.2.4",
   "characters": [
     {
       "id": "adebayo",
@@ -219,7 +219,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "43069a1fa8140df38f7925441a1a00832305f039f5e0016078fc5ea76fa6c296",
+        "card": "c2b15dddc16055eae1305f12d3fadb7db50a9873f4fc2187e560d3f06c0aa99f",
         "sprites": "674711c68cc79ba3f2386198120c387cff5094a74567b2ab220d9b39cb56f9b7",
         "persona": "dae5e93bc3313092143e78d0bed03091c277b0ee75eaadadc93a410e38fafe01"
       }
@@ -794,7 +794,7 @@
         "second-socket"
       ],
       "hash": {
-        "card": "a4056374c61024ca61aadb27cd10013e04f77bfeee7841037d1ca406560f02a2",
+        "card": "60ca2ba65714e595e8f412ca821ccd2854871ee7c4f491ffc4e8dd0f4695f43d",
         "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
         "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
       }

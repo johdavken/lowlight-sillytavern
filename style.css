@@ -14,9 +14,12 @@
 body.lowlight-room-on #bg1, body.lowlight-room-on #bg_custom { display: none; }
 
 /* ── Lowlight chat (/lowchat): the subtitle band from Lowlight's stage, over SillyTavern's chat ──
-   No frame: the current line sits low over a dark scrim, names in spaced capitals, Plex Mono. */
+   No frame: the current line sits low over a dark scrim, names in spaced capitals, Plex Mono.
+   Sizes are in --px, one pixel of Lowlight's 1600×900 stage zoomed to the window (web/src/ui/game-stage.ts), so the
+   band reads at the game's size: 1.2× at 1080p. */
 
 body.lowlight-chat {
+  --px: min(100vw / 1600, 100dvh / 900);
   --SmartThemeBodyColor: #ffe1ea;
   --SmartThemeEmColor: color-mix(in srgb, #ff4f8b 38%, #c9b3c4);
   --SmartThemeQuoteColor: #ffe1ea;
@@ -29,12 +32,12 @@ body.lowlight-chat {
 }
 /* The band: the bottom of the screen, side margins like Lowlight's corner stacks. */
 body.lowlight-chat #sheld {
-  --sheldWidth: calc(100vw - 260px);
+  --sheldWidth: calc(100vw - 260 * var(--px));
   height: 38dvh;
   top: auto;
   bottom: 0;
-  left: 130px;
-  right: 130px;
+  left: calc(130 * var(--px));
+  right: calc(130 * var(--px));
   width: auto;
   max-width: none;
 }
@@ -67,13 +70,13 @@ body.lowlight-chat .mes {
   background: none;
   border: none;
   box-shadow: none;
-  padding: 0 0 8px;
+  padding: 0 0 calc(8 * var(--px));
 }
 body.lowlight-chat .mes .mesAvatarWrapper,
 body.lowlight-chat .mes .avatar { display: none; }
 body.lowlight-chat .mes .name_text {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 22px;
+  font-size: calc(22 * var(--px));
   font-weight: 600;
   letter-spacing: 0.4em;
   text-transform: uppercase;
@@ -84,18 +87,18 @@ body.lowlight-chat .mes[is_user='true'] .name_text {
   color: #7fe9ff;
   text-shadow: 0 0 6px rgba(127, 233, 255, 0.35);
 }
-body.lowlight-chat .mes .timestamp,
+body.lowlight-chat .mes .ll-stamp,
 body.lowlight-chat .mes .mesIDDisplay,
 body.lowlight-chat .mes .mes_timer,
 body.lowlight-chat .mes .tokenCounterDisplay {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 13px;
+  font-size: calc(15 * var(--px));
   letter-spacing: 0.18em;
   color: rgba(127, 233, 255, 0.45);
 }
 body.lowlight-chat .mes_text {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 17px;
+  font-size: calc(17 * var(--px));
   line-height: 1.6;
   color: #ffe1ea;
   text-shadow: 0 0 2px #000, 0 1px 3px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.6);
@@ -103,6 +106,14 @@ body.lowlight-chat .mes_text {
 body.lowlight-chat .mes[is_user='true'] .mes_text { color: #ddf7ff; }
 body.lowlight-chat .mes[is_user='true'] .mes_text em { color: color-mix(in srgb, #7fe9ff 40%, #a9c3cc); }
 body.lowlight-chat .mes_text em { font-style: italic; }
+/* A new paragraph opens with an indent, not a blank line, as in Lowlight's box (typing.ts indentParagraphs). */
+body.lowlight-chat .mes_text p { margin: 0; }
+body.lowlight-chat .mes_text p + p { text-indent: 1.5em; }
+/* The name row's time and model as Lowlight writes them (subtitles.js .ll-stamp): 01:18 GLM-5.2, not the full date. */
+.ll-stamp { display: none; }
+body.lowlight-chat .mes .timestamp { display: none; }
+body.lowlight-chat .mes .ll-stamp { display: inline; margin-left: calc(18 * var(--px)); white-space: nowrap; }
+body.lowlight-chat .mes .ll-stamp .ll-model { margin-left: calc(18 * var(--px)); text-transform: uppercase; }
 body.lowlight-chat .mes_text q::before,
 body.lowlight-chat .mes_text q::after { content: none; }
 /* The prompt line (Lowlight's input): one purple underline, no box; the side buttons quiet until hovered. */
@@ -122,8 +133,8 @@ body.lowlight-chat #send_form {
 body.lowlight-chat #send_form:has(#send_textarea:focus-visible) { outline: none; border-color: rgba(155, 92, 255, 0.95); box-shadow: 0 8px 12px -10px rgba(155, 92, 255, 0.7); }
 body.lowlight-chat #send_textarea {
   font-family: 'IBM Plex Mono', ui-monospace, monospace;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: calc(16 * var(--px));
+  line-height: calc(24 * var(--px));
   color: #ffd9e6;
   caret-color: #9b5cff;
   background: none;
@@ -131,7 +142,7 @@ body.lowlight-chat #send_textarea {
   box-shadow: none;
   padding-left: 4px;
 }
-body.lowlight-chat #send_textarea::placeholder { color: rgba(155, 92, 255, 0.55); font-family: 'VT323', ui-monospace, monospace; font-size: 19px; letter-spacing: 0.12em; }
+body.lowlight-chat #send_textarea::placeholder { color: rgba(155, 92, 255, 0.55); font-family: 'VT323', ui-monospace, monospace; font-size: calc(19 * var(--px)); letter-spacing: 0.12em; }
 body.lowlight-chat :is(#leftSendForm, #rightSendForm) > div { color: rgba(127, 233, 255, 0.45); opacity: 0.55; transition: opacity 150ms, color 150ms; }
 body.lowlight-chat :is(#leftSendForm, #rightSendForm) > div:hover,
 body.lowlight-chat #send_form:has(#send_textarea:focus-visible) :is(#leftSendForm, #rightSendForm) > div { opacity: 1; }
@@ -312,7 +323,7 @@ body.lowlight-chat .ll-continue:not([hidden]) {
   border: none;
   padding: 0 4px;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 13px;
+  font-size: calc(13 * var(--px));
   letter-spacing: 0.12em;
   color: #ff4f8b;
   cursor: pointer;

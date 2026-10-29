@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.4 · 2026-10-29
+- The dialogue box reads at Lowlight's size, paragraphs indent, and the name row shows the time and model
+
 ## 1.2.3 · 2026-10-29
 - CONTINUE clears SillyTavern's swipe arrow
 
