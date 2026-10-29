@@ -245,7 +245,16 @@ export function mountSelect({ cast, rooms, current, goTo, cue, menu = () => {} }
     const c = SillyTavern.getContext();
     // The chat first: opening it applies its locked persona, else the default one, which would undo the pick. Then
     // the persona, locked to this chat so reloads and later visits keep it (no "temporary persona" warning).
-    if (String(c.characterId) !== String(p2.index)) await c.selectCharacterById(p2.index);
+    if (String(c.characterId) !== String(p2.index)) {
+      // selectCharacterById returns before the chat has loaded; SillyTavern's own CHAT_CHANGED listeners then set the
+      // chat's persona and metadata. Ours runs after theirs (listeners run in order), so the pick and its lock stand.
+      const loaded = new Promise((resolve) => {
+        c.eventSource.once(c.eventTypes.CHAT_CHANGED, resolve);
+        setTimeout(resolve, 15_000);
+      });
+      await c.selectCharacterById(p2.index);
+      await loaded;
+    }
     if (p1.file !== user_avatar) await setUserAvatar(p1.file, { toastPersonaNameChange: false });
     await setPersonaLockState(true, 'chat');
   }

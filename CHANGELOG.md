@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.6 · 2026-10-29
+- Jacking in waits for the chat to load before setting and locking your persona
+
 ## 1.1.5 · 2026-10-29
 - Jacking in keeps the persona you picked: it's locked to the chat, so your default persona no longer takes over (no more 'Temporary Persona')
 
