@@ -1,7 +1,7 @@
 {
   "id": "lowlight-intake",
   "name": "Lowlight Intake",
-  "description": "Lowlight Intake, the sliding-scale counselling co-op in one old room above Hae's Noodles on Level 4 of the Ribbon, where Nix works nights. A kitchenette on the left with a sink, a kettle and mugs on hooks, and a back door with a wired-glass window to the stairs down to the alley. The counsellor's desk: three old monitors, an angled lamp, an open appointment book, a stamp pad and a tray of attendance slips, a box of tissues; a client armchair with a plaid throw facing it. A tall shelf of fat ring binders and a cork board of leaflets and tear-off numbers. A big bay window on the Ribbon's stacked lights, a daybed under it with cushions and a folded blanket, a glass of water. The entry door to the street stairs under a caged bulb, a brass plate on it, a coat rack and three chairs for people waiting. Pipes everywhere, and Hae's broth coming up through the floor.",
+  "description": "Lowlight Intake, the sliding-scale counselling co-op in one old room above Hae's Noodles on Level 4 of the Ribbon, where Nix works nights. A kitchenette on the left with a sink, a kettle that's always on and mugs on hooks, and a back door with a wired-glass window to the stairs down to the alley. The counsellor's desk: three old monitors, an angled lamp, an open appointment book, a stamp pad and a tray of attendance slips, a box of tissues; a client armchair with a plaid throw facing it. A tall shelf of fat ring binders and a cork board of leaflets and tear-off numbers. A big bay window on the Ribbon's stacked lights, a daybed under it with cushions and a folded blanket, a glass of water. The entry door to the street stairs under a caged bulb, a brass plate on it, a coat rack and three chairs for people waiting. Pipes everywhere, and Hae's broth coming up through the floor.",
   "resolution": [
     1536,
     864
@@ -390,8 +390,12 @@
         350
       ],
       [
-        672,
-        350
+        770,
+        242
+      ],
+      [
+        677,
+        241
       ]
     ],
     [
@@ -422,8 +426,24 @@
         0
       ],
       [
-        1170,
-        350
+        1168,
+        272
+      ],
+      [
+        1132,
+        266
+      ],
+      [
+        1123,
+        302
+      ],
+      [
+        1098,
+        309
+      ],
+      [
+        1080,
+        349
       ],
       [
         1045,

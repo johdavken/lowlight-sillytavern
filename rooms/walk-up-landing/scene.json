@@ -121,19 +121,99 @@
     "late": {
       "ambientLevel": 0.21,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "shrine": {
+          "intensity": 0.26
+        },
+        "her_door": {
+          "intensity": 0.26
+        },
+        "neighbour_tv": {
+          "intensity": 0.26
+        },
+        "stair_bulb": {
+          "intensity": 0.3
+        },
+        "exit_sign": {
+          "intensity": 0.26
+        },
+        "tube": {
+          "intensity": 0.38
+        },
+        "ribbon": {
+          "intensity": 0.26
+        }
+      }
     },
     "quiet": {
       "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "weatherLevel": 0.18,
+      "fog": 0.05,
+      "lights": {
+        "shrine": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "her_door": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "neighbour_tv": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "stair_bulb": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "exit_sign": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "tube": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "ribbon": {
+          "intensity": 0.26,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
       "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "fog": 0.21,
+      "lights": {
+        "shrine": {
+          "intensity": 0.18,
+          "flicker": 0.3
+        },
+        "her_door": {
+          "intensity": 0.18,
+          "flicker": 0.2
+        },
+        "neighbour_tv": {
+          "intensity": 0.18,
+          "flicker": 0.4
+        },
+        "stair_bulb": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "exit_sign": {
+          "intensity": 0.18,
+          "flicker": 0.2
+        },
+        "tube": {
+          "intensity": 0.25,
+          "flicker": 0.28
+        },
+        "ribbon": {
+          "intensity": 0.18,
+          "flicker": 0.2
+        }
+      }
     },
     "nobody-home": {
       "lights": {
@@ -166,20 +246,104 @@
   "weatherArea": [
     [
       [
-        505,
-        105
+        523,
+        127
       ],
       [
-        770,
-        105
+        597,
+        125
       ],
       [
-        770,
-        390
+        596,
+        246
       ],
       [
-        505,
-        390
+        525,
+        244
+      ]
+    ],
+    [
+      [
+        621,
+        125
+      ],
+      [
+        744,
+        129
+      ],
+      [
+        742,
+        202
+      ],
+      [
+        695,
+        201
+      ],
+      [
+        725,
+        220
+      ],
+      [
+        710,
+        244
+      ],
+      [
+        623,
+        245
+      ]
+    ],
+    [
+      [
+        524,
+        260
+      ],
+      [
+        594,
+        260
+      ],
+      [
+        594,
+        386
+      ],
+      [
+        524,
+        386
+      ]
+    ],
+    [
+      [
+        622,
+        258
+      ],
+      [
+        743,
+        258
+      ],
+      [
+        743,
+        384
+      ],
+      [
+        622,
+        384
+      ]
+    ],
+    [
+      [
+        729,
+        225
+      ],
+      [
+        742,
+        225
+      ],
+      [
+        742,
+        241
+      ],
+      [
+        729,
+        241
       ]
     ]
   ],

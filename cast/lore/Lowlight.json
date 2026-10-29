@@ -376,6 +376,52 @@
     "9": {
       "uid": 9,
       "key": [
+        "Cortex Relay",
+        "the Relay",
+        "relay line",
+        "texts",
+        "texting",
+        "text her",
+        "text him",
+        "burner",
+        "burners",
+        "on copper"
+      ],
+      "keysecondary": [],
+      "comment": "Cortex Relay",
+      "content": "Cortex Relay is the phone network almost everyone in Lowlight uses. It is a Cortex Global subsidiary, cheap enough that the Houses hand out Relay decks with a placement, and its towers cover every district except the deepest Hollows and the drowned blocks of the Marsh. Everyone knows the Relay keeps every text and sells what it reads. Corp security buys it by the district, Spectra buys it for stories, and a fixer can buy one person's week for the price of a good dinner. So people text the Relay as if someone is reading: plain talk, nothing about work, no names that matter. Anything that does matter goes in person, through a burner bought that morning, or \"on copper\": paid to the Copper-Heads and carried on the old Karasu lines, which the Relay cannot see.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 150,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 9,
+      "vectorized": false
+    },
+    "10": {
+      "uid": 10,
+      "key": [
         "deck",
         "decks",
         "cyberdeck",
@@ -413,11 +459,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 9,
+      "displayIndex": 10,
       "vectorized": false
     },
-    "10": {
-      "uid": 10,
+    "11": {
+      "uid": 11,
       "key": [
         "Dead Air",
         "pirate broadcast",
@@ -455,11 +501,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 10,
+      "displayIndex": 11,
       "vectorized": false
     },
-    "11": {
-      "uid": 11,
+    "12": {
+      "uid": 12,
       "key": [
         "deaf Meridian",
         "deaf deck",
@@ -496,11 +542,51 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 11,
+      "displayIndex": 12,
       "vectorized": false
     },
-    "12": {
-      "uid": 12,
+    "13": {
+      "uid": 13,
+      "key": [
+        "deck market",
+        "the deck market",
+        "night market",
+        "under the deck market"
+      ],
+      "keysecondary": [],
+      "comment": "The deck market",
+      "content": "Between Pylon Forty and its neighbours, in the shadow of the deck, the Spine holds a night market that never quite closes. Stalls go up under patched tarps on strings of bulbs and paper lanterns: woks and skewers and cheap dumplings, a glass-repair booth that will fix an implant without asking where it came from, a pirate radio stall playing whatever got past the filters, second-hand jackets, a small shrine with candles in red glass. It's loud, crowded and cheap, and the freight overhead drowns half of every conversation. Spiners come to eat, trade and be seen. People who are being followed come because it is the easiest place on the Spine to stop being followed. Sentinels walk through only during a tide, and the market is always half-packed by the time they arrive.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 225,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 13,
+      "vectorized": false
+    },
+    "14": {
+      "uid": 14,
       "key": [
         "dock slate",
         "dock slates",
@@ -537,11 +623,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 12,
+      "displayIndex": 14,
       "vectorized": false
     },
-    "13": {
-      "uid": 13,
+    "15": {
+      "uid": 15,
       "key": [
         "Dockside",
         "docks",
@@ -581,11 +667,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 13,
+      "displayIndex": 15,
       "vectorized": false
     },
-    "14": {
-      "uid": 14,
+    "16": {
+      "uid": 16,
       "key": [
         "Drownworks",
         "the Works",
@@ -623,11 +709,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 14,
+      "displayIndex": 16,
       "vectorized": false
     },
-    "15": {
-      "uid": 15,
+    "17": {
+      "uid": 17,
       "key": [
         "Fairy Dust",
         "the band",
@@ -663,11 +749,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 15,
+      "displayIndex": 17,
       "vectorized": false
     },
-    "16": {
-      "uid": 16,
+    "18": {
+      "uid": 18,
       "key": [
         "glass orchid",
         "the orchid"
@@ -701,11 +787,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 16,
+      "displayIndex": 18,
       "vectorized": false
     },
-    "17": {
-      "uid": 17,
+    "19": {
+      "uid": 19,
       "key": [
         "lacquer",
         "carts",
@@ -745,11 +831,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 17,
+      "displayIndex": 19,
       "vectorized": false
     },
-    "18": {
-      "uid": 18,
+    "20": {
+      "uid": 20,
       "key": [
         "Hae",
         "Hae's",
@@ -786,11 +872,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 18,
+      "displayIndex": 20,
       "vectorized": false
     },
-    "19": {
-      "uid": 19,
+    "21": {
+      "uid": 21,
       "key": [
         "Halloran",
         "Halloran P.I.",
@@ -826,11 +912,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 19,
+      "displayIndex": 21,
       "vectorized": false
     },
-    "20": {
-      "uid": 20,
+    "22": {
+      "uid": 22,
       "key": [
         "Helios Towers",
         "the Towers",
@@ -868,11 +954,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 20,
+      "displayIndex": 22,
       "vectorized": false
     },
-    "21": {
-      "uid": 21,
+    "23": {
+      "uid": 23,
       "key": [
         "founding",
         "\"1878\"",
@@ -909,11 +995,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 21,
+      "displayIndex": 23,
       "vectorized": false
     },
-    "22": {
-      "uid": 22,
+    "24": {
+      "uid": 24,
       "key": [
         "Iron Reach",
         "the Reach",
@@ -952,11 +1038,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 22,
+      "displayIndex": 24,
       "vectorized": false
     },
-    "23": {
-      "uid": 23,
+    "25": {
+      "uid": 25,
       "key": [
         "Kalimera Bay",
         "Kalimeran",
@@ -991,11 +1077,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 23,
+      "displayIndex": 25,
       "vectorized": false
     },
-    "24": {
-      "uid": 24,
+    "26": {
+      "uid": 26,
       "key": [
         "Karaköy Deep",
         "Karakoy Deep",
@@ -1032,11 +1118,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 24,
+      "displayIndex": 26,
       "vectorized": false
     },
-    "25": {
-      "uid": 25,
+    "27": {
+      "uid": 27,
       "key": [
         "Karasu",
         "the old city",
@@ -1071,11 +1157,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 25,
+      "displayIndex": 27,
       "vectorized": false
     },
-    "26": {
-      "uid": 26,
+    "28": {
+      "uid": 28,
       "key": [
         "Lowlight Intake",
         "the Intake",
@@ -1112,11 +1198,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 26,
+      "displayIndex": 28,
       "vectorized": false
     },
-    "27": {
-      "uid": 27,
+    "29": {
+      "uid": 29,
       "key": [
         "slang",
         "street talk",
@@ -1158,11 +1244,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 27,
+      "displayIndex": 29,
       "vectorized": false
     },
-    "28": {
-      "uid": 28,
+    "30": {
+      "uid": 30,
       "key": [],
       "keysecondary": [],
       "comment": "\"Lowlight, the City Itself\"",
@@ -1193,11 +1279,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 28,
+      "displayIndex": 30,
       "vectorized": false
     },
-    "29": {
-      "uid": 29,
+    "31": {
+      "uid": 31,
       "key": [
         "Mirage Heights",
         "the Heights",
@@ -1236,11 +1322,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 29,
+      "displayIndex": 31,
       "vectorized": false
     },
-    "30": {
-      "uid": 30,
+    "32": {
+      "uid": 32,
       "key": [
         "MiraGen",
         "the script",
@@ -1277,11 +1363,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 30,
+      "displayIndex": 32,
       "vectorized": false
     },
-    "31": {
-      "uid": 31,
+    "33": {
+      "uid": 33,
       "key": [
         "MiraGen",
         "MiraGen Pharmaceuticals",
@@ -1320,11 +1406,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 31,
+      "displayIndex": 33,
       "vectorized": false
     },
-    "32": {
-      "uid": 32,
+    "34": {
+      "uid": 34,
       "key": [
         "Mother Rot",
         "the Counting House",
@@ -1360,11 +1446,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 32,
+      "displayIndex": 34,
       "vectorized": false
     },
-    "33": {
-      "uid": 33,
+    "35": {
+      "uid": 35,
       "key": [
         "the Strand",
         "Strand",
@@ -1403,11 +1489,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 33,
+      "displayIndex": 35,
       "vectorized": false
     },
-    "34": {
-      "uid": 34,
+    "36": {
+      "uid": 36,
       "key": [
         "Nexus",
         "Central Core",
@@ -1445,11 +1531,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 34,
+      "displayIndex": 36,
       "vectorized": false
     },
-    "35": {
-      "uid": 35,
+    "37": {
+      "uid": 37,
       "key": [
         "Nix's place",
         "Nix's apartment",
@@ -1485,11 +1571,50 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 35,
+      "displayIndex": 37,
       "vectorized": false
     },
-    "36": {
-      "uid": 36,
+    "38": {
+      "uid": 38,
+      "key": [
+        "Oksana",
+        "Oksana's",
+        "Oksana's counter"
+      ],
+      "keysecondary": [],
+      "comment": "Oksana's",
+      "content": "Oksana's is a counter at the foot of Pylon Forty, cut into the concrete where a maintenance bay used to be, open to the street under the Spine's deck behind a roll-up steel shutter. Six stools, a zinc counter worn bright where elbows go, a steel urn of black tea that is never empty, tea served in glasses in tin holders, and one dish worth crossing the Spine for: dumplings, boiled or fried, with whatever filling was cheap, sour cream if you ask, dill whether you ask or not. An old radio plays the freight report and talk shows nobody listens to. When a heavy hauler crosses the joint overhead, the glasses walk an inch along the counter, and the regulars put out a hand without looking. Oksana runs it alone. She feeds the night-shift lift crews before they start, keeps a tab for the hangers, and never asks anyone what they do. Spiners say nothing said at her counter reaches the street, and that she knows who's missing before their families do.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 225,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 38,
+      "vectorized": false
+    },
+    "39": {
+      "uid": 39,
       "key": [
         "Old Karasu deck",
         "old deck",
@@ -1527,11 +1652,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 36,
+      "displayIndex": 39,
       "vectorized": false
     },
-    "37": {
-      "uid": 37,
+    "40": {
+      "uid": 40,
       "key": [
         "Old Town",
         "the habs",
@@ -1570,11 +1695,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 37,
+      "displayIndex": 40,
       "vectorized": false
     },
-    "38": {
-      "uid": 38,
+    "41": {
+      "uid": 41,
       "key": [
         "pocket deck",
         "pocket decks",
@@ -1610,11 +1735,50 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 38,
+      "displayIndex": 41,
       "vectorized": false
     },
-    "39": {
-      "uid": 39,
+    "42": {
+      "uid": 42,
+      "key": [
+        "Pylon Forty",
+        "the pylon",
+        "hung habs"
+      ],
+      "keysecondary": [],
+      "comment": "Pylon Forty",
+      "content": "Pylon Forty is one of the Spine's great concrete legs, where the highway passes between Nexus and Karasu on its long run south toward the Marsh. Like most pylons it is a building now. Hab rings are cut into the concrete around the old maintenance lift, nine floors of them, and the higher you live, the closer you are to the road. The top ring sits right under the deck, where every heavy hauler hits an expansion joint with a sound like a door slamming, all night. Below the deck, between Forty and Forty-One, the hangers hang: habs built out of shipping steel and slung from the deck girders on cables, reached by a cable stair that sways when you use it. Their floors are grating, and under the grating is a long way down. At the foot of the pylon, open to the street under the deck, Oksana's counter keeps the lights on. A lift-maintenance office on the second ring has a company name on the door and nobody who ever fixes the lift. Spiners in Forty say you stop hearing the freight after a month, and you start hearing it again the night something is wrong.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 175,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 42,
+      "vectorized": false
+    },
+    "43": {
+      "uid": 43,
       "key": [
         "QDF",
         "the Q",
@@ -1651,11 +1815,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 39,
+      "displayIndex": 43,
       "vectorized": false
     },
-    "40": {
-      "uid": 40,
+    "44": {
+      "uid": 44,
       "key": [
         "Scoma",
         "Soma scams",
@@ -1692,11 +1856,51 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 40,
+      "displayIndex": 44,
       "vectorized": false
     },
-    "41": {
-      "uid": 41,
+    "45": {
+      "uid": 45,
+      "key": [
+        "Sentinel Tower",
+        "SDG HQ",
+        "SDG headquarters",
+        "the sixty-first"
+      ],
+      "keysecondary": [],
+      "comment": "The Sentinel Tower",
+      "content": "SDG's headquarters is the Sentinel Tower in Nexus, a dark glass column with no logo on it, because everyone already knows. The public sees the lobby: grey stone, a scanner arch, and a desk where people who have been called in wait to be told why. The sixty-first floor has no number on the lift panel. It is the branch's floor. Carpet that swallows footsteps, glass walls between the offices, real wood on the desks, a coffee machine that costs more than a year in a Spine hab, and windows from floor to ceiling. Rain runs down them most nights, and the city below looks like weather. Nothing on the floor is loud. Nobody raises their voice, nobody runs, and nobody looks at another officer's screen. Case officers come up when they are called and go back down when they are done. It is the cleanest room most of them will ever stand in, and none of them stay longer than they have to.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 225,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 45,
+      "vectorized": false
+    },
+    "46": {
+      "uid": 46,
       "key": [
         "SDG",
         "Sentinel",
@@ -1734,11 +1938,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 41,
+      "displayIndex": 46,
       "vectorized": false
     },
-    "42": {
-      "uid": 42,
+    "47": {
+      "uid": 47,
       "key": [
         "SDG",
         "Sentinel",
@@ -1777,11 +1981,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 42,
+      "displayIndex": 47,
       "vectorized": false
     },
-    "43": {
-      "uid": 43,
+    "48": {
+      "uid": 48,
       "key": [
         "field deck",
         "Sentinel field deck",
@@ -1818,11 +2022,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 43,
+      "displayIndex": 48,
       "vectorized": false
     },
-    "44": {
-      "uid": 44,
+    "49": {
+      "uid": 49,
       "key": [
         "Skarnholm",
         "Skarnholmer",
@@ -1857,11 +2061,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 44,
+      "displayIndex": 49,
       "vectorized": false
     },
-    "45": {
-      "uid": 45,
+    "50": {
+      "uid": 50,
       "key": [],
       "keysecondary": [],
       "comment": "Lowlight slang",
@@ -1892,11 +2096,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 45,
+      "displayIndex": 50,
       "vectorized": false
     },
-    "46": {
-      "uid": 46,
+    "51": {
+      "uid": 51,
       "key": [
         "sol",
         "currency",
@@ -1934,11 +2138,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 46,
+      "displayIndex": 51,
       "vectorized": false
     },
-    "47": {
-      "uid": 47,
+    "52": {
+      "uid": 52,
       "key": [
         "Soma",
         "cloned organs",
@@ -1977,11 +2181,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 47,
+      "displayIndex": 52,
       "vectorized": false
     },
-    "48": {
-      "uid": 48,
+    "53": {
+      "uid": 53,
       "key": [
         "Spectra",
         "SBN",
@@ -2019,11 +2223,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 48,
+      "displayIndex": 53,
       "vectorized": false
     },
-    "49": {
-      "uid": 49,
+    "54": {
+      "uid": 54,
       "key": [
         "SBN",
         "Spectra",
@@ -2060,11 +2264,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 49,
+      "displayIndex": 54,
       "vectorized": false
     },
-    "50": {
-      "uid": 50,
+    "55": {
+      "uid": 55,
       "key": [
         "stall build",
         "stall builds",
@@ -2102,11 +2306,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 50,
+      "displayIndex": 55,
       "vectorized": false
     },
-    "51": {
-      "uid": 51,
+    "56": {
+      "uid": 56,
       "key": [
         "Sundarpur",
         "Sundarpuri",
@@ -2141,11 +2345,51 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 51,
+      "displayIndex": 56,
       "vectorized": false
     },
-    "52": {
-      "uid": 52,
+    "57": {
+      "uid": 57,
+      "key": [
+        "case officer",
+        "case officers",
+        "SDG plainclothes",
+        "plainclothes branch"
+      ],
+      "keysecondary": [],
+      "comment": "SDG's plainclothes",
+      "content": "Everyone in Lowlight knows SDG has people who don't wear the grey, and almost nobody can say who they are. The street calls them plainclothes, or case officers when it wants to sound like it knows more. What the street believes: they don't arrest good runners, they buy them, with a charge that goes away as long as you keep working, and comes back the day you stop. They pay well and on time. They sit next to you at a counter for weeks before they say what they want, and some of them are kind about it, which people say is worse. Their glass is better than anything sold on the Ribbon, and the rumour is that it records. Runners warn each other about a stranger who buys tea too often. Nobody can prove any of it, and the people who could have a reason not to.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 200,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 57,
+      "vectorized": false
+    },
+    "58": {
+      "uid": 58,
       "key": [
         "Breakers",
         "Spine gang",
@@ -2182,11 +2426,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 52,
+      "displayIndex": 58,
       "vectorized": false
     },
-    "53": {
-      "uid": 53,
+    "59": {
+      "uid": 59,
       "key": [
         "Capers",
         "Caper",
@@ -2224,11 +2468,51 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 53,
+      "displayIndex": 59,
       "vectorized": false
     },
-    "54": {
-      "uid": 54,
+    "60": {
+      "uid": 60,
+      "key": [
+        "the catwalk",
+        "maintenance catwalk",
+        "deck edge",
+        "the gantry"
+      ],
+      "keysecondary": [],
+      "comment": "The catwalk",
+      "content": "Along the outside edge of the Spine's deck, a narrow steel maintenance catwalk runs between the pylons, meant for crews who stopped coming years ago. Near Pylon Forty you can reach it through a service hatch off the top ring, or by climbing out past the hung habs, and both are trespass. The traffic roars past on the other side of the crash barrier, close enough to shake the grating, and on the open side there is only a waist-high rail and the whole city below: the core's towers, the Ribbon stacked up in light, the bay and its ship lights, the highway curving away on its legs. A sodium lamp leans out over the edge and a yellow warning beacon nobody switches off turns slowly at the end. Spiners go out there to smoke, to think, to be alone, or to be alone with someone. Nobody official ever comes, and nobody falls, mostly.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 225,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 60,
+      "vectorized": false
+    },
+    "61": {
+      "uid": 61,
       "key": [
         "co-ops",
         "co-op",
@@ -2266,11 +2550,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 54,
+      "displayIndex": 61,
       "vectorized": false
     },
-    "55": {
-      "uid": 55,
+    "62": {
+      "uid": 62,
       "key": [
         "Copper-Heads",
         "Copper Heads",
@@ -2307,11 +2591,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 55,
+      "displayIndex": 62,
       "vectorized": false
     },
-    "56": {
-      "uid": 56,
+    "63": {
+      "uid": 63,
       "key": [
         "Drowned Choir",
         "the Choir",
@@ -2347,11 +2631,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 56,
+      "displayIndex": 63,
       "vectorized": false
     },
-    "57": {
-      "uid": 57,
+    "64": {
+      "uid": 64,
       "key": [
         "Ferrymen",
         "Ferryman",
@@ -2389,11 +2673,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 57,
+      "displayIndex": 64,
       "vectorized": false
     },
-    "58": {
-      "uid": 58,
+    "65": {
+      "uid": 65,
       "key": [
         "Freight Runners",
         "freight runner",
@@ -2430,11 +2714,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 58,
+      "displayIndex": 65,
       "vectorized": false
     },
-    "59": {
-      "uid": 59,
+    "66": {
+      "uid": 66,
       "key": [
         "netrunner",
         "netrunners",
@@ -2472,11 +2756,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 59,
+      "displayIndex": 66,
       "vectorized": false
     },
-    "60": {
-      "uid": 60,
+    "67": {
+      "uid": 67,
       "key": [
         "Hollows",
         "the Hollows",
@@ -2514,11 +2798,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 60,
+      "displayIndex": 67,
       "vectorized": false
     },
-    "61": {
-      "uid": 61,
+    "68": {
+      "uid": 68,
       "key": [
         "the houses",
         "house contract",
@@ -2555,11 +2839,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 61,
+      "displayIndex": 68,
       "vectorized": false
     },
-    "62": {
-      "uid": 62,
+    "69": {
+      "uid": 69,
       "key": [
         "Lazarus Net",
         "Lazarus",
@@ -2597,11 +2881,51 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 62,
+      "displayIndex": 69,
       "vectorized": false
     },
-    "63": {
-      "uid": 63,
+    "70": {
+      "uid": 70,
+      "key": [
+        "Long Haul",
+        "the Long Haul",
+        "hauler stop",
+        "hauler's diner"
+      ],
+      "keysecondary": [],
+      "comment": "The Long Haul",
+      "content": "The Long Haul is a hauler stop built into a Spine pylon at deck level, a little north of Pylon Forty, reached by a service ramp that drivers use and nobody else is supposed to. It has been open all night for as long as anyone on the Spine remembers. A long counter with chrome stools, a flat-top griddle, two coffee urns that are never empty, a pie case nobody trusts, an old jukebox, and a row of oxblood booths along wide windows onto the deck, where the heavy haulers park with their marker lights on and the traffic goes by close enough to feel. A pink neon cup glows in the window. The drivers who eat there come off twelve-hour shifts and don't care who's in the next booth, which is why people who need somewhere ordinary to sit with someone go there. The coffee is bad, the eggs are real, and the corner booth at the far end is the one couples and deals both end up in.",
+      "constant": false,
+      "selective": true,
+      "selectiveLogic": 0,
+      "addMemo": true,
+      "order": 225,
+      "ignoreBudget": false,
+      "position": 0,
+      "disable": false,
+      "excludeRecursion": false,
+      "preventRecursion": true,
+      "delayUntilRecursion": false,
+      "probability": 100,
+      "useProbability": true,
+      "depth": 4,
+      "group": "",
+      "groupOverride": false,
+      "groupWeight": 100,
+      "scanDepth": null,
+      "caseSensitive": null,
+      "matchWholeWords": null,
+      "useGroupScoring": null,
+      "automationId": "",
+      "role": null,
+      "sticky": 0,
+      "cooldown": 0,
+      "delay": 0,
+      "displayIndex": 70,
+      "vectorized": false
+    },
+    "71": {
+      "uid": 71,
       "key": [
         "Low Roller",
         "the Wheel",
@@ -2638,11 +2962,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 63,
+      "displayIndex": 71,
       "vectorized": false
     },
-    "64": {
-      "uid": 64,
+    "72": {
+      "uid": 72,
       "key": [
         "the Marsh",
         "Marsh",
@@ -2680,11 +3004,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 64,
+      "displayIndex": 72,
       "vectorized": false
     },
-    "65": {
-      "uid": 65,
+    "73": {
+      "uid": 73,
       "key": [
         "OhhCee's",
         "OhhCees",
@@ -2723,11 +3047,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 65,
+      "displayIndex": 73,
       "vectorized": false
     },
-    "66": {
-      "uid": 66,
+    "74": {
+      "uid": 74,
       "key": [
         "The Open Hand",
         "Open Hand",
@@ -2765,11 +3089,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 66,
+      "displayIndex": 74,
       "vectorized": false
     },
-    "67": {
-      "uid": 67,
+    "75": {
+      "uid": 75,
       "key": [
         "the Ribbon",
         "Ribbon",
@@ -2808,11 +3132,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 67,
+      "displayIndex": 75,
       "vectorized": false
     },
-    "68": {
-      "uid": 68,
+    "76": {
+      "uid": 76,
       "key": [
         "Ridge Families",
         "the Families",
@@ -2850,11 +3174,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 68,
+      "displayIndex": 76,
       "vectorized": false
     },
-    "69": {
-      "uid": 69,
+    "77": {
+      "uid": 77,
       "key": [
         "the Spine",
         "Spine",
@@ -2892,11 +3216,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 69,
+      "displayIndex": 77,
       "vectorized": false
     },
-    "70": {
-      "uid": 70,
+    "78": {
+      "uid": 78,
       "key": [
         "Strip-Miners",
         "Strip Miners",
@@ -2933,11 +3257,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 70,
+      "displayIndex": 78,
       "vectorized": false
     },
-    "71": {
-      "uid": 71,
+    "79": {
+      "uid": 79,
       "key": [
         "Sump-Rats",
         "Sump Rats",
@@ -2976,11 +3300,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 71,
+      "displayIndex": 79,
       "vectorized": false
     },
-    "72": {
-      "uid": 72,
+    "80": {
+      "uid": 80,
       "key": [
         "Switchboard",
         "fixer",
@@ -3016,11 +3340,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 72,
+      "displayIndex": 80,
       "vectorized": false
     },
-    "73": {
-      "uid": 73,
+    "81": {
+      "uid": 81,
       "key": [
         "The Tilt",
         "the tilted bar",
@@ -3055,11 +3379,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 73,
+      "displayIndex": 81,
       "vectorized": false
     },
-    "74": {
-      "uid": 74,
+    "82": {
+      "uid": 82,
       "key": [
         "Waterkeepers",
         "Waterkeeper",
@@ -3097,11 +3421,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 74,
+      "displayIndex": 82,
       "vectorized": false
     },
-    "75": {
-      "uid": 75,
+    "83": {
+      "uid": 83,
       "key": [
         "Wheel-Men",
         "Wheel Men",
@@ -3139,11 +3463,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 75,
+      "displayIndex": 83,
       "vectorized": false
     },
-    "76": {
-      "uid": 76,
+    "84": {
+      "uid": 84,
       "key": [
         "Silas",
         "Ember",
@@ -3181,11 +3505,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 76,
+      "displayIndex": 84,
       "vectorized": false
     },
-    "77": {
-      "uid": 77,
+    "85": {
+      "uid": 85,
       "key": [
         "Tidal Isle",
         "the Isle",
@@ -3224,11 +3548,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 77,
+      "displayIndex": 85,
       "vectorized": false
     },
-    "78": {
-      "uid": 78,
+    "86": {
+      "uid": 86,
       "key": [
         "Titan",
         "Titan board",
@@ -3265,11 +3589,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 78,
+      "displayIndex": 86,
       "vectorized": false
     },
-    "79": {
-      "uid": 79,
+    "87": {
+      "uid": 87,
       "key": [
         "Titan",
         "asteroid mining",
@@ -3307,11 +3631,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 79,
+      "displayIndex": 87,
       "vectorized": false
     },
-    "80": {
-      "uid": 80,
+    "88": {
+      "uid": 88,
       "key": [
         "True-North",
         "True North",
@@ -3346,11 +3670,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 80,
+      "displayIndex": 88,
       "vectorized": false
     },
-    "81": {
-      "uid": 81,
+    "89": {
+      "uid": 89,
       "key": [
         "Velvet",
         "red-light quarter",
@@ -3388,11 +3712,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 81,
+      "displayIndex": 89,
       "vectorized": false
     },
-    "82": {
-      "uid": 82,
+    "90": {
+      "uid": 90,
       "key": [
         "Voltaic",
         "Voltaic Logistics",
@@ -3429,11 +3753,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 82,
+      "displayIndex": 90,
       "vectorized": false
     },
-    "83": {
-      "uid": 83,
+    "91": {
+      "uid": 91,
       "key": [
         "Voltaic",
         "Voltaic Logistics",
@@ -3472,11 +3796,11 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 83,
+      "displayIndex": 91,
       "vectorized": false
     },
-    "84": {
-      "uid": 84,
+    "92": {
+      "uid": 92,
       "key": [
         "Vrana",
         "Vranan",
@@ -3511,7 +3835,7 @@
       "sticky": 0,
       "cooldown": 0,
       "delay": 0,
-      "displayIndex": 84,
+      "displayIndex": 92,
       "vectorized": false
     }
   }

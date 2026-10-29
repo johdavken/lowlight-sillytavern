@@ -107,21 +107,90 @@
   },
   "presets": {
     "late": {
-      "ambientLevel": 0.21,
+      "ambientLevel": 0.22,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "lanterns": {
+          "intensity": 0.3
+        },
+        "mirror_lamps": {
+          "intensity": 0.3
+        },
+        "shrine": {
+          "intensity": 0.19
+        },
+        "vending": {
+          "intensity": 0.26
+        },
+        "changing_room": {
+          "intensity": 0.22
+        },
+        "bath": {
+          "intensity": 0.22
+        }
+      }
     },
     "quiet": {
-      "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "ambientLevel": 0.26,
+      "weatherLevel": 0.11,
+      "fog": 0.17,
+      "lights": {
+        "lanterns": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "mirror_lamps": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "shrine": {
+          "intensity": 0.19,
+          "flicker": 0
+        },
+        "vending": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "changing_room": {
+          "intensity": 0.22,
+          "flicker": 0
+        },
+        "bath": {
+          "intensity": 0.22,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
-      "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "ambientLevel": 0.22,
+      "fog": 0.37,
+      "lights": {
+        "lanterns": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "mirror_lamps": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "shrine": {
+          "intensity": 0.13,
+          "flicker": 0.32
+        },
+        "vending": {
+          "intensity": 0.18,
+          "flicker": 0.2
+        },
+        "changing_room": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        },
+        "bath": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        }
+      }
     },
     "closing": {
       "lights": {
@@ -156,8 +225,8 @@
         0
       ],
       [
-        55,
-        150
+        52,
+        163
       ],
       [
         0,
@@ -170,16 +239,16 @@
         0
       ],
       [
-        220,
-        0
+        219,
+        137
       ],
       [
         220,
         275
       ],
       [
-        75,
-        200
+        78,
+        179
       ]
     ],
     [
@@ -188,8 +257,8 @@
         170
       ],
       [
-        300,
-        190
+        297,
+        217
       ],
       [
         300,
@@ -212,6 +281,28 @@
     {
       "kind": "glass",
       "amount": 2
+    },
+    {
+      "kind": "plume",
+      "rect": [
+        1033,
+        492,
+        43,
+        120
+      ],
+      "style": "steam",
+      "amount": 0.3
+    },
+    {
+      "kind": "plume",
+      "rect": [
+        494,
+        556,
+        638,
+        98
+      ],
+      "style": "steam",
+      "amount": 0.05
     }
   ],
   "exits": [

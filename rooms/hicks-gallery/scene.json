@@ -137,19 +137,110 @@
     "late": {
       "ambientLevel": 0.21,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "camera": {
+          "intensity": 0.15
+        },
+        "stair_bulb": {
+          "intensity": 0.26
+        },
+        "neighbour": {
+          "intensity": 0.22
+        },
+        "twins": {
+          "intensity": 0.34
+        },
+        "wall_lamp": {
+          "intensity": 0.38
+        },
+        "sodium": {
+          "intensity": 0.3
+        },
+        "below": {
+          "intensity": 0.3
+        },
+        "windows": {
+          "intensity": 0.19
+        }
+      }
     },
     "quiet": {
       "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "weatherLevel": 0.23,
+      "fog": 0.09,
+      "lights": {
+        "camera": {
+          "intensity": 0.15,
+          "flicker": 0
+        },
+        "stair_bulb": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "neighbour": {
+          "intensity": 0.22,
+          "flicker": 0
+        },
+        "twins": {
+          "intensity": 0.34,
+          "flicker": 0
+        },
+        "wall_lamp": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "sodium": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "below": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "windows": {
+          "intensity": 0.19,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
       "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "fog": 0.27,
+      "lights": {
+        "camera": {
+          "intensity": 0.1,
+          "flicker": 0.2
+        },
+        "stair_bulb": {
+          "intensity": 0.18,
+          "flicker": 0.2
+        },
+        "neighbour": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        },
+        "twins": {
+          "intensity": 0.23,
+          "flicker": 0.4
+        },
+        "wall_lamp": {
+          "intensity": 0.25,
+          "flicker": 0.32
+        },
+        "sodium": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "below": {
+          "intensity": 0.2,
+          "flicker": 0.25
+        },
+        "windows": {
+          "intensity": 0.13,
+          "flicker": 0.2
+        }
+      }
     },
     "twins-out": {
       "lights": {
@@ -188,12 +279,106 @@
         250
       ],
       [
-        560,
-        450
+        553,
+        439
+      ],
+      [
+        56,
+        651
       ],
       [
         0,
-        720
+        674
+      ]
+    ],
+    [
+      [
+        2,
+        761
+      ],
+      [
+        79,
+        722
+      ],
+      [
+        75,
+        758
+      ],
+      [
+        0,
+        811
+      ]
+    ],
+    [
+      [
+        131,
+        692
+      ],
+      [
+        172,
+        665
+      ],
+      [
+        172,
+        704
+      ],
+      [
+        131,
+        723
+      ]
+    ],
+    [
+      [
+        210,
+        642
+      ],
+      [
+        271,
+        611
+      ],
+      [
+        273,
+        648
+      ],
+      [
+        211,
+        687
+      ]
+    ],
+    [
+      [
+        307,
+        590
+      ],
+      [
+        366,
+        559
+      ],
+      [
+        364,
+        587
+      ],
+      [
+        304,
+        628
+      ]
+    ],
+    [
+      [
+        410,
+        530
+      ],
+      [
+        441,
+        517
+      ],
+      [
+        440,
+        532
+      ],
+      [
+        407,
+        556
       ]
     ]
   ],

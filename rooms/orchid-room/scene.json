@@ -122,19 +122,99 @@
     "late": {
       "ambientLevel": 0.21,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "call_light": {
+          "intensity": 0.22
+        },
+        "dome": {
+          "intensity": 0.22
+        },
+        "orchid_lamp": {
+          "intensity": 0.34
+        },
+        "mirror": {
+          "intensity": 0.38
+        },
+        "lantern_l": {
+          "intensity": 0.3
+        },
+        "lantern_r": {
+          "intensity": 0.3
+        },
+        "neon": {
+          "intensity": 0.34
+        }
+      }
     },
     "quiet": {
       "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "weatherLevel": 0.14,
+      "fog": 0.05,
+      "lights": {
+        "call_light": {
+          "intensity": 0.22,
+          "flicker": 0
+        },
+        "dome": {
+          "intensity": 0.22,
+          "flicker": 0
+        },
+        "orchid_lamp": {
+          "intensity": 0.34,
+          "flicker": 0
+        },
+        "mirror": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "lantern_l": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "lantern_r": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "neon": {
+          "intensity": 0.34,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
       "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "fog": 0.21,
+      "lights": {
+        "call_light": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        },
+        "dome": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        },
+        "orchid_lamp": {
+          "intensity": 0.23,
+          "flicker": 0.22
+        },
+        "mirror": {
+          "intensity": 0.25,
+          "flicker": 0.2
+        },
+        "lantern_l": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "lantern_r": {
+          "intensity": 0.2,
+          "flicker": 0.2
+        },
+        "neon": {
+          "intensity": 0.23,
+          "flicker": 0.2
+        }
+      }
     },
     "the-bell": {
       "lights": {
@@ -188,20 +268,20 @@
   "weatherArea": [
     [
       [
-        480,
-        90
+        629,
+        83
       ],
       [
-        1090,
-        90
+        1078,
+        91
       ],
       [
-        1090,
-        290
+        1084,
+        275
       ],
       [
-        480,
-        290
+        629,
+        275
       ]
     ]
   ],

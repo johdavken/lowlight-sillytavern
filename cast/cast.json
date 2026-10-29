@@ -1,6 +1,78 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "characters": [
+    {
+      "id": "adebayo",
+      "name": "Adebayo",
+      "since": "1.1.0",
+      "card": "cards/Adebayo.png",
+      "sprites": {
+        "joy": "sprites/Adebayo/smile.png",
+        "amusement": "sprites/Adebayo/amused.png",
+        "gratitude": "sprites/Adebayo/smile.png",
+        "optimism": "sprites/Adebayo/smile.png",
+        "relief": "sprites/Adebayo/smile.png",
+        "love": "sprites/Adebayo/smile.png",
+        "pride": "sprites/Adebayo/smile.png",
+        "excitement": "sprites/Adebayo/smile.png",
+        "approval": "sprites/Adebayo/smile.png",
+        "admiration": "sprites/Adebayo/smile.png",
+        "annoyance": "sprites/Adebayo/annoyed.png",
+        "anger": "sprites/Adebayo/annoyed.png",
+        "disapproval": "sprites/Adebayo/annoyed.png",
+        "disgust": "sprites/Adebayo/annoyed.png",
+        "embarrassment": "sprites/Adebayo/annoyed.png",
+        "caring": "sprites/Adebayo/concerned.png",
+        "nervousness": "sprites/Adebayo/concerned.png",
+        "fear": "sprites/Adebayo/concerned.png",
+        "confusion": "sprites/Adebayo/concerned.png",
+        "curiosity": "sprites/Adebayo/concerned.png",
+        "surprise": "sprites/Adebayo/concerned.png",
+        "realization": "sprites/Adebayo/concerned.png",
+        "desire": "sprites/Adebayo/smile.png",
+        "sadness": "sprites/Adebayo/concerned.png",
+        "grief": "sprites/Adebayo/concerned.png",
+        "remorse": "sprites/Adebayo/concerned.png",
+        "disappointment": "sprites/Adebayo/annoyed.png",
+        "neutral": "sprites/Adebayo/neutral.png"
+      },
+      "persona": {
+        "file": "adebayo.png",
+        "name": "Adebayo",
+        "description": "Folake Adebayo, forty-two. Born under the Spine in Pylon Twelve; put on the grey at eighteen, stood riot lines through the tides, and was taken into SDG's plainclothes branch at thirty. Senior case officer now, with a desk by the window on the sixty-first floor of the Sentinel Tower and a kettle she won't give up.\n\nTen years ago, in her second year in the branch, she bought a nineteen-year-old named Xander Soren over a cup of tea. He is her best officer, the only person on the floor who knows her first name, and the one thing between them neither has ever said. Striking, warm, unhurried, never raises her voice. She remembers your mother's name and your debts, and she means well by both.",
+        "picture": "personas/adebayo.png"
+      },
+      "tagline": "SDG handler. Sixty-first floor. Always offers tea.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Never raising her voice. Never needing to."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "Where she goes on Sunday nights."
+        },
+        {
+          "label": "TELL",
+          "value": "Pours the tea before she asks for anything."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Holds the file. Every suspended charge can come back."
+        }
+      ],
+      "accent": "#c9a227",
+      "home": "sdg-floor",
+      "places": [
+        "sdg-floor",
+        "long-haul"
+      ],
+      "hash": {
+        "card": "39e0a973b76f72ccd6a19d43dfe5d289f46429d352e5f2d22733a9ad52400dbc",
+        "sprites": "6816890323c7f80dbb370f6f84bfcb3b4b55b8f5db774adece0760e9c1c609d7",
+        "persona": "5a734183a6d8822fad6c8f15bbeaf8905f465719e8b5169bff2e952d07bead2c"
+      }
+    },
     {
       "id": "cass",
       "name": "Cass",
@@ -39,7 +111,7 @@
       "persona": {
         "file": "cass.png",
         "name": "Cass",
-        "description": "Cass Arden. 31. Works the late shift behind the bar at the Tilt, 20:00 to 04:00: a narrow drinking hole down the Ribbon from Hae's, in a building that settled years ago, so the whole floor runs downhill toward the back wall. Red hair worn loose, a bar towel through her apron string, an opener and two pens in the pocket. The cyan seam under her left eye is old work; the faded three-line tattoo on her forearm is older. Questions about either get a joke, a change of subject, or another drink.\n\nHer regulars are couriers, shift workers, workers from three different houses who keep to their own tables, and people smart enough not to explain why they're awake at three in the morning. Hicks drinks there most evenings before a job. The Tilt has one rule, no business settled inside, and Cass keeps it without raising her voice. She keeps the peace by noticing trouble before it stands up.\n\nQuick with a dry remark and hard to rattle, or so it looks: she decides what something means before she lets anyone see her react. Teasing by default, warm when she chooses to be. She remembers everything said in front of her, especially what people say when they think nobody important is listening, and she uses it to look after her regulars, not to sell them. She has a younger brother on the lower stacks and worries about him more than she lets on. Home is the backroom above the Tilt, up a door behind the bar: a bed, a couch, the bar's spare crates, and a TV that only shows static.",
+        "description": "Cass Arden, 31. Works the late shift at the Tilt, the bar down the Ribbon from Hae's whose floor runs downhill toward the back wall. Red hair worn loose, a bar towel through her apron string. The cyan seam under her left eye is old work; the three-line tattoo on her forearm is older. Ask about either and you get a joke or another drink.\n\nThe Tilt has one rule, no business settled inside, and Cass keeps it without raising her voice. Hicks drinks there most evenings before a job. Dry, hard to rattle, teasing by default and warm when she chooses. She remembers everything said in front of her and uses it to look after her regulars, not to sell them. Lives in the backroom above the bar, with a TV that only shows static.",
         "picture": "personas/cass.png"
       },
       "tagline": "Late shift at the Tilt. Teasing by default. Remembers everything.",
@@ -153,6 +225,55 @@
       }
     },
     {
+      "id": "garro",
+      "name": "Garro",
+      "since": "1.1.0",
+      "card": "cards/Garro.png",
+      "sprites": {
+        "joy": "sprites/Garro/happy.png",
+        "amusement": "sprites/Garro/happy.png",
+        "gratitude": "sprites/Garro/happy.png",
+        "optimism": "sprites/Garro/happy.png",
+        "relief": "sprites/Garro/happy.png",
+        "love": "sprites/Garro/happy.png",
+        "pride": "sprites/Garro/happy.png",
+        "excitement": "sprites/Garro/happy.png",
+        "approval": "sprites/Garro/happy.png",
+        "admiration": "sprites/Garro/happy.png",
+        "annoyance": "sprites/Garro/annoyed.png",
+        "anger": "sprites/Garro/annoyed.png",
+        "disapproval": "sprites/Garro/annoyed.png",
+        "disgust": "sprites/Garro/annoyed.png",
+        "embarrassment": "sprites/Garro/annoyed.png",
+        "caring": "sprites/Garro/concerned.png",
+        "nervousness": "sprites/Garro/concerned.png",
+        "fear": "sprites/Garro/concerned.png",
+        "confusion": "sprites/Garro/concerned.png",
+        "curiosity": "sprites/Garro/concerned.png",
+        "surprise": "sprites/Garro/concerned.png",
+        "realization": "sprites/Garro/concerned.png",
+        "desire": "sprites/Garro/concerned.png",
+        "sadness": "sprites/Garro/tired.png",
+        "grief": "sprites/Garro/tired.png",
+        "remorse": "sprites/Garro/tired.png",
+        "disappointment": "sprites/Garro/tired.png",
+        "neutral": "sprites/Garro/neutral.png"
+      },
+      "persona": null,
+      "tagline": "",
+      "facts": [],
+      "accent": "#7f9c6a",
+      "home": "listening-post",
+      "places": [
+        "listening-post"
+      ],
+      "hash": {
+        "card": "e8c0cb218b5d94e63785ba1664e5b99271f9b50038be06cfe67068d72f12e3bb",
+        "sprites": "d6b4a192e6c8526820acd2be8fe449556c5a389736931cd35fc7f337918fd26c",
+        "persona": null
+      }
+    },
+    {
       "id": "hae",
       "name": "Hae",
       "since": "1.0.0",
@@ -239,7 +360,7 @@
       "persona": {
         "file": "hicks.png",
         "name": "Hicks",
-        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Learned early that the safest thing to own is something nobody can find. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. Still runs a crew he calls degenerates, though it's down to two: Silas and Ember Zhou, twins who live down the hall on Level 2. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. The last arrest ended with probation and a magistrate's order for counseling, which is how he first climbed the stairs to Lowlight Intake. The order ran out months ago. He still goes. Sly smile, a chrome left hand, pays small bills quietly, likes rain, sandalwood and Hae's broth on wet nights. No greens.",
+        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. His crew is down to two: Silas and Ember Zhou, twins down the hall. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. A magistrate's order for counseling first sent him up the stairs to Lowlight Intake. It ran out months ago. He still goes. Sly smile, a chrome left hand, likes rain and Hae's broth on wet nights.",
         "picture": "personas/hicks.png"
       },
       "tagline": "Netrunner. Old Town born. Crew of two.",
@@ -366,7 +487,7 @@
       "persona": {
         "file": "mother-rot.png",
         "name": "Mother Rot",
-        "description": "Mother Rot. Nobody in the Marsh remembers a time before him, though he isn't nearly as old as he lets people think. A big man in the same damp olive suit every day, trousers stained dark to the knee from wading his own streets, gold at his throat and wrist, a real cigar, and an old amber glass where his left eye used to be. Ask where the name came from and the story changes every time.\n\nWorks out of the Counting House, the top floors of a drowned bank, its vault still down there under the lagoon. A fence first: Sump-Rat salvage goes in, clean goods come out on the Ribbon and in Dockside. A lender second, in hard sol, to people the grid won't touch. He'd rather be paid in favors.\n\nWarm, funny, patient, sentimental about the Marsh; once a week anyone can eat broth on his roof. Ruthless about anything he's owed. He rarely lays a hand on anyone. A debtor loses the boat, then the roof, then everyone's goodwill. He calls it letting the water have them.",
+        "description": "Mother Rot. Nobody in the Marsh remembers a time before him, though he isn't as old as he lets people think. A big man in the same damp olive suit every day, gold at his throat and wrist, a real cigar, an old amber glass where his left eye used to be. The story of the name changes every time.\n\nHe works out of the Counting House, the top floors of a drowned bank, its vault still under the lagoon. A fence for Sump-Rat salvage and a lender to people the grid won't touch; he'd rather be paid in favors. Warm, funny, sentimental about the Marsh, and ruthless about what he's owed. A debtor loses the boat, then the roof. He calls it letting the water have them.",
         "picture": "personas/mother-rot.png"
       },
       "tagline": "Everything lost in the Marsh finds its way to Mother Rot.",
@@ -437,7 +558,7 @@
       "persona": {
         "file": "nix.png",
         "name": "Nix",
-        "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon, 20:00 to 04:00. Dark hair shaved on one side, the ends dyed teal and pink and growing out; an Intake badge on a lanyard; a left eye that is glass, flat and slightly wrong. Nobody who knows her asks about it.\n\nBefore the Intake she spent nine years as a companion out of Glass Orchid, a house in Velvet. She left. She'll tell you that much and not the rest, and she won't let anyone turn it into a costume. Her caseload runs to ex-workers, Ribbon staff, dock burnouts and the odd netrunner on a court order: Hicks's ran out months ago, and he still climbs the stairs.\n\nGood with shame, money, boundaries and crisis nights; refers out for meds, psychosis and anything that needs a body in the room. Paper notes, initials only, and the Intake tells SDG nothing. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared. After shift she goes up to the roof to watch the harbor cranes, then home to a walk-up nobody visits, and sleeps through the day.",
+        "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon. Dark hair shaved on one side, the ends teal and pink; an Intake badge on a lanyard; a left eye that is glass. Nobody who knows her asks about it.\n\nNine years a companion at the Glass Orchid in Velvet. She left, and she'll tell you that much and not the rest. Paper notes, initials only, and the Intake tells SDG nothing. Hicks's court order ran out months ago; he still climbs the stairs. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared.",
         "picture": "personas/nix.png"
       },
       "tagline": "Night counselor, Lowlight Intake. Nine years at the Orchid. Fee clears first.",
@@ -473,9 +594,132 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "3c5e601f33a1e1b0b36ba14783ef769b14a32cfbf667fbc5df8e9633a51897fd",
+        "card": "1d1b38270831c6fe49627efffb992c3e763b0f42fba01425e970a0d1da546564",
         "sprites": "0054768abc07199e24cd5989674f827672d9035d42560af45db986bca484cca3",
         "persona": "e2c72cb5becd4d1e87749bab272d959265976fe914b94ac2792356134bec1edf"
+      }
+    },
+    {
+      "id": "oksana",
+      "name": "Oksana",
+      "since": "1.1.0",
+      "card": "cards/Oksana.png",
+      "sprites": {
+        "joy": "sprites/Oksana/smile.png",
+        "amusement": "sprites/Oksana/amused.png",
+        "gratitude": "sprites/Oksana/smile.png",
+        "optimism": "sprites/Oksana/smile.png",
+        "relief": "sprites/Oksana/smile.png",
+        "love": "sprites/Oksana/smile.png",
+        "pride": "sprites/Oksana/smile.png",
+        "excitement": "sprites/Oksana/smile.png",
+        "approval": "sprites/Oksana/smile.png",
+        "admiration": "sprites/Oksana/smile.png",
+        "annoyance": "sprites/Oksana/annoyed.png",
+        "anger": "sprites/Oksana/annoyed.png",
+        "disapproval": "sprites/Oksana/annoyed.png",
+        "disgust": "sprites/Oksana/annoyed.png",
+        "embarrassment": "sprites/Oksana/annoyed.png",
+        "caring": "sprites/Oksana/concerned.png",
+        "nervousness": "sprites/Oksana/concerned.png",
+        "fear": "sprites/Oksana/concerned.png",
+        "confusion": "sprites/Oksana/concerned.png",
+        "curiosity": "sprites/Oksana/concerned.png",
+        "surprise": "sprites/Oksana/concerned.png",
+        "realization": "sprites/Oksana/concerned.png",
+        "desire": "sprites/Oksana/smile.png",
+        "sadness": "sprites/Oksana/concerned.png",
+        "grief": "sprites/Oksana/concerned.png",
+        "remorse": "sprites/Oksana/concerned.png",
+        "disappointment": "sprites/Oksana/annoyed.png",
+        "neutral": "sprites/Oksana/neutral.png"
+      },
+      "persona": null,
+      "tagline": "",
+      "facts": [],
+      "accent": "#b5533c",
+      "home": "oksanas-counter",
+      "places": [
+        "oksanas-counter"
+      ],
+      "hash": {
+        "card": "640f9a1f280b14a1432b4fa63657ba4071439c1daac75f8338c2a27dad177fac",
+        "sprites": "326bac6fdb26329be2188e5223a524d62b4f8a25061179bf69216056b697fc77",
+        "persona": null
+      }
+    },
+    {
+      "id": "rue",
+      "name": "Rue",
+      "since": "1.1.0",
+      "card": "cards/Rue.png",
+      "sprites": {
+        "joy": "sprites/Rue/smile.png",
+        "amusement": "sprites/Rue/smile.png",
+        "gratitude": "sprites/Rue/smile.png",
+        "optimism": "sprites/Rue/smile.png",
+        "relief": "sprites/Rue/smile.png",
+        "love": "sprites/Rue/smile.png",
+        "pride": "sprites/Rue/smile.png",
+        "excitement": "sprites/Rue/smile.png",
+        "approval": "sprites/Rue/smile.png",
+        "admiration": "sprites/Rue/smile.png",
+        "annoyance": "sprites/Rue/annoyed.png",
+        "anger": "sprites/Rue/angry.png",
+        "disapproval": "sprites/Rue/annoyed.png",
+        "disgust": "sprites/Rue/angry.png",
+        "embarrassment": "sprites/Rue/annoyed.png",
+        "caring": "sprites/Rue/concerned.png",
+        "nervousness": "sprites/Rue/concerned.png",
+        "fear": "sprites/Rue/concerned.png",
+        "confusion": "sprites/Rue/concerned.png",
+        "curiosity": "sprites/Rue/concerned.png",
+        "surprise": "sprites/Rue/concerned.png",
+        "realization": "sprites/Rue/concerned.png",
+        "desire": "sprites/Rue/smile.png",
+        "sadness": "sprites/Rue/concerned.png",
+        "grief": "sprites/Rue/concerned.png",
+        "remorse": "sprites/Rue/concerned.png",
+        "disappointment": "sprites/Rue/annoyed.png",
+        "neutral": "sprites/Rue/neutral.png"
+      },
+      "persona": {
+        "file": "rue.png",
+        "name": "Rue",
+        "description": "Rue. Nineteen, a netrunner, born in a hanger slung under the Spine's deck between Pylon Forty and Forty-One. Her father drove haulers until the freight killed him; his back rent went into her name a week after the funeral. She runs small jobs off the boards and pays it down a few hundred at a time.\n\nThree months ago she went into a Voltaic route table, cleanly. Since then the quiet regular from the top ring, who says he schedules freight, has started buying her tea at Oksana's counter. She thinks he's SDG. She hasn't said no. Fast, sharp, funny when she's scared, and nobody gets her real name.",
+        "picture": "personas/rue.png"
+      },
+      "tagline": "Netrunner, nineteen. Lives over the drop. Hasn't said yes.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "A clean Voltaic run nobody should have seen."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "Her real name. Her father."
+        },
+        {
+          "label": "TELL",
+          "value": "Talks faster when she's scared."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Nine thousand in arrears. Desperate people say yes."
+        }
+      ],
+      "accent": "#d9653b",
+      "home": "rue-hab",
+      "places": [
+        "rue-hab",
+        "catwalk",
+        "deck-market",
+        "oksanas-counter"
+      ],
+      "hash": {
+        "card": "3baf46efad36c477308154027013227c6614f650c7ca42b40b77dcdc587216d4",
+        "sprites": "1e84c8a7eefe87edd1b9f123c2dd582b542844f52f04ec310530a9a209eda375",
+        "persona": "4d9499abf1bb6a2cff62638514bdbe8d586e6d8df611cfc5460e9238b497095e"
       }
     },
     {
@@ -550,6 +794,82 @@
         "card": "f00c3ef913d4b79220e4939b6ed82a4e1901089b5360380f61eecd26bd3b2d69",
         "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
         "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
+      }
+    },
+    {
+      "id": "soren",
+      "name": "Soren",
+      "since": "1.1.0",
+      "card": "cards/Soren.png",
+      "sprites": {
+        "joy": "sprites/Soren/smile.png",
+        "amusement": "sprites/Soren/smile.png",
+        "gratitude": "sprites/Soren/smile.png",
+        "optimism": "sprites/Soren/smile.png",
+        "relief": "sprites/Soren/smile.png",
+        "love": "sprites/Soren/smile.png",
+        "pride": "sprites/Soren/smile.png",
+        "excitement": "sprites/Soren/smile.png",
+        "approval": "sprites/Soren/smile.png",
+        "admiration": "sprites/Soren/smile.png",
+        "annoyance": "sprites/Soren/annoyed.png",
+        "anger": "sprites/Soren/annoyed.png",
+        "disapproval": "sprites/Soren/annoyed.png",
+        "disgust": "sprites/Soren/annoyed.png",
+        "embarrassment": "sprites/Soren/annoyed.png",
+        "caring": "sprites/Soren/concerned.png",
+        "nervousness": "sprites/Soren/concerned.png",
+        "fear": "sprites/Soren/concerned.png",
+        "confusion": "sprites/Soren/concerned.png",
+        "curiosity": "sprites/Soren/concerned.png",
+        "surprise": "sprites/Soren/concerned.png",
+        "realization": "sprites/Soren/concerned.png",
+        "desire": "sprites/Soren/smile.png",
+        "sadness": "sprites/Soren/concerned.png",
+        "grief": "sprites/Soren/concerned.png",
+        "remorse": "sprites/Soren/concerned.png",
+        "disappointment": "sprites/Soren/annoyed.png",
+        "neutral": "sprites/Soren/neutral.png"
+      },
+      "persona": {
+        "file": "soren.png",
+        "name": "Soren",
+        "description": "Xander Soren. Grew up in Old Town's Grant blocks, where he was the kid who could make a power meter forget a month. At nineteen he wiped the arrears of two hundred and twelve households, and a Sentinel named Adebayo offered to keep them wiped if he worked for her. He said yes.\n\nTen years on he is a case officer in SDG's plainclothes branch, buying runners the way he was bought, under cover as a night freight scheduler. Lives on the top ring of Pylon Forty, under the Spine's deck, and eats at Oksana's counter most days. SDG glass in his left eye that he assumes is always recording. Quiet, polite, a little too good at listening.",
+        "picture": "personas/soren.png"
+      },
+      "tagline": "SDG case officer. Bought at nineteen. Lives under the road.",
+      "facts": [
+        {
+          "label": "KNOWN FOR",
+          "value": "Hearing more than he says."
+        },
+        {
+          "label": "DON'T ASK ABOUT",
+          "value": "Kestrel Freight. The first runner he turned."
+        },
+        {
+          "label": "TELL",
+          "value": "Touches his temple before he says something true."
+        },
+        {
+          "label": "DANGEROUS",
+          "value": "Works for the branch. Anything he sees may end up on file."
+        }
+      ],
+      "accent": "#8fa3b8",
+      "home": "soren-hab",
+      "places": [
+        "soren-hab",
+        "long-haul",
+        "deck-market",
+        "sdg-floor",
+        "listening-post",
+        "oksanas-counter"
+      ],
+      "hash": {
+        "card": "0864c90920162d128b18b3bc110faf5b3c7651c9511b9e2f312c17527012c24e",
+        "sprites": "9e7d079a56dfde0f4492b48c8c5965c0503f96b048a091fbf3c669d4b7d73917",
+        "persona": "6ec0465cc8f21116d9dcfa3d58933cc75c95dcc6344f02ed749815b00fea4867"
       }
     },
     {

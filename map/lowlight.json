@@ -2,115 +2,7 @@
   "version": 1,
   "image": "/map/lowlight.webp",
   "ambience": {
-    "signs": [
-      {
-        "at": [
-          84.3,
-          20.6
-        ],
-        "color": "#ff4fd8",
-        "mode": "flicker",
-        "size": 2.6
-      },
-      {
-        "at": [
-          50.9,
-          12.6
-        ],
-        "color": "#ff3dff",
-        "mode": "pulse",
-        "size": 1.8
-      },
-      {
-        "at": [
-          53.6,
-          21.4
-        ],
-        "color": "#d65cff",
-        "mode": "pulse",
-        "size": 2.2,
-        "speed": 0.6
-      },
-      {
-        "at": [
-          34.2,
-          5.2
-        ],
-        "color": "#ffd76b",
-        "mode": "pulse",
-        "size": 1.4,
-        "speed": 0.4
-      },
-      {
-        "at": [
-          73.6,
-          48
-        ],
-        "color": "#ff5fb0",
-        "mode": "pulse",
-        "size": 2.4,
-        "speed": 0.8
-      },
-      {
-        "at": [
-          51.6,
-          62.3
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.7
-      },
-      {
-        "at": [
-          56.6,
-          63.6
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.7,
-        "phase": 0.4
-      },
-      {
-        "at": [
-          41.3,
-          67.9
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.7,
-        "phase": 0.7
-      },
-      {
-        "at": [
-          62.6,
-          70.7
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.7,
-        "phase": 0.2
-      },
-      {
-        "at": [
-          78.3,
-          80.3
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.7,
-        "phase": 0.55
-      },
-      {
-        "at": [
-          47.6,
-          9
-        ],
-        "color": "#ff2a2a",
-        "mode": "blink",
-        "size": 0.6,
-        "phase": 0.85
-      }
-    ],
+    "signs": [],
     "plumes": [
       {
         "at": [
@@ -177,286 +69,7 @@
         "lean": 0.4
       }
     ],
-    "traffic": [
-      {
-        "kind": "cars",
-        "path": [
-          [
-            51,
-            31.2
-          ],
-          [
-            54.9,
-            31.7
-          ],
-          [
-            59.7,
-            31.2
-          ],
-          [
-            64.1,
-            29
-          ],
-          [
-            66.8,
-            27.2
-          ],
-          [
-            70.4,
-            28.3
-          ],
-          [
-            75.2,
-            29.9
-          ],
-          [
-            78.2,
-            31
-          ],
-          [
-            79.3,
-            33
-          ],
-          [
-            82.2,
-            35.2
-          ],
-          [
-            83.3,
-            38.4
-          ],
-          [
-            86,
-            40.7
-          ],
-          [
-            90,
-            41.3
-          ],
-          [
-            92.8,
-            42.2
-          ],
-          [
-            96.1,
-            44.1
-          ],
-          [
-            97.6,
-            47.1
-          ],
-          [
-            99.9,
-            49.4
-          ]
-        ],
-        "every": 5,
-        "speed": 1
-      },
-      {
-        "kind": "cars",
-        "path": [
-          [
-            10,
-            28.1
-          ],
-          [
-            15.2,
-            26.4
-          ],
-          [
-            21.7,
-            23.8
-          ],
-          [
-            28,
-            23.4
-          ],
-          [
-            31.3,
-            23.4
-          ],
-          [
-            36.2,
-            25.1
-          ],
-          [
-            40,
-            24.8
-          ],
-          [
-            42.5,
-            25.9
-          ],
-          [
-            44.4,
-            28.1
-          ],
-          [
-            50.8,
-            31.1
-          ]
-        ],
-        "every": 2.8,
-        "speed": 1
-      },
-      {
-        "kind": "train",
-        "path": [
-          [
-            12.9,
-            40.3
-          ],
-          [
-            19,
-            37.8
-          ],
-          [
-            24.5,
-            33.8
-          ],
-          [
-            30,
-            30.6
-          ],
-          [
-            36,
-            28.3
-          ],
-          [
-            38.2,
-            27.6
-          ],
-          [
-            41.5,
-            26.6
-          ]
-        ],
-        "every": 26,
-        "speed": 7
-      },
-      {
-        "kind": "cars",
-        "path": [
-          [
-            79.7,
-            6
-          ],
-          [
-            80.4,
-            7.3
-          ],
-          [
-            81.2,
-            9
-          ],
-          [
-            83.3,
-            10.5
-          ],
-          [
-            88.5,
-            12.9
-          ],
-          [
-            87.5,
-            14
-          ],
-          [
-            90.5,
-            16.4
-          ],
-          [
-            91.6,
-            18.4
-          ],
-          [
-            92.7,
-            19.2
-          ]
-        ],
-        "every": 5,
-        "speed": 2.6
-      },
-      {
-        "kind": "cars",
-        "path": [
-          [
-            61,
-            72.6
-          ],
-          [
-            64,
-            71.4
-          ],
-          [
-            68.5,
-            73.4
-          ],
-          [
-            73.9,
-            69.3
-          ],
-          [
-            72.4,
-            67.5
-          ],
-          [
-            72.1,
-            65.2
-          ],
-          [
-            75.4,
-            62.4
-          ],
-          [
-            76.6,
-            60.9
-          ],
-          [
-            80.2,
-            58.6
-          ],
-          [
-            82.4,
-            57.5
-          ],
-          [
-            85.5,
-            52.6
-          ]
-        ],
-        "every": 4,
-        "speed": 1
-      },
-      {
-        "kind": "drone",
-        "path": [
-          [
-            38,
-            9
-          ],
-          [
-            52,
-            6.5
-          ],
-          [
-            66,
-            5.2
-          ],
-          [
-            80.3,
-            4.8
-          ],
-          [
-            96,
-            9.5
-          ]
-        ],
-        "every": 14,
-        "speed": 3.2
-      }
-    ]
+    "traffic": []
   },
   "districts": [
     {
@@ -464,8 +77,8 @@
       "name": "Cloudridge",
       "area": "Executive Terraces",
       "label": [
-        19.5,
-        10.6
+        21.7,
+        17.5
       ],
       "border": [
         [
@@ -509,15 +122,27 @@
           19.1
         ]
       ],
-      "windows": 0.8
+      "windows": 0,
+      "lettering": {
+        "from": [
+          12.9,
+          17.5
+        ],
+        "to": [
+          30.5,
+          17.5
+        ],
+        "bend": 0,
+        "size": 1.6
+      }
     },
     {
       "id": "helios",
       "name": "Helios Towers",
       "area": "Corp District",
       "label": [
-        41.5,
-        6.4
+        39,
+        15
       ],
       "border": [
         [
@@ -553,15 +178,27 @@
           13.3
         ]
       ],
-      "windows": 0.6
+      "windows": 0,
+      "lettering": {
+        "from": [
+          34,
+          21.3
+        ],
+        "to": [
+          44,
+          8.6
+        ],
+        "bend": 7.2,
+        "size": 1.6
+      }
     },
     {
       "id": "nexus",
       "name": "Nexus",
       "area": "Central Core",
       "label": [
-        58.4,
-        23.6
+        54.2,
+        15.8
       ],
       "border": [
         [
@@ -629,15 +266,27 @@
           19
         ]
       ],
-      "windows": 0.7
+      "windows": 0,
+      "lettering": {
+        "from": [
+          49.5,
+          16.7
+        ],
+        "to": [
+          58.8,
+          14.8
+        ],
+        "bend": 1.2,
+        "size": 1.6
+      }
     },
     {
       "id": "mirage",
       "name": "Mirage Heights",
       "area": "Luxury Enclave / The Shelf",
       "label": [
-        90.6,
-        5.2
+        91,
+        14.8
       ],
       "border": [
         [
@@ -669,7 +318,19 @@
           6
         ]
       ],
-      "windows": 0.8
+      "windows": 0,
+      "lettering": {
+        "from": [
+          82.9,
+          9.8
+        ],
+        "to": [
+          99.1,
+          19.8
+        ],
+        "bend": -2.1,
+        "size": 1.6
+      }
     },
     {
       "id": "velvet",
@@ -728,15 +389,16 @@
           64.6,
           16.1
         ]
-      ]
+      ],
+      "windows": 0
     },
     {
       "id": "karasu",
       "name": "Karasu",
       "area": "Old Town / The Ribbon",
       "label": [
-        92.4,
-        25.6
+        93.6,
+        35.4
       ],
       "border": [
         [
@@ -803,15 +465,28 @@
           78.9,
           30.7
         ]
-      ]
+      ],
+      "windows": 0,
+      "lettering": {
+        "from": [
+          90,
+          31.9
+        ],
+        "to": [
+          97.2,
+          38.9
+        ],
+        "bend": 1.5,
+        "size": 1.6
+      }
     },
     {
       "id": "strand",
       "name": "Neon Strand",
       "area": "Entertainment District",
       "label": [
-        66,
-        47.6
+        72.3,
+        44.8
       ],
       "border": [
         [
@@ -890,25 +565,50 @@
           62.6,
           43.9
         ]
-      ]
+      ],
+      "windows": 0,
+      "lettering": {
+        "from": [
+          66,
+          39.9
+        ],
+        "to": [
+          78.6,
+          49.8
+        ],
+        "bend": 3,
+        "size": 1.6
+      }
     },
     {
       "id": "spine",
       "name": "The Spine",
       "area": "Elevated Rail",
       "label": [
-        89,
-        43.4
+        91.9,
+        49.7
       ],
-      "windows": 0.5
+      "windows": 0,
+      "lettering": {
+        "from": [
+          84.4,
+          46.4
+        ],
+        "to": [
+          99.3,
+          52.9
+        ],
+        "bend": 3.4,
+        "size": 1.6
+      }
     },
     {
       "id": "marsh",
       "name": "The Marsh",
       "area": "Lower City",
       "label": [
-        93.6,
-        58
+        90.2,
+        61.9
       ],
       "border": [
         [
@@ -983,15 +683,28 @@
           82.9,
           54.9
         ]
-      ]
+      ],
+      "windows": 0,
+      "lettering": {
+        "from": [
+          83,
+          61.9
+        ],
+        "to": [
+          97.3,
+          61.9
+        ],
+        "bend": 0,
+        "size": 1.6
+      }
     },
     {
       "id": "drownworks",
       "name": "Drownworks",
       "area": "Waste & Reclamation",
       "label": [
-        91,
-        82.6
+        80.8,
+        82.9
       ],
       "border": [
         [
@@ -1067,15 +780,27 @@
           61.9
         ]
       ],
-      "windows": 0.8
+      "windows": 0,
+      "lettering": {
+        "from": [
+          74.4,
+          88.4
+        ],
+        "to": [
+          87.2,
+          77.4
+        ],
+        "bend": -2.8,
+        "size": 1.6
+      }
     },
     {
       "id": "tidal",
       "name": "Tidal Isle",
       "area": "Processing & Customs",
       "label": [
-        52.8,
-        77.5
+        51.8,
+        87.1
       ],
       "border": [
         [
@@ -1127,15 +852,27 @@
           85.5
         ]
       ],
-      "windows": 0.8
+      "windows": 0,
+      "lettering": {
+        "from": [
+          43,
+          87.1
+        ],
+        "to": [
+          60.6,
+          87.1
+        ],
+        "bend": 0,
+        "size": 1.6
+      }
     },
     {
       "id": "dockside",
       "name": "Dockside",
       "area": "Freight & Containers",
       "label": [
-        30.6,
-        43.4
+        36.3,
+        48.7
       ],
       "border": [
         [
@@ -1195,15 +932,27 @@
           54.3
         ]
       ],
-      "windows": 0.7
+      "windows": 0,
+      "lettering": {
+        "from": [
+          29.3,
+          48.7
+        ],
+        "to": [
+          43.3,
+          48.7
+        ],
+        "bend": 0,
+        "size": 1.6
+      }
     },
     {
       "id": "ironreach",
       "name": "Iron Reach",
       "area": "Industrial Zone",
       "label": [
-        10,
-        47.6
+        13.1,
+        42.2
       ],
       "border": [
         [
@@ -1263,16 +1012,40 @@
           60.6
         ]
       ],
-      "windows": 0.7
+      "windows": 0,
+      "lettering": {
+        "from": [
+          7,
+          49.6
+        ],
+        "to": [
+          19.1,
+          34.8
+        ],
+        "bend": 3.9,
+        "size": 1.6
+      }
     },
     {
       "id": "bay",
       "name": "Lowlight Bay",
       "label": [
-        45.5,
-        60.5
+        58,
+        61.4
       ],
-      "windows": 0
+      "windows": 0,
+      "lettering": {
+        "from": [
+          47.3,
+          60.7
+        ],
+        "to": [
+          68.6,
+          62
+        ],
+        "bend": 6.1,
+        "size": 1.6
+      }
     }
   ],
   "places": [
@@ -1284,7 +1057,9 @@
         85.9,
         29.6
       ],
-      "scene": "karasu/ribbon-rooftop"
+      "scene": "karasu/ribbon-rooftop",
+      "on": "ribbon",
+      "level": "roof"
     },
     {
       "id": "nix-walk-up",
@@ -1294,7 +1069,9 @@
         88.4,
         30.8
       ],
-      "scene": "karasu/walk-up-landing"
+      "scene": "karasu/walk-up-landing",
+      "on": "ribbon",
+      "level": 5
     },
     {
       "id": "public-landing",
@@ -1305,7 +1082,9 @@
         31.5
       ],
       "scene": "karasu/public-landing",
-      "gigs": true
+      "gigs": true,
+      "on": "ribbon",
+      "level": 6
     },
     {
       "id": "lowlight-intake",
@@ -1315,7 +1094,9 @@
         89.1,
         33.5
       ],
-      "scene": "karasu/lowlight-intake"
+      "scene": "karasu/lowlight-intake",
+      "on": "ribbon",
+      "level": 4
     },
     {
       "id": "second-socket",
@@ -1329,7 +1110,9 @@
       "hires": [
         "wire",
         "runner"
-      ]
+      ],
+      "on": "ribbon",
+      "level": 4
     },
     {
       "id": "haes-noodles",
@@ -1339,7 +1122,9 @@
         86.9,
         33.8
       ],
-      "scene": "karasu/noodle-stall"
+      "scene": "karasu/noodle-stall",
+      "on": "ribbon",
+      "level": 4
     },
     {
       "id": "the-tilt",
@@ -1350,7 +1135,9 @@
         34.3
       ],
       "scene": "karasu/the-tilt",
-      "gigs": true
+      "gigs": true,
+      "on": "ribbon",
+      "level": 3
     },
     {
       "id": "glass-orchid",
@@ -1372,7 +1159,9 @@
         32.7
       ],
       "scene": "karasu/cass-apartment",
-      "side": true
+      "side": true,
+      "on": "ribbon",
+      "level": 3
     },
     {
       "id": "hicks-walkway",
@@ -1382,7 +1171,9 @@
         87.1,
         37.7
       ],
-      "scene": "karasu/hicks-gallery"
+      "scene": "karasu/hicks-gallery",
+      "on": "ribbon",
+      "level": 2
     },
     {
       "id": "hicks-room",
@@ -1393,7 +1184,9 @@
         37.7
       ],
       "scene": "karasu/hicks-room",
-      "side": true
+      "side": true,
+      "on": "ribbon",
+      "level": 2
     },
     {
       "id": "zhou-flat",
@@ -1404,7 +1197,9 @@
         38.3
       ],
       "scene": "karasu/zhou-flat",
-      "side": true
+      "side": true,
+      "on": "ribbon",
+      "level": 2
     },
     {
       "id": "ferry-stairs",
@@ -1460,8 +1255,8 @@
       "name": "The Breakwater",
       "district": "strand",
       "pin": [
-        76.4,
-        49.6
+        79.3,
+        49.5
       ],
       "scene": "strand/breakwater"
     },
@@ -1484,7 +1279,103 @@
         85.4,
         35.9
       ],
-      "scene": "karasu/ripper-clinic"
+      "scene": "karasu/ripper-clinic",
+      "on": "ribbon",
+      "level": 1
+    },
+    {
+      "id": "soren-hab",
+      "name": "Soren's hab",
+      "district": "spine",
+      "pin": [
+        85.5,
+        42
+      ],
+      "scene": "spine/soren-hab",
+      "on": "spine",
+      "level": 9
+    },
+    {
+      "id": "oksanas-counter",
+      "name": "Oksana's",
+      "district": "spine",
+      "pin": [
+        73.4,
+        31.4
+      ],
+      "scene": "spine/oksanas-counter",
+      "on": "spine",
+      "level": 1
+    },
+    {
+      "id": "rue-hab",
+      "name": "Rue's hab",
+      "district": "spine",
+      "pin": [
+        69.5,
+        29.5
+      ],
+      "scene": "spine/rue-hab",
+      "on": "spine",
+      "level": 8
+    },
+    {
+      "id": "listening-post",
+      "name": "The listening post",
+      "district": "spine",
+      "pin": [
+        75.8,
+        33.5
+      ],
+      "scene": "spine/listening-post",
+      "on": "spine",
+      "level": 2
+    },
+    {
+      "id": "sdg-floor",
+      "name": "The Sentinel Tower",
+      "district": "nexus",
+      "pin": [
+        60.1,
+        18.4
+      ],
+      "scene": "nexus/sdg-floor"
+    },
+    {
+      "id": "long-haul",
+      "name": "The Long Haul",
+      "district": "spine",
+      "pin": [
+        80.9,
+        35.6
+      ],
+      "scene": "spine/long-haul",
+      "on": "spine",
+      "level": "roof"
+    },
+    {
+      "id": "deck-market",
+      "name": "The deck market",
+      "district": "spine",
+      "pin": [
+        67.7,
+        30
+      ],
+      "scene": "spine/deck-market",
+      "on": "spine",
+      "level": 1
+    },
+    {
+      "id": "catwalk",
+      "name": "The catwalk",
+      "district": "spine",
+      "pin": [
+        84.1,
+        40.9
+      ],
+      "scene": "spine/catwalk",
+      "on": "spine",
+      "level": "roof"
     }
   ]
 }

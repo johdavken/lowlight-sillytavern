@@ -98,19 +98,78 @@
     "late": {
       "ambientLevel": 0.21,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "door_lamp": {
+          "intensity": 0.38
+        },
+        "intake_window": {
+          "intensity": 0.34
+        },
+        "kitchen_door": {
+          "intensity": 0.38
+        },
+        "neon_bowl": {
+          "intensity": 0.45
+        },
+        "skyline": {
+          "intensity": 0.22
+        }
+      }
     },
     "quiet": {
       "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "weatherLevel": 0.14,
+      "fog": 0.11,
+      "lights": {
+        "door_lamp": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "intake_window": {
+          "intensity": 0.34,
+          "flicker": 0
+        },
+        "kitchen_door": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "neon_bowl": {
+          "intensity": 0.3,
+          "flicker": 0.05
+        },
+        "skyline": {
+          "intensity": 0.22,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
       "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "fog": 0.3,
+      "lights": {
+        "door_lamp": {
+          "intensity": 0.25,
+          "flicker": 0.2
+        },
+        "intake_window": {
+          "intensity": 0.23,
+          "flicker": 0.2
+        },
+        "kitchen_door": {
+          "intensity": 0.25,
+          "flicker": 0.22
+        },
+        "neon_bowl": {
+          "color": "#ff2d4a",
+          "intensity": 0.9,
+          "flicker": 0.5
+        },
+        "skyline": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        }
+      }
     },
     "closed": {
       "lights": {
@@ -154,20 +213,32 @@
   "weatherArea": [
     [
       [
-        1060,
+        1184,
+        19
+      ],
+      [
+        1206,
+        3
+      ],
+      [
+        1532,
         0
       ],
       [
-        1536,
-        0
+        1535,
+        859
       ],
       [
-        1536,
-        600
+        1073,
+        858
       ],
       [
-        1060,
-        600
+        1076,
+        91
+      ],
+      [
+        1123,
+        27
       ]
     ]
   ],

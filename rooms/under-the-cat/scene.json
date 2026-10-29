@@ -214,20 +214,20 @@
       "to": "velvet/glass-orchid",
       "way": "through the orchid door into the Glass Orchid",
       "door": [
-        1236,
-        600,
-        120,
-        192
+        1230,
+        490,
+        132,
+        302
       ]
     },
     {
       "to": "velvet/bathhouse",
       "way": "in through the bathhouse curtain",
       "door": [
-        130,
-        585,
-        170,
-        195
+        118,
+        395,
+        194,
+        385
       ]
     }
   ]

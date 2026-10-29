@@ -56,7 +56,14 @@
   position: absolute;
   inset: 0;
   overflow: hidden;
-  background: #000;
+  /* The empty survey grid, seen past the city's edges (the world covers the rest); MapPanel's setView sizes and places
+     it on the camera, so its lines stay 1px and line up with the map (spec 2026-10-28 §3). Major, then minor. */
+  background-color: #000;
+  background-image:
+    linear-gradient(90deg, rgba(127, 233, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(127, 233, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 233, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(127, 233, 255, 0.04) 1px, transparent 1px);
   cursor: grab;
   touch-action: none;
   animation: map-flicker 5s steps(1, end) infinite;
@@ -72,6 +79,8 @@
   /* a touch of phosphor bloom */
   filter: saturate(1.08) contrast(1.04) brightness(1.04) drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.12));
 }
+/* On the rendered map the painting stands by hidden (display above would otherwise beat the hidden attribute). */
+.map-img[hidden] { display: none; }
 .map-screen > div { position: absolute; inset: 0; pointer-events: none; }
 /* The camera's layer (the picture and the city's borders, names and pins) zooms into the open district; --inv keeps pins one size.
    The band, heading and file strip sit over it, unzoomed. MapPanel eases it in script, so --inv moves with it. */

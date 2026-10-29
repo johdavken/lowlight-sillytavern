@@ -123,19 +123,99 @@
     "late": {
       "ambientLevel": 0.21,
       "timeOfDay": "late-night",
-      "lights": {}
+      "lights": {
+        "stove": {
+          "intensity": 0.26
+        },
+        "candles": {
+          "intensity": 0.34
+        },
+        "hand_lantern": {
+          "intensity": 0.3
+        },
+        "oil_lamp": {
+          "intensity": 0.38
+        },
+        "fairy_lights": {
+          "intensity": 0.34
+        },
+        "block_windows": {
+          "intensity": 0.22
+        },
+        "ribbon": {
+          "intensity": 0.19
+        }
+      }
     },
     "quiet": {
       "ambientLevel": 0.25,
-      "weatherLevel": 0,
-      "fog": 0.15,
-      "lights": {}
+      "weatherLevel": 0.18,
+      "fog": 0.08,
+      "lights": {
+        "stove": {
+          "intensity": 0.26,
+          "flicker": 0
+        },
+        "candles": {
+          "intensity": 0.34,
+          "flicker": 0
+        },
+        "hand_lantern": {
+          "intensity": 0.3,
+          "flicker": 0
+        },
+        "oil_lamp": {
+          "intensity": 0.38,
+          "flicker": 0
+        },
+        "fairy_lights": {
+          "intensity": 0.34,
+          "flicker": 0
+        },
+        "block_windows": {
+          "intensity": 0.22,
+          "flicker": 0
+        },
+        "ribbon": {
+          "intensity": 0.19,
+          "flicker": 0
+        }
+      }
     },
     "tense": {
       "ambient": "#2a0f1c",
       "ambientLevel": 0.21,
-      "fog": 0.35,
-      "lights": {}
+      "fog": 0.25,
+      "lights": {
+        "stove": {
+          "intensity": 0.18,
+          "flicker": 0.3
+        },
+        "candles": {
+          "intensity": 0.23,
+          "flicker": 0.28
+        },
+        "hand_lantern": {
+          "intensity": 0.2,
+          "flicker": 0.25
+        },
+        "oil_lamp": {
+          "intensity": 0.25,
+          "flicker": 0.26
+        },
+        "fairy_lights": {
+          "intensity": 0.23,
+          "flicker": 0.23
+        },
+        "block_windows": {
+          "intensity": 0.15,
+          "flicker": 0.2
+        },
+        "ribbon": {
+          "intensity": 0.13,
+          "flicker": 0.2
+        }
+      }
     },
     "candles-only": {
       "lights": {
@@ -191,6 +271,34 @@
       }
     }
   },
+  "weatherArea": [
+    [
+      [
+        500,
+        115
+      ],
+      [
+        856,
+        113
+      ],
+      [
+        856,
+        296
+      ],
+      [
+        655,
+        286
+      ],
+      [
+        450,
+        296
+      ],
+      [
+        449,
+        134
+      ]
+    ]
+  ],
   "sound": {
     "indoor": true
   },
@@ -207,6 +315,10 @@
       "style": "steam",
       "amount": 0.6,
       "lean": 0.1
+    },
+    {
+      "kind": "lightning",
+      "strength": 1
     }
   ],
   "exits": [
