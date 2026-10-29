@@ -412,6 +412,19 @@ window.lowlightCast = {
   },
 };
 
+// SYS → CAST from anywhere: after NOT NOW the Keys bar only shows in a Lowlight chat, so this is how you install later.
+SlashCommandParser.addCommandObject(SlashCommand.fromProps({
+  name: 'lowcast',
+  helpString: 'Install the Lowlight cast, or update its cards when they have updates.',
+  callback: async () => {
+    const { accepted, cardUpdates } = window.lowlightCast.status();
+    if (!accepted) await window.lowlightCast.install();
+    else if (cardUpdates) await window.lowlightCast.updateCards();
+    else showNotice([`THE LOWLIGHT CAST IS INSTALLED · ${window.lowlightCast.status().installed} CHARACTERS`]);
+    return '';
+  },
+}));
+
 // No chat open (SillyTavern's welcome screen): the select stands in for it once you've said yes to the cast, when
 // your last chat was a Lowlight one, with the Lowlight look on and room for it. Otherwise SillyTavern's own welcome.
 const selectIfNoChat = async () => {

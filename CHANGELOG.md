@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.8 · 2026-10-29
+- /lowcast installs the cast after NOT NOW; the welcome says so
+
 ## 1.2.7 · 2026-10-29
 - After NOT NOW, the welcome points to /select, then SYS → CAST
 
