@@ -19,9 +19,9 @@ const el = (tag, cls, text) => {
 const thumb = (type, file) => `/thumbnail?type=${type}&file=${encodeURIComponent(file)}`;
 
 /**
- * @param {{ cast: { characters?: any[] }, rooms: string[], current: () => string, goTo: (folder: string) => Promise<void>, cue: (name: string) => void }} deps
+ * @param {{ cast: { characters?: any[] }, rooms: string[], current: () => string, goTo: (folder: string) => Promise<void>, cue: (name: string) => void, menu?: (on: boolean) => void }} deps
  */
-export function mountSelect({ cast, rooms, current, goTo, cue }) {
+export function mountSelect({ cast, rooms, current, goTo, cue, menu = () => {} }) {
   const info = new Map((cast.characters ?? []).map((c) => [c.name, c]));
   const root = el('div', 'lls-root');
   root.hidden = true;
@@ -260,6 +260,8 @@ export function mountSelect({ cast, rooms, current, goTo, cue }) {
     root.hidden = false;
     document.body.classList.add('lls-open');
     fit();
+    // Its sound, as Lowlight's own select: the menu theme over the room behind at a quarter.
+    menu(true);
     backdropFor(null);
     paint();
   }
@@ -270,6 +272,7 @@ export function mountSelect({ cast, rooms, current, goTo, cue }) {
     clearTimeout(restTimer);
     root.hidden = true;
     document.body.classList.remove('lls-open');
+    menu(false);
     if (restore && roomBefore && roomBefore !== current()) void goTo(roomBefore);
   }
 

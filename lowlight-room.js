@@ -30342,22 +30342,28 @@ function cH(e, t, n, r) {
 		...e,
 		url: `${t}thunder/${e.url.split("/").pop()}`
 	})));
-	let a = iH({
-		engine: new EV({
-			warn: (e) => console.warn("[lowlight sound]", e),
-			rainUrls: r.rain ? {
-				light: `${t}${r.rain.light}`,
-				heavy: `${t}${r.rain.heavy}`
-			} : null
-		}),
+	let a = new EV({
+		warn: (e) => console.warn("[lowlight sound]", e),
+		rainUrls: r.rain ? {
+			light: `${t}${r.rain.light}`,
+			heavy: `${t}${r.rain.heavy}`
+		} : null
+	}), o = iH({
+		engine: a,
 		view: n
 	});
-	QV.length && e.onStrike((e) => a.thunder(e.distance, e.sceneId)), e.onFrame(() => a.frame(e.time())), document.addEventListener("visibilitychange", () => a.visibility(document.hidden));
-	let o = (e) => a.gesture({ fromSpeaker: e.target instanceof Element && e.target.closest("#lowlight-sound") !== null });
-	return window.addEventListener("pointerdown", o, !0), window.addEventListener("keydown", o, !0), a;
+	QV.length && e.onStrike((e) => o.thunder(e.distance, e.sceneId)), e.onFrame(() => o.frame(e.time())), document.addEventListener("visibilitychange", () => o.visibility(document.hidden));
+	let s = (e) => o.gesture({ fromSpeaker: e.target instanceof Element && e.target.closest("#lowlight-sound") !== null });
+	return window.addEventListener("pointerdown", s, !0), window.addEventListener("keydown", s, !0), {
+		audio: o,
+		menu: (e) => {
+			a.setScale(e ? lH : 1), o.overrideMusic(e && r.theme ? `${t}${r.theme}` : null);
+		}
+	};
 }
-async function lH(e, t, n, r = () => {}, i = sH) {
-	let a = await TO(e, void 0, { backdrop: !0 }), o = cH(a, n, r, i), s = null, c = null, l = null, u = (e) => {
+var lH = .25;
+async function uH(e, t, n, r = () => {}, i = sH) {
+	let a = await TO(e, void 0, { backdrop: !0 }), { audio: o, menu: s } = cH(a, n, r, i), c = null, l = null, u = null, d = (e) => {
 		if (!i.beds || !e.sound) return e;
 		let t = i.beds[e.id];
 		return {
@@ -30371,63 +30377,64 @@ async function lH(e, t, n, r = () => {}, i = sH) {
 				sounds: []
 			}
 		};
-	}, d = (e, n) => {
-		o.room(c, u(s), t, e, n), o.place(s, t, e);
+	}, f = (e, n) => {
+		o.room(l, d(c), t, e, n), o.place(c, t, e);
 	};
 	return {
 		renderer: a,
 		audio: o,
+		menu: s,
 		light: (e) => oH(a, e),
 		async load(e, n = 0) {
 			let r = await (await fetch(`${t}${e}/scene.json`)).json();
 			r.id = e;
 			let i = oR.safeParse(r);
 			if (!i.success) throw Error(`scene ${e}: ${i.error.message}`);
-			return s = i.data, await a.loadScene(s, t), c = aH(s), l = null, a.applyState(c, 0), d(n, n > 0 ? "fade" : void 0), Object.keys(s.presets ?? {});
+			return c = i.data, await a.loadScene(c, t), l = aH(c), u = null, a.applyState(l, 0), f(n, n > 0 ? "fade" : void 0), Object.keys(c.presets ?? {});
 		},
 		mood(e, t = 2) {
-			if (!s || !c) return !1;
-			if (e === "default") c = aH(s);
+			if (!c || !l) return !1;
+			if (e === "default") l = aH(c);
 			else {
-				let t = s.presets?.[e];
+				let t = c.presets?.[e];
 				if (!t) return !1;
-				c = sR(c, t);
+				l = sR(l, t);
 			}
-			return l = e === "default" ? null : e, a.applyState(c, t), d(t), !0;
+			return u = e === "default" ? null : e, a.applyState(l, t), f(t), !0;
 		},
-		state: () => c,
-		moodName: () => l,
-		scene: () => s,
+		state: () => l,
+		moodName: () => u,
+		scene: () => c,
 		apply(e, t = 0) {
-			s && (c = {
-				sceneId: s.id,
+			c && (l = {
+				sceneId: c.id,
 				lights: e.lights.map((e) => ({ ...e })),
 				atmosphere: { ...e.atmosphere }
-			}, l = e.mood, a.applyState(c, t), d(t));
+			}, u = e.mood, a.applyState(l, t), f(t));
 		},
 		setLight(e, t, n = 1.5) {
-			return !c || !c.lights.some((t) => t.id === e) ? !1 : (c = {
-				...c,
-				lights: c.lights.map((n) => n.id === e ? {
+			return !l || !l.lights.some((t) => t.id === e) ? !1 : (l = {
+				...l,
+				lights: l.lights.map((n) => n.id === e ? {
 					...n,
 					...t
 				} : n)
-			}, l = null, a.applyState(c, n), d(n), !0);
+			}, u = null, a.applyState(l, n), f(n), !0);
 		},
 		setAtmosphere(e, t = 1.5) {
-			c && (c = {
-				...c,
+			l && (l = {
+				...l,
 				atmosphere: {
-					...c.atmosphere,
+					...l.atmosphere,
 					...e
 				}
-			}, a.applyState(c, t), d(t));
+			}, a.applyState(l, t), f(t));
 		},
-		moods: () => Object.keys(s?.presets ?? {}),
-		sceneName: () => s?.name ?? null
+		moods: () => Object.keys(c?.presets ?? {}),
+		sceneName: () => c?.name ?? null
 	};
 }
-function uH(e, t) {
+function dH(e, t) {
 	let n = null, r = (e) => e.scene?.split("/").pop(), i = new YB(e, {
 		tiles: new URL("./", new URL(t.mapUrl, location.href)).href,
 		load: async () => {
@@ -30455,4 +30462,4 @@ function uH(e, t) {
 	return a && (a.src = new URL("lowlight.webp", new URL(t.mapUrl, location.href)).href), i;
 }
 //#endregion
-export { RO as ROOM_TOOLS, VO as appliedText, BO as checkRoomTool, HO as isRoomToolMessage, uH as mountMap, lH as mountRoom, JO as planInstall, ZO as planSettings, UO as preToolMessage, qO as roomFromChat, kO as roomLine, GO as stampOf, KO as withStamp };
+export { RO as ROOM_TOOLS, VO as appliedText, BO as checkRoomTool, HO as isRoomToolMessage, dH as mountMap, uH as mountRoom, JO as planInstall, ZO as planSettings, UO as preToolMessage, qO as roomFromChat, kO as roomLine, GO as stampOf, KO as withStamp };

@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.1.2 · 2026-10-29
+- The select screen sounds like Lowlight's own: the menu theme, with the room behind at a quarter; the character pictures show each one's select face (no more annoyed by default), cropped where the game crops them
+
 ## 1.1.1 · 2026-10-29
 - The real rain, thunder, room sounds and menu cues: the rain was the engine's synthesized noise, which sounded like static
 
