@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.7 · 2026-10-29
+- After NOT NOW, the welcome points to /select, then SYS → CAST
+
 ## 1.2.6 · 2026-10-29
 - Lowlight only in its own chats, ST's look on small screens, wearing on cards and personas
 
