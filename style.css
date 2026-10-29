@@ -307,7 +307,7 @@ body.lowlight-chat #chat .mes.ll-pre-tool { display: none; }
 .ll-continue { display: none; }
 body.lowlight-chat .ll-continue:not([hidden]) {
   display: block;
-  margin: 4px 0 0 auto;
+  margin: 4px 48px 0 auto; /* clear of SillyTavern's swipe arrow and counter */
   background: none;
   border: none;
   padding: 0 4px;

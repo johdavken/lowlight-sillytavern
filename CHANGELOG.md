@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.3 · 2026-10-29
+- CONTINUE clears SillyTavern's swipe arrow
+
 ## 1.2.2 · 2026-10-29
 - CONTINUE sits under the line it pages, in the space the page leaves free
 
