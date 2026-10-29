@@ -15,11 +15,13 @@ body.lowlight-room-on #bg1, body.lowlight-room-on #bg_custom { display: none; }
 
 /* ── Lowlight chat (/lowchat): the subtitle band from Lowlight's stage, over SillyTavern's chat ──
    No frame: the current line sits low over a dark scrim, names in spaced capitals, Plex Mono.
-   Sizes are in --px, one pixel of Lowlight's 1600×900 stage zoomed to the window (web/src/ui/game-stage.ts), so the
-   band reads at the game's size: 1.2× at 1080p. */
+   Everything Lowlight draws over the room lays out on its 1600×900 stage, zoomed to the window and centred
+   (web/src/ui/game-stage.ts), so it keeps its place on the room at any window shape: index.js writes the stage's rect
+   (--stage-x/-y/-w/-h) and zoom (--ll-scale). --px is one stage pixel, so the band reads at the game's size: 1.2× at 1080p. */
 
+:root { --ll-scale: 1; --stage-x: 0px; --stage-y: 0px; --stage-w: 100vw; --stage-h: 100dvh; }
 body.lowlight-chat {
-  --px: min(100vw / 1600, 100dvh / 900);
+  --px: calc(var(--ll-scale) * 1px);
   --SmartThemeBodyColor: #ffe1ea;
   --SmartThemeEmColor: color-mix(in srgb, #ff4f8b 38%, #c9b3c4);
   --SmartThemeQuoteColor: #ffe1ea;
@@ -30,14 +32,14 @@ body.lowlight-chat {
   --SmartThemeBlurStrength: 0px;
   --SmartThemeShadowColor: #000;
 }
-/* The band: the bottom of the screen, side margins like Lowlight's corner stacks. */
+/* The band: the bottom of the stage, side margins like Lowlight's corner stacks. */
 body.lowlight-chat #sheld {
-  --sheldWidth: calc(100vw - 260 * var(--px));
-  height: 38dvh;
+  --sheldWidth: calc(var(--stage-w) - 260 * var(--px));
+  height: calc(342 * var(--px));
   top: auto;
-  bottom: 0;
-  left: calc(130 * var(--px));
-  right: calc(130 * var(--px));
+  bottom: var(--stage-y);
+  left: calc(var(--stage-x) + 130 * var(--px));
+  right: calc(var(--stage-x) + 130 * var(--px));
   width: auto;
   max-width: none;
 }
@@ -45,10 +47,10 @@ body.lowlight-chat #sheld {
 body.lowlight-chat::after {
   content: '';
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 46dvh;
+  left: var(--stage-x);
+  right: var(--stage-x);
+  bottom: var(--stage-y);
+  height: calc(414 * var(--px));
   background: linear-gradient(180deg, transparent, rgba(6, 2, 12, 0.72) 40%, rgba(6, 2, 12, 0.94));
   pointer-events: none;
   /* Over her sprite (SillyTavern's expression holder is z 2), so the band darkens her waist as in Lowlight. */
@@ -156,7 +158,7 @@ body.lowlight-chat #send_but { color: #9b5cff; }
 #lowlight-persona .stage-light-fx { position: absolute; width: 0; height: 0; overflow: hidden; }
 
 /* Lowlight's stage positions (with /lowchat on): you left, her right, standing from the floor, whole sprites
-   115 % of the screen tall and cut off below it, the band over your waists (style.css --fig-full/-floor/-x at 900 px). */
+   115 % of the stage tall and cut off at its floor, the band over your waists (style.css --fig-full/-floor/-x at 900 px). */
 #lowlight-persona { display: none; }
 body.lowlight-chat #lowlight-persona:not([hidden]) { display: block; }
 body.lowlight-chat #expression-holder,
@@ -165,35 +167,51 @@ body.lowlight-chat #lowlight-persona {
   max-width: none;
   max-height: none;
   height: auto;
-  bottom: -30dvh;
+  bottom: calc(var(--stage-y) - 270 * var(--px));
   margin: 0;
+  /* What hangs below the stage's floor would show in the bar under it. */
+  clip-path: inset(0 0 calc(270 * var(--px)) 0);
   overflow: visible;
   filter: none;
   z-index: 2;
 }
 body.lowlight-chat #expression-holder img.expression,
 body.lowlight-chat #lowlight-persona img {
-  height: 115dvh;
+  height: calc(1035 * var(--px));
   max-height: none;
   max-width: none;
   width: auto;
 }
-body.lowlight-chat #expression-holder { left: auto; right: 7vw; }
-body.lowlight-chat #lowlight-persona { position: fixed; left: 7vw; right: auto; pointer-events: none; }
+body.lowlight-chat #expression-holder { left: auto; right: calc(var(--stage-x) + 112 * var(--px)); }
+body.lowlight-chat #lowlight-persona { position: fixed; left: calc(var(--stage-x) + 112 * var(--px)); right: auto; pointer-events: none; }
 #lowlight-persona img { display: block; image-rendering: pixelated; }
 
 /* The city map over everything, as in Lowlight (its own rules come in lowlight-room.css and map-game.css). */
-#lowlight-map.map-root { position: fixed; inset: 0; z-index: 6000; }
+/* On the stage, zoomed like the game's #game (left/top on a zoomed box are zoomed too, so they're in stage px). */
+#lowlight-map.map-root {
+  position: fixed;
+  inset: auto;
+  left: calc(var(--stage-x) / var(--ll-scale));
+  top: calc(var(--stage-y) / var(--ll-scale));
+  width: 1600px;
+  height: 900px;
+  zoom: var(--ll-scale);
+  z-index: 6000;
+}
 /* SillyTavern's global .tag rule (tags.css) would box the map's file-strip chips. */
 #lowlight-map .chip .tag { all: unset; opacity: 0.65; font-size: 0.85em; }
 
 /* ── Lowlight's Keys bar (hud.js), with /lowchat on: Lowlight's HUD values, classes prefixed llh- ── */
 .llh-root { display: none; }
+/* On the stage, zoomed like the map: its values below are the game's, in stage px. */
 body.lowlight-chat .llh-root {
   display: block;
   position: fixed;
-  inset: 0 0 auto 0;
+  left: calc(var(--stage-x) / var(--ll-scale));
+  top: calc(var(--stage-y) / var(--ll-scale));
+  width: 1600px;
   height: 0;
+  zoom: var(--ll-scale);
   /* Over SillyTavern's panels (its top bar holder is z 3005), under the map. */
   z-index: 5000;
   pointer-events: none;
@@ -271,7 +289,7 @@ body.lowlight-chat .llh-root {
   top: 71.6px;
   right: 56px;
   width: 420px;
-  max-width: calc(100vw - 32px);
+  max-width: calc(1600px - 32px);
   padding: 4px 0 0;
   pointer-events: auto;
   font: 19px/1 'VT323', ui-monospace, monospace;
@@ -297,7 +315,7 @@ body.lowlight-chat .llh-root {
 .llh-foot { padding: 8px 16px; font-size: 16px; color: #8a7fa0; border-top: 1px solid rgba(127, 233, 255, 0.14); }
 
 /* SillyTavern's top bar steps aside for the Keys bar: its icons hide, its panels still open (under the bar). */
-body.lowlight-chat { --topBarBlockSize: 74px; }
+body.lowlight-chat { --llh-bottom: calc(var(--stage-y) + 74 * var(--px)); --topBarBlockSize: var(--llh-bottom); }
 body.lowlight-chat #top-bar { display: none; }
 body.lowlight-chat #top-settings-holder { pointer-events: none; }
 body.lowlight-chat #top-settings-holder .drawer-toggle,
@@ -305,8 +323,8 @@ body.lowlight-chat #top-settings-holder > #lowlight-map-button,
 body.lowlight-chat #top-settings-holder > #lowlight-sound { visibility: hidden; }
 body.lowlight-chat #top-settings-holder .drawer-content { pointer-events: auto; }
 /* Every panel opens under the bar: the centred ones and the full-height side ones (characters, AI settings). */
-body.lowlight-chat #top-settings-holder .drawer-content { top: 74px !important; max-height: calc(100dvh - 74px - 70px); }
-body.lowlight-chat #top-settings-holder .drawer-content:is(.fillLeft, .fillRight) { height: calc(100dvh - 74px); max-height: calc(100dvh - 74px); }
+body.lowlight-chat #top-settings-holder .drawer-content { top: var(--llh-bottom) !important; max-height: calc(100dvh - var(--llh-bottom) - 70px); }
+body.lowlight-chat #top-settings-holder .drawer-content:is(.fillLeft, .fillRight) { height: calc(100dvh - var(--llh-bottom)); max-height: calc(100dvh - var(--llh-bottom)); }
 
 /* Her tool calls (SillyTavern saves each as a system message classed toolCall; room-tools.js marks the ones made only of
    her room tools): hidden in the Lowlight look, so the room just changes. The newest stays, so a failed follow-up shows. */
@@ -332,7 +350,7 @@ body.lowlight-chat .ll-continue:not([hidden]) {
 body.lowlight-chat.ll-history .ll-continue { display: none; }
 @keyframes ll-continue-pulse { 50% { opacity: 0.55; } }
 /* Page Up: the whole chat, scrollable, over a dimmed room. */
-body.lowlight-chat.ll-history #sheld { height: 86dvh; }
+body.lowlight-chat.ll-history #sheld { height: calc(774 * var(--px)); }
 body.lowlight-chat.ll-history #chat { justify-content: flex-start; }
 body.lowlight-chat.ll-history #chat .mes:not(.last_mes) { display: flex; opacity: 0.82; }
-body.lowlight-chat.ll-history::after { height: 100dvh; background: rgba(6, 2, 12, 0.86); }
+body.lowlight-chat.ll-history::after { height: var(--stage-h); background: rgba(6, 2, 12, 0.86); }

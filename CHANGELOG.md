@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.2.5 · 2026-10-29
+- Lowlight's fixed 16:9 stage: the band, figures, Keys bar and map keep their place on the room at any window shape
+
 ## 1.2.4 · 2026-10-29
 - The dialogue box reads at Lowlight's size, paragraphs indent, and the name row shows the time and model
 

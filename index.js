@@ -6,11 +6,25 @@ import { mountHud } from './hud.js';
 import { mountSelect } from './select.js';
 import { mountSubtitles } from './subtitles.js';
 import { mountRoomTools } from './room-tools.js';
-import { planInstall, planSettings } from './lowlight-room.js';
+import { planInstall, planSettings, stageRect } from './lowlight-room.js';
 import { runInstall, updateCards, lowlightSettings } from './installer.js';
 import { showNotice, showWelcome } from './welcome.js';
 
 const BASE = new URL('./rooms/', import.meta.url).href;
+
+// Lowlight's 1600×900 stage, zoomed to the window and centred (web/src/ui/game-stage.ts): the band, both figures, the
+// Keys bar and the map lay out on it (style.css), so they keep their place on the room, which the renderer fits to it too.
+function placeStage() {
+  const r = stageRect(window.innerWidth, window.innerHeight);
+  const s = document.documentElement.style;
+  s.setProperty('--ll-scale', String(r.scale));
+  s.setProperty('--stage-x', `${r.left}px`);
+  s.setProperty('--stage-y', `${r.top}px`);
+  s.setProperty('--stage-w', `${r.width}px`);
+  s.setProperty('--stage-h', `${r.height}px`);
+}
+placeStage();
+window.addEventListener('resize', placeStage);
 // The bundle's stylesheet (the map, its fonts) and the map's rules copied from the game's: SillyTavern loads only style.css.
 for (const css of ['lowlight-room.css', 'map-game.css', 'panels.css', 'select.css', 'welcome.css']) {
   const link = document.createElement('link');
