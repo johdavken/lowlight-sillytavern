@@ -1,15 +1,32 @@
-# Lowlight for SillyTavern
+<p align="center">
+  <img src="https://raw.githubusercontent.com/johdavken/lowlight/main/docs/readme/banner.jpg" alt="Lowlight: Nix leaning on a wet alley wall above the harbour" width="100%">
+</p>
 
-**Lowlight** is a roleplaying cyberpunk city: wet streets, neon, and people with lives of their own. This extension brings Lowlight's world into SillyTavern:
+<p align="center">
+  <img src="https://img.shields.io/badge/SillyTavern-extension-6fe7ef?style=for-the-badge&labelColor=0b0614" alt="SillyTavern extension">
+  <img src="https://img.shields.io/badge/models-OpenRouter-ffb347?style=for-the-badge&labelColor=0b0614" alt="models via OpenRouter">
+  <img src="https://img.shields.io/badge/tool%20calling-recommended-b48cff?style=for-the-badge&labelColor=0b0614" alt="tool calling recommended">
+  <img src="https://img.shields.io/badge/code-GPL--3.0-ff2d75?style=for-the-badge&labelColor=0b0614" alt="code GPL-3.0">
+</p>
+
+<p align="center"><b>Lowlight for SillyTavern: a roleplaying cyberpunk city, in your chat.</b></p>
+
+**Lowlight** is a rain-soaked port city of wet streets, neon, and people with lives of their own. This
+extension brings its world into SillyTavern:
+
 - **The live rooms** behind your chat: lights, glow, rain on the glass, steam, passing cars, and lightning.
-- **The cast:** characters and personas, each with their own sprites and the city's lore book.
+- **The cast:** characters and personas, each with their own sprites, and the city's lore book.
 - **The city map.**
 - **The rooms' songs.**
 - **Lowlight's look.**
 
 Your contact can change the room as you talk: the mood, the weather, the lights, or walking you both somewhere else.
 
-The full game, with missions, jobs, quests and the city's clock, is on **https://www.patreon.com/cw/Farban**.
+## The full game
+
+This extension is the city and its people. **[Lowlight](https://github.com/johdavken/lowlight)** itself
+adds the rest: missions, jobs, quests, a crew and the city's clock. Get the builds on
+[itch.io](https://lowlightgame.itch.io/lowlight), or run it from its open-source repository.
 
 ## Install
 
