@@ -35,7 +35,7 @@ the chat so far, so a long chat doesn't forget what mattered.
 ## What's in it
 
 **15 characters.** Ten you can talk to or play as, each also a persona: Nix, Cass, Ember, Silas, Hicks, Ines,
-Mother Rot, Soren, Adebayo and Rue. Five more to talk to: Hae, Tilly, Vesna, Garro and Oksana.
+Mother Rot, Soren, Kroll and Rue. Five more to talk to: Hae, Tilly, Vesna, Garro and Oksana.
 
 **34 rooms,** district by district:
 

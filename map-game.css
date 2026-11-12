@@ -21,18 +21,18 @@
 .map-root.map-closing { animation: map-backdrop-out 0.6s ease-in forwards; }
 .map-root.map-closing .map-head { opacity: 0; transition: opacity 0.2s; }
 @keyframes map-backdrop-out { to { background-color: rgba(2, 1, 6, 0); } }
-/* The map fills the stage; its heading floats under the keys bar, over the picture. */
+/* The map fills the stage; its hint lies along the foot, between the list and the card. */
 .map-frame { position: absolute; inset: 0; }
 .map-head {
   position: absolute;
   z-index: 5;
-  top: calc(21.6px + 60px);
-  left: var(--edge-x);
-  right: var(--edge-x);
+  bottom: 12px;
+  left: 340px;
+  right: 380px;
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 1.2em;
-  padding-bottom: 8px;
   font-family: var(--pixel);
   font-size: 20px;
   letter-spacing: 0.24em;
@@ -40,7 +40,7 @@
   text-shadow: 0 0 4px #000, 0 0 10px #000;
   pointer-events: none;
 }
-.map-hint { margin-left: auto; color: rgba(255, 217, 230, 0.4); }
+.map-hint { font-size: 16px; color: rgba(255, 217, 230, 0.4); }
 /* Missing or broken map data: the picture stays, with one line saying what's wrong. */
 .map-screen > .map-notice {
   inset: auto 0 0 0;
@@ -85,15 +85,16 @@
 /* The camera's layer (the picture and the city's borders, names and pins) zooms into the open district; --inv keeps pins one size.
    The band, heading and file strip sit over it, unzoomed. MapPanel eases it in script, so --inv moves with it. */
 .map-screen > .map-world { z-index: 1; transform-origin: 0 0; }
-.map-screen > .map-overlay-host { z-index: 2; top: calc(21.6px + 60px + 34px); }
+.map-screen > .map-overlay-host { z-index: 2; }
 .map-screen.map-dragging { cursor: grabbing; }
 /* The ambience canvas: inside the camera layer (under the pins) but carrying the camera's inverse, so it lies on the screen. */
 .map-world > .map-amb { position: absolute; left: 0; top: 0; transform-origin: 0 0; pointer-events: none; }
-/* The CRT is drawn over the city map, its band and strip (z 1–2), under the data notice (z 4), as over the old panel. */
+/* The CRT is drawn over the city map, its list and card (z 1–2), under the data notice (z 4), as over the old panel.
+   The vignette goes under the list and card: it would dim them, out at the edges. */
 .map-screen > .map-fuzz,
 .map-screen > .map-scan,
-.map-screen > .map-roll,
-.map-screen > .map-vignette { z-index: 3; }
+.map-screen > .map-roll { z-index: 3; }
+.map-screen > .map-vignette { z-index: 1; }
 /* Fuzz: an SVG noise tile, jumped around a few times a second. */
 .map-fuzz {
   inset: -50% !important;

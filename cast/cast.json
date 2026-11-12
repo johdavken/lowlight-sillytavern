@@ -1,53 +1,53 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "characters": [
     {
       "id": "adebayo",
-      "name": "Adebayo",
+      "name": "Kroll",
       "pronoun": "she",
       "since": "1.1.0",
-      "card": "cards/Adebayo.png",
+      "card": "cards/Kroll.png",
       "sprites": {
-        "joy": "sprites/Adebayo/smile.png",
-        "amusement": "sprites/Adebayo/amused.png",
-        "gratitude": "sprites/Adebayo/smile.png",
-        "optimism": "sprites/Adebayo/smile.png",
-        "relief": "sprites/Adebayo/smile.png",
-        "love": "sprites/Adebayo/smile.png",
-        "pride": "sprites/Adebayo/smile.png",
-        "excitement": "sprites/Adebayo/smile.png",
-        "approval": "sprites/Adebayo/smile.png",
-        "admiration": "sprites/Adebayo/smile.png",
-        "annoyance": "sprites/Adebayo/annoyed.png",
-        "anger": "sprites/Adebayo/annoyed.png",
-        "disapproval": "sprites/Adebayo/annoyed.png",
-        "disgust": "sprites/Adebayo/annoyed.png",
-        "embarrassment": "sprites/Adebayo/annoyed.png",
-        "caring": "sprites/Adebayo/concerned.png",
-        "nervousness": "sprites/Adebayo/concerned.png",
-        "fear": "sprites/Adebayo/concerned.png",
-        "confusion": "sprites/Adebayo/concerned.png",
-        "curiosity": "sprites/Adebayo/concerned.png",
-        "surprise": "sprites/Adebayo/concerned.png",
-        "realization": "sprites/Adebayo/concerned.png",
-        "desire": "sprites/Adebayo/smile.png",
-        "sadness": "sprites/Adebayo/concerned.png",
-        "grief": "sprites/Adebayo/concerned.png",
-        "remorse": "sprites/Adebayo/concerned.png",
-        "disappointment": "sprites/Adebayo/annoyed.png",
-        "neutral": "sprites/Adebayo/neutral.png"
+        "joy": "sprites/Kroll/smile.png",
+        "amusement": "sprites/Kroll/amused.png",
+        "gratitude": "sprites/Kroll/smile.png",
+        "optimism": "sprites/Kroll/smile.png",
+        "relief": "sprites/Kroll/smile.png",
+        "love": "sprites/Kroll/smile.png",
+        "pride": "sprites/Kroll/smile.png",
+        "excitement": "sprites/Kroll/smile.png",
+        "approval": "sprites/Kroll/smile.png",
+        "admiration": "sprites/Kroll/smile.png",
+        "annoyance": "sprites/Kroll/annoyed.png",
+        "anger": "sprites/Kroll/annoyed.png",
+        "disapproval": "sprites/Kroll/annoyed.png",
+        "disgust": "sprites/Kroll/annoyed.png",
+        "embarrassment": "sprites/Kroll/annoyed.png",
+        "caring": "sprites/Kroll/concerned.png",
+        "nervousness": "sprites/Kroll/concerned.png",
+        "fear": "sprites/Kroll/concerned.png",
+        "confusion": "sprites/Kroll/concerned.png",
+        "curiosity": "sprites/Kroll/concerned.png",
+        "surprise": "sprites/Kroll/concerned.png",
+        "realization": "sprites/Kroll/concerned.png",
+        "desire": "sprites/Kroll/smile.png",
+        "sadness": "sprites/Kroll/concerned.png",
+        "grief": "sprites/Kroll/concerned.png",
+        "remorse": "sprites/Kroll/concerned.png",
+        "disappointment": "sprites/Kroll/annoyed.png",
+        "neutral": "sprites/Kroll/neutral.png"
       },
       "persona": {
         "file": "adebayo.png",
-        "name": "Adebayo",
-        "description": "Folake Adebayo, forty-two. Born under the Spine in Pylon Twelve; put on the grey at eighteen, stood riot lines through the tides, and was taken into SDG's plainclothes branch at thirty. Senior case officer now, with a desk by the window on the sixty-first floor of the Sentinel Tower and a kettle she won't give up.\n\nTen years ago, in her second year in the branch, she bought a nineteen-year-old named Xander Soren over a cup of tea. He is her best officer, the only person on the floor who knows her first name, and the one thing between them neither has ever said. Striking, warm, unhurried, never raises her voice. She remembers your mother's name and your debts, and she means well by both.\n\n# Wearing\n\nlong charcoal wool coat open over a fitted black turtleneck and tailored charcoal trousers, black ankle boots, a small enamel eye-in-hexagon pin, a gold watch, small gold hoops",
+        "name": "Kroll",
+        "description": "Ilse Kroll, forty-two. Born under the Spine in Pylon Twelve, and polished it out of her voice; put on the grey at eighteen, stood riot lines through the tides, and was taken into SDG's plainclothes branch at thirty. Senior case officer now, with a desk by the window on the sixty-first floor of the Sentinel Tower, a tea tray for her visitors, and the only cigarette on the floor.\n\nTen years ago, in her second year in the branch, she bought a nineteen-year-old named Xander Soren in a holding room: told him why he'd done it before he said a word, then offered him tea. He is her best officer, the only person who calls her Ilse, and the game between them he has never known whether she means. Icy, amused, unhurried, never raises her voice. She'll tell you what you're afraid of, and she's usually right.\n\n# Wearing\n\nlong black wool coat open over a fitted black roll-neck, tailored black trousers, black ankle boots, a small eye-in-hexagon pin, a gold watch, pearl studs, a cigarette",
         "picture": "personas/adebayo.png"
       },
-      "tagline": "SDG handler. Sixty-first floor. Always offers tea.",
+      "tagline": "SDG handler. Sixty-first floor. The only cigarette on it.",
       "facts": [
         {
           "label": "KNOWN FOR",
-          "value": "Never raising her voice. Never needing to."
+          "value": "Saying the thing you hoped she hadn't noticed."
         },
         {
           "label": "DON'T ASK ABOUT",
@@ -55,23 +55,24 @@
         },
         {
           "label": "TELL",
-          "value": "Pours the tea before she asks for anything."
+          "value": "Lights a cigarette before she asks for anything."
         },
         {
           "label": "DANGEROUS",
           "value": "Holds the file. Every suspended charge can come back."
         }
       ],
-      "accent": "#c9a227",
+      "accent": "#e3dcc8",
       "home": "sdg-floor",
       "places": [
         "sdg-floor",
-        "long-haul"
+        "long-haul",
+        "deck-market"
       ],
       "hash": {
-        "card": "d0af022f65f01414afcc3c09a599e5a8e771fb1c318962f917c359d2025d6fe2",
-        "sprites": "6816890323c7f80dbb370f6f84bfcb3b4b55b8f5db774adece0760e9c1c609d7",
-        "persona": "5a734183a6d8822fad6c8f15bbeaf8905f465719e8b5169bff2e952d07bead2c"
+        "card": "a0caa696909627d2ba3db77b2778e01a60c2ac05f6926dcc27dff22e25b07c65",
+        "sprites": "cf60711c258e2953547756818fe444cbfd9fc1e50e24550dc4abf17e861e5581",
+        "persona": "fb0b15216ba21572e9d63b3228a5d84646b9f988ba0aad8ed32e1666c47b8d01"
       }
     },
     {
@@ -143,10 +144,11 @@
       "home": "the-tilt",
       "places": [
         "the-tilt",
-        "cass-apartment"
+        "cass-apartment",
+        "noodle-stall"
       ],
       "hash": {
-        "card": "1f997e2521e86fe12fe3b75636378952c3bd742b6b2a99de450928160a252363",
+        "card": "96df188103da2c1fcf9cbea1f798f85699423851d814d5673443a8943d01bd01",
         "sprites": "40f390353a29782a869c607574994963980b933154e4036ba7295a5e98fbf681",
         "persona": "1cdf515dd5222ab9fe317f68f834ee33c452817b6dc5a6d683c12c9175db7765"
       }
@@ -222,7 +224,7 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "387d19055d1d670a880d9cf18c5bbc31d174ffb9de0cb38ecb81f998412d43ca",
+        "card": "5d29f727e240a9ec63dfab95d55331cdb5e0be703fcd3ba6cf9642cf092a22a7",
         "sprites": "674711c68cc79ba3f2386198120c387cff5094a74567b2ab220d9b39cb56f9b7",
         "persona": "dae5e93bc3313092143e78d0bed03091c277b0ee75eaadadc93a410e38fafe01"
       }
@@ -273,7 +275,7 @@
         "listening-post"
       ],
       "hash": {
-        "card": "bad436479000020245b3dc6da6741e1284776e1c5429d2b623580fd52bff22ba",
+        "card": "961bf72f944587cd88e3b97f6d35e7bc30798e3abc3fe9d97826f95688e90e3c",
         "sprites": "d6b4a192e6c8526820acd2be8fe449556c5a389736931cd35fc7f337918fd26c",
         "persona": null
       }
@@ -286,33 +288,6 @@
       "since": "1.0.0",
       "card": "cards/Hae.png",
       "sprites": {
-        "joy": "sprites/Hae/happy.png",
-        "amusement": "sprites/Hae/happy.png",
-        "gratitude": "sprites/Hae/happy.png",
-        "optimism": "sprites/Hae/happy.png",
-        "relief": "sprites/Hae/happy.png",
-        "love": "sprites/Hae/happy.png",
-        "pride": "sprites/Hae/happy.png",
-        "excitement": "sprites/Hae/happy.png",
-        "approval": "sprites/Hae/happy.png",
-        "admiration": "sprites/Hae/happy.png",
-        "annoyance": "sprites/Hae/annoyed.png",
-        "anger": "sprites/Hae/angry.png",
-        "disapproval": "sprites/Hae/annoyed.png",
-        "disgust": "sprites/Hae/angry.png",
-        "embarrassment": "sprites/Hae/annoyed.png",
-        "caring": "sprites/Hae/concerned.png",
-        "nervousness": "sprites/Hae/concerned.png",
-        "fear": "sprites/Hae/concerned.png",
-        "confusion": "sprites/Hae/concerned.png",
-        "curiosity": "sprites/Hae/concerned.png",
-        "surprise": "sprites/Hae/concerned.png",
-        "realization": "sprites/Hae/concerned.png",
-        "desire": "sprites/Hae/concerned.png",
-        "sadness": "sprites/Hae/concerned.png",
-        "grief": "sprites/Hae/concerned.png",
-        "remorse": "sprites/Hae/concerned.png",
-        "disappointment": "sprites/Hae/annoyed.png",
         "neutral": "sprites/Hae/neutral.png"
       },
       "persona": null,
@@ -324,8 +299,8 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "126e845c068a441b80bdeb549eb6b232859c745f98f1734bdf2ebb1b0592c1c8",
-        "sprites": "df521b4a4771115cafee6213288190e0741d4566394061720e419efafaadb58a",
+        "card": "3cf904a7ec24742a4e7fbbed27ba82040a0a4b65d4d73e036972f03b0ad3832f",
+        "sprites": "f91f96b8e0a3abcf24ee50c2d6a7758840b919d384b2a208de8d4db6d5f6a33e",
         "persona": null
       }
     },
@@ -336,46 +311,37 @@
       "since": "1.0.0",
       "card": "cards/Hicks.png",
       "sprites": {
-        "joy": "sprites/Hicks/happy.png",
-        "amusement": "sprites/Hicks/happy.png",
-        "gratitude": "sprites/Hicks/happy.png",
-        "optimism": "sprites/Hicks/happy.png",
-        "relief": "sprites/Hicks/happy.png",
-        "love": "sprites/Hicks/happy.png",
-        "pride": "sprites/Hicks/happy.png",
-        "excitement": "sprites/Hicks/happy.png",
-        "approval": "sprites/Hicks/happy.png",
-        "admiration": "sprites/Hicks/happy.png",
+        "joy": "sprites/Hicks/smile.png",
+        "amusement": "sprites/Hicks/smile.png",
+        "gratitude": "sprites/Hicks/smile.png",
+        "optimism": "sprites/Hicks/smile.png",
+        "relief": "sprites/Hicks/smile.png",
+        "love": "sprites/Hicks/smile.png",
+        "pride": "sprites/Hicks/smile.png",
+        "excitement": "sprites/Hicks/smile.png",
+        "approval": "sprites/Hicks/smile.png",
+        "admiration": "sprites/Hicks/smile.png",
         "annoyance": "sprites/Hicks/annoyed.png",
-        "anger": "sprites/Hicks/angry.png",
+        "anger": "sprites/Hicks/annoyed.png",
         "disapproval": "sprites/Hicks/annoyed.png",
-        "disgust": "sprites/Hicks/angry.png",
+        "disgust": "sprites/Hicks/annoyed.png",
         "embarrassment": "sprites/Hicks/annoyed.png",
-        "caring": "sprites/Hicks/concerned.png",
-        "nervousness": "sprites/Hicks/concerned.png",
-        "fear": "sprites/Hicks/concerned.png",
-        "confusion": "sprites/Hicks/concerned.png",
-        "curiosity": "sprites/Hicks/concerned.png",
-        "surprise": "sprites/Hicks/concerned.png",
-        "realization": "sprites/Hicks/concerned.png",
-        "desire": "sprites/Hicks/concerned.png",
-        "sadness": "sprites/Hicks/concerned.png",
-        "grief": "sprites/Hicks/concerned.png",
-        "remorse": "sprites/Hicks/concerned.png",
+        "curiosity": "sprites/Hicks/smile.png",
+        "desire": "sprites/Hicks/smile.png",
         "disappointment": "sprites/Hicks/annoyed.png",
         "neutral": "sprites/Hicks/neutral.png"
       },
       "persona": {
         "file": "hicks.png",
         "name": "Hicks",
-        "description": "Hicks. Grew up in Old Town, in the rebuilt blocks with the dead ones next door, running errands for people who didn't exist on the grid. Lives in one room on Level 2 of the Ribbon now, down where the stack barely sees daylight.\n\nNetrunner. Jacks in from a battered deck and does the work nobody admits to paying for. His crew is down to two: Silas and Ember Zhou, twins down the hall. For years his operator was also his girlfriend. They split recently, and he runs with nobody on the clock now.\n\nSDG has had a file on him since he was fifteen. A magistrate's order for counseling first sent him up the stairs to Lowlight Intake. It ran out months ago. He still goes. Sly smile, a chrome left hand, likes rain and Hae's broth on wet nights.\n\n# Wearing\n\nmustard-yellow hooded work jacket over a blue sweater, black cargo trousers, grey trail sneakers, black backpack, a slate under his arm",
+        "description": "Hicks. Grew up in Old Town, beside the dead blocks, running errands for people who didn't exist on the grid. One room on Level 2 of the Ribbon now, where the stack barely sees daylight.\n\nNetrunner, and a finder without a ticket: he finds people who don't want finding. His crew is down to two, Silas and Ember Zhou, twins down the hall. For years his operator was also his girlfriend. They split recently. He runs with nobody on the clock now, and nobody brings her up.\n\nSDG has had a file on him since he was fifteen, and pulled his ticket when he wouldn't work for them. A counseling order first sent him up the stairs to Lowlight Intake. It ran out months ago. He still goes. Sly smile, a chrome left hand, drinks at the Tilt most nights.\n\n# Wearing\n\nlong weathered brown trench coat hanging open over a stained cream shirt, dark pleated trousers, scuffed black lace-up boots",
         "picture": "personas/hicks.png"
       },
-      "tagline": "Netrunner. Old Town born. Crew of two.",
+      "tagline": "Netrunner. Finder, no ticket.",
       "facts": [
         {
           "label": "KNOWN FOR",
-          "value": "Finding the gap before the fight."
+          "value": "Finding people who don't want finding."
         },
         {
           "label": "DON'T ASK ABOUT",
@@ -387,7 +353,7 @@
         },
         {
           "label": "DANGEROUS",
-          "value": "Thick SDG file. Never took their offer."
+          "value": "Thick SDG file. Said no to them; lost his ticket."
         }
       ],
       "accent": "#3dff7a",
@@ -401,9 +367,9 @@
         "the-tilt"
       ],
       "hash": {
-        "card": "0c116c2dfc7d20462bde038623e105f3cf0a3fcd2b831c289d14f9fdade3e5d8",
-        "sprites": "1fa14b02fd688a72a5c0bd814d4437f17f5febd2b0dad7a5ab757d4d0dc54beb",
-        "persona": "70dee9b877358204c8a7f211dd974211448fb67b3b4c41904ed5423238ba36dc"
+        "card": "c87726b729379613c552e1019154f16c1148eaa84472f148bb9b313ee508c3dc",
+        "sprites": "729047089863d5a7b9144350924dc20f5dc0b03373a9e096ace57cd97637a9ec",
+        "persona": "5cf74d8ffacaa4c805a5bedec035a4c6d26ef09ead3fdeec99d7704fa5b3374c"
       }
     },
     {
@@ -474,7 +440,7 @@
         "noodle-stall"
       ],
       "hash": {
-        "card": "ed019f932babcc4ebc578a9b592dd1ad98432e84b6d00d8ef04703a0a4b968b1",
+        "card": "062953b0d543d80641eebbcce907c1529447a4fb524a7b1e372c04f6c35bded7",
         "sprites": "f8fb618f3d29e45b73ee916483b79401539e4e189101f7c7ad3aa795c9bd652f",
         "persona": "3bf86203101747ec72a577147f43325008553fa6ccd59ac776eab894baf86682"
       }
@@ -522,19 +488,20 @@
       "accent": "#b5835a",
       "home": "counting-house",
       "places": [
-        "counting-house"
+        "counting-house",
+        "low-roller"
       ],
       "hash": {
-        "card": "0b40bd9aee018cf957e6b60b0bac68b70943620b819238a4e5eb76fcce6d23ac",
+        "card": "0e44a84a54b094134e6aa71caf7ed3ac497170fe0122a3ba9f6b5630d310f537",
         "sprites": "00ae542b93c0ddc27d99d4d47f9fa45d45c09e402814507e4be8f92f3f2683e1",
         "persona": "0f77fcfa57a49fbad5deda5c4cc7ee9b7defa4e5e94e0ddc2e1824b9bbbc8fa7"
       }
     },
     {
-      "id": "nix",
+      "id": "nix-direct",
       "name": "Nix",
       "pronoun": "she",
-      "since": "1.0.0",
+      "since": "1.4.0",
       "card": "cards/Nix.png",
       "sprites": {
         "joy": "sprites/Nix/happy.png",
@@ -567,10 +534,10 @@
         "neutral": "sprites/Nix/neutral.png"
       },
       "persona": {
-        "file": "nix.png",
+        "file": "nix-direct.png",
         "name": "Nix",
         "description": "Nix Neon. Nicolette Varga on clinic paperwork, Nix to everyone else. 36. Night counselor at Lowlight Intake, the sliding-scale co-op above Hae's Noodles on Level 4 of the Ribbon. Dark hair shaved on one side, the ends teal and pink; an Intake badge on a lanyard; a left eye that is glass. Nobody who knows her asks about it.\n\nNine years a companion at the Glass Orchid in Velvet. She left, and she'll tell you that much and not the rest. Paper notes, initials only, and the Intake tells SDG nothing. Hicks's court order ran out months ago; he still climbs the stairs. Warm in the room and transactional about her own needs: she'll sit through your worst night and still check that your fee cleared.\n\n# Wearing\n\nblack leather moto jacket over a grey tee, ID badge on a lanyard, black cargo trousers, laced black combat boots",
-        "picture": "personas/nix.png"
+        "picture": "personas/nix-direct.png"
       },
       "tagline": "Night counselor, Lowlight Intake. Nine years at the Orchid. Fee clears first.",
       "facts": [
@@ -599,13 +566,14 @@
       "home": "lowlight-intake",
       "places": [
         "lowlight-intake",
-        "ribbon-rooftop",
         "nix-apartment",
+        "ribbon-rooftop",
+        "walk-up-landing",
         "the-tilt",
         "noodle-stall"
       ],
       "hash": {
-        "card": "3f984c3b71213174b456d059bf63e28d679e846308678d2fd479a5376d8ee73e",
+        "card": "34e8bf808b7cbdc7eadd7c083b129f56343b673748129c29f877656729e30b46",
         "sprites": "0054768abc07199e24cd5989674f827672d9035d42560af45db986bca484cca3",
         "persona": "e2c72cb5becd4d1e87749bab272d959265976fe914b94ac2792356134bec1edf"
       }
@@ -656,7 +624,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "7770e7787cee44fd163dbce48f0c58acc3cc1997fc207b18eb345bb51db87efe",
+        "card": "8cf6e92ce0f4a0a1d5115a5f1f1839587831bb55bba450b5591e623dcbcd1798",
         "sprites": "326bac6fdb26329be2188e5223a524d62b4f8a25061179bf69216056b697fc77",
         "persona": null
       }
@@ -728,11 +696,12 @@
         "rue-hab",
         "catwalk",
         "deck-market",
-        "oksanas-counter"
+        "oksanas-counter",
+        "second-socket"
       ],
       "hash": {
-        "card": "5c297ef37c9e4729505d39aeab1be856bb6d9b33362f85b3c82497815c0b6701",
-        "sprites": "1e84c8a7eefe87edd1b9f123c2dd582b542844f52f04ec310530a9a209eda375",
+        "card": "35424ada6aff6403a282d63bc68ada4aae76cf30d12a203507ca5a96e2b5fa5c",
+        "sprites": "6c0c5aedbca397e333f7a0701f7ceb338eed6398c444b7f69a05e5b5be8b382c",
         "persona": "4d9499abf1bb6a2cff62638514bdbe8d586e6d8df611cfc5460e9238b497095e"
       }
     },
@@ -806,7 +775,7 @@
         "second-socket"
       ],
       "hash": {
-        "card": "9450d89b2a7a22fb8819c9de30ae0bf35e0ee345a1adc81e99ee1e1886419763",
+        "card": "3ad3d7e4f8cc322b1ce6aec472b5af932d11583fe3c262a1becca094eb549235",
         "sprites": "e41325ff3160753fed06c3c4ca2970428a15e195caefb6930053cb0e69a33be4",
         "persona": "bf047e62dc04dbf167c79789d06a62433dc8d731f1493b42fdd256438b6ebea8"
       }
@@ -850,7 +819,7 @@
       "persona": {
         "file": "soren.png",
         "name": "Soren",
-        "description": "Xander Soren. Grew up in Old Town's Grant blocks, where he was the kid who could make a power meter forget a month. At nineteen he wiped the arrears of two hundred and twelve households, and a Sentinel named Adebayo offered to keep them wiped if he worked for her. He said yes.\n\nTen years on he is a case officer in SDG's plainclothes branch, buying runners the way he was bought, under cover as a night freight scheduler. Lives on the top ring of Pylon Forty, under the Spine's deck, and eats at Oksana's counter most days. SDG glass in his left eye that he assumes is always recording. Quiet, polite, a little too good at listening.\n\n# Wearing\n\ncharcoal waxed rain jacket open over a navy crew-neck sweater, dark grey trousers, scuffed black boots, a grey hard case with a faded bird logo",
+        "description": "Xander Soren. Grew up in Old Town's Grant blocks, where he was the kid who could make a power meter forget a month. At nineteen he wiped the arrears of two hundred and twelve households, and a Sentinel named Kroll offered to keep them wiped if he worked for her. He said yes.\n\nTen years on he is a case officer in SDG's plainclothes branch, buying runners the way he was bought, under cover as a night freight scheduler. Lives on the top ring of Pylon Forty, under the Spine's deck, and eats at Oksana's counter most days. SDG glass in his left eye that he assumes is always recording. Quiet, polite, a little too good at listening.\n\n# Wearing\n\ncharcoal waxed rain jacket open over a navy crew-neck sweater, dark grey trousers, scuffed black boots, a grey hard case with a faded bird logo",
         "picture": "personas/soren.png"
       },
       "tagline": "SDG case officer. Bought at nineteen. Lives under the road.",
@@ -883,7 +852,7 @@
         "oksanas-counter"
       ],
       "hash": {
-        "card": "800502443ed8447409ec77bc6fcdfd3a85c6ae07e5cdd26d780f4a74e57f47b2",
+        "card": "844c9ea3c4557fda0695fbb2d7154650592d2818bc3c40c612288e1517f16393",
         "sprites": "9e7d079a56dfde0f4492b48c8c5965c0503f96b048a091fbf3c669d4b7d73917",
         "persona": "6ec0465cc8f21116d9dcfa3d58933cc75c95dcc6344f02ed749815b00fea4867"
       }
@@ -934,7 +903,7 @@
         "breakwater"
       ],
       "hash": {
-        "card": "7a082ef0980c64c729d595fdfc9310945a9cca448e0630939e965189257faccd",
+        "card": "2ce0da971e0d8c246a799f6e6817184c98263201857aad90fd60ee330a0b26d5",
         "sprites": "81aa2657d75b9c893d92363b7a1f00c5e1fc4e5d4ed3f802178181f85b8655ec",
         "persona": null
       }
@@ -985,7 +954,7 @@
         "glass-orchid"
       ],
       "hash": {
-        "card": "b49d5e67b3b9ecfa85f943c8769c33763253709ca3675203472b19aaa7db81a9",
+        "card": "8a40f4120769a6b0628dcf6b99c3e6f1197b16253901856db79afbfcd0ee55d8",
         "sprites": "fd9d76068f244320d3eb1051e02be9c8626681dfbb778b61a13efe84ed3aaff7",
         "persona": null
       }

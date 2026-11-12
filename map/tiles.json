@@ -9032,7 +9032,7 @@
       ]
     ]
   ],
-  "dataHash": "b5974bf677e67ab51f4ee3dd8b6a12ea26a3b7427a6e32c395fbc7210d0343f2",
+  "dataHash": "d71e8eae56dded0374a79a3846fc25e60cb98ae73c9fad21b4995a655b110e9d",
   "blender": "5.2.2",
   "pinHeights": {
     "ribbon-rooftop": 56.05635295800166,
@@ -9054,7 +9054,7 @@
     "ferry-stairs": 13.447176827072335,
     "sdg-floor": 228
   },
-  "rendered": "2026-10-28T21:54:15.965Z",
+  "rendered": "2026-10-31T15:12:58.162Z",
   "dark": {
     "levels": [
       1,

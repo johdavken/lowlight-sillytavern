@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.4.0 · 2026-11-12
+- Ilse Kroll replaces Adebayo; Rue, Ember and Nix sound like themselves; two new rooms (the Old Intake, Spectra's archive); new room songs; a bigger lore book
+
 ## 1.3.0 · 2026-10-29
 - Her Residual: after each reply one quiet call keeps her notes, a recap and the lights she forgot (/ledger); each persona keeps its own chat
 
