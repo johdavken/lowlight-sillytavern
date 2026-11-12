@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.5.0 · 2026-11-12
+- The whole room dims at once (her lights come in two groups); the room gives her small things to notice; she's told when she repeats herself; the weather comes up when it changes
+
 ## 1.4.0 · 2026-11-12
 - Ilse Kroll replaces Adebayo; Rue, Ember and Nix sound like themselves; two new rooms (the Old Intake, Spectra's archive); new room songs; a bigger lore book
 

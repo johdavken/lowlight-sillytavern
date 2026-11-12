@@ -20,7 +20,8 @@ extension brings its world into SillyTavern:
 - **The rooms' songs.**
 - **Lowlight's look.**
 
-Your contact can change the room as you talk: the mood, the weather, the lights, or walking you both somewhere else.
+Your contact can change the room as you talk: the mood, the weather, the lights (the whole room at once, the way you'd notice it), or walking you both somewhere else.
+Now and then the room gives her something small to notice (a neighbour through the wall, the stair creaking), and she's told when she keeps writing the same thing.
 And her **Residual** remembers: after each of her replies it keeps her notes on you and on herself, and a recap of
 the chat so far, so a long chat doesn't forget what mattered.
 

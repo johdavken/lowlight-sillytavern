@@ -69,6 +69,12 @@ export function mountResidual({ room, roomTools }) {
     const recapRun = isRecapRun(c.chat, at);
     const scene = room.scene();
     const take = takeOf(msg);
+    // She changed the lights herself since your last line (a set_light or a mood among her tool calls): the lights
+    // backstop isn't asked, since it would only be refused (light groups).
+    let herLights = false;
+    for (let i = at - 1; i >= 0 && !c.chat[i]?.is_user; i--) {
+      if ((c.chat[i]?.extra?.tool_invocations ?? []).some((t) => t?.name === 'set_light' || t?.name === 'apply_mood')) herLights = true;
+    }
     const messages = residualMessages({
       kind: recapRun ? 'recap' : 'turn',
       self: { name: who.name, pronoun: who.pronoun ?? 'they' },
@@ -77,6 +83,8 @@ export function mountResidual({ room, roomTools }) {
       standing: false,
       jobs: false,
       nights: false,
+      lightGroups: true,
+      ...(herLights ? { lights: false } : {}),
       notes: l.notes,
       exchanges: exchangesFor(c.chat, at),
       recap: l.recap,
@@ -98,7 +106,7 @@ export function mountResidual({ room, roomTools }) {
     if (tokenOf(at) !== token) return;
     const lightIds = new Set((scene?.lights ?? []).map((x) => x.id));
     const change = result.answer
-      ? applyAnswer(l, result.answer, lightIds, [who.name, c.name1], { recap: recapRun })
+      ? applyAnswer(l, result.answer, herLights ? new Set() : lightIds, [who.name, c.name1], { recap: recapRun, ...(herLights ? {} : { roomLights: room.state()?.lights, painted: scene?.lights }) })
       : { notes: [], lights: [], run: result };
     change.take = take;
     last = change.run;

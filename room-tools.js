@@ -1,13 +1,20 @@
 // Her room tools in SillyTavern (spec 2026-10-23 §4): apply_mood, set_atmosphere, set_light and go_to through
 // SillyTavern's tool calling; her [room: …] line before each reply; the room saved on every message and swipe, and put
 // back on a swipe, delete, edit or reopening a chat. The checks and texts are the bundle's (room-tools.ts, room-stamp.ts).
-import { ROOM_TOOLS, appliedText, checkRoomTool, isRoomToolMessage, preToolMessage, roomFromChat, roomLine, stampOf, withStamp } from './lowlight-room.js';
+import { ROOM_TOOLS, appliedText, checkRoomTool, echoLine, isRoomToolMessage, preToolMessage, propWords, roomDetail, roomDetailLine, roomFromChat, roomLine, stampOf, withStamp } from './lowlight-room.js';
 
 const LINE_KEY = 'lowlight-room';
 const RULES_KEY = 'lowlight-room-rules';
+/** One of the room's details now and then (shared/room-details.ts), and what she keeps writing (the game's echo line). */
+const DETAIL_KEY = 'lowlight-room-detail';
+const ECHO_KEY = 'lowlight-echo';
+/** Her replies looked at for the echo line, newest last (server/src/echoes.ts looks at the last four). */
+const ECHO_REPLIES = 4;
+/** What weather she was last shown in this chat, in its metadata: the line names it only when it's news. */
+const SEEN_KEY = 'lowlight_seen';
 /** A short version of Lowlight's room instructions (server/src/instructions.ts ROOM_INSTRUCTIONS). */
 const ROOM_RULES =
-  "The [room: …] line before each of your replies is the room you're in right now: the place, the atmosphere, each light as its id plus \"label\", the room's moods, your other places and the ways out. It is the room, not something the user typed. Change the room whenever it suits the moment — the mood shifts, the light is wrong, the weather turns — without being asked and without narrating every adjustment. When your reply takes you both to one of your places or through a way out, call go_to with its id from the [room: …] line in that same turn, so the room is where the story is. Your tools are not part of the story: never mention them in your reply, and don't name a change (\"quiet mood\", \"lamp low\") — show it in the scene: what the light does, what the rain does.";
+  "The [room: …] line before each of your replies is the room you're in right now: the place, the atmosphere, the lights as two groups (inside, the room's own, and outside, the city through the windows), the room's moods, your other places and the ways out. It is the room, not something the user typed. To change the light, set a whole group (inside, mostly) or apply a mood; one lamp alone barely shows. Change the room whenever it suits the moment — the mood shifts, the light is wrong, the weather turns — without being asked and without narrating every adjustment. When your reply takes you both to one of your places or through a way out, call go_to with its id from the [room: …] line in that same turn, so the room is where the story is. Your tools are not part of the story: never mention them in your reply, and don't name a change (\"quiet mood\", \"lamp low\") — show it in the scene: what the light does, what the rain does.";
 
 /**
  * @param {{ room: any, cast: any, rooms: string[], meta: Record<string, { name: string, district: string | null }>, current: () => string, goTo: (folder: string) => Promise<void>, idle: () => Promise<void> }} deps
@@ -41,7 +48,49 @@ export function mountRoomTools({ room, cast, rooms, meta, current, goTo, idle })
       district: meta[here]?.district ?? undefined,
       places: places.map((f) => ({ id: f, name: meta[f]?.name ?? f })),
       ways: exits.filter((e) => rooms.includes(e.folder)).map((e) => ({ id: e.folder, name: meta[e.folder]?.name ?? e.folder, way: e.way })),
+      groups: true,
+      painted: scene.lights,
+      weather: weatherNews,
     });
+  }
+  /** Whether this turn's line names the weather: decided once per generation (turnLines), kept for the refreshes between. */
+  let weatherNews = true;
+
+  /** Her own replies in this chat, oldest first: not yours, not system lines, not tool calls. */
+  const herReplies = (chat) => chat.filter((m) => !m.is_user && !m.is_system && !m.extra?.tool_invocations && typeof m.mes === 'string' && m.mes.trim() !== '');
+
+  /**
+   * Before each generation: whether the weather is news (a new chat, a new room, the weather changed since she was
+   * last shown it), one of the room's details every few of her replies, and what she keeps writing (the echo line,
+   * with the room's props). The detail turn counts her replies, so a swipe or a rewind gives the same one again.
+   */
+  function turnLines() {
+    const c = ctx();
+    if (!ours()) {
+      c.setExtensionPrompt(DETAIL_KEY, '', 1, 0, false, 0);
+      c.setExtensionPrompt(ECHO_KEY, '', 1, 0, false, 0);
+      return;
+    }
+    const scene = room.scene();
+    const state = room.state();
+    const here = current();
+    if (state) {
+      const a = state.atmosphere;
+      const now = `${here}|${a.weather === 'none' ? 'clear' : `${a.weather} ${Math.round(a.weatherLevel * 100)}`}`;
+      const md = c.chatMetadata ?? {};
+      weatherNews = md[SEEN_KEY] !== now;
+      if (weatherNews && c.chatMetadata) {
+        c.chatMetadata[SEEN_KEY] = now;
+        c.saveMetadata?.();
+      }
+    }
+    const hers = herReplies(c.chat).map((m) => m.mes);
+    const details = scene?.details ?? [];
+    const d = details.length > 0 ? roomDetail(details, `${c.chatId ?? ''}:${here}`, hers.length) : null;
+    c.setExtensionPrompt(DETAIL_KEY, d ? roomDetailLine(d) : '', 1, 0, false, 0);
+    const users = c.chat.filter((m) => m.is_user && typeof m.mes === 'string').map((m) => m.mes);
+    const props = state && scene ? propWords(scene.lights.map((l) => l.label), state.atmosphere.weather) : [];
+    c.setExtensionPrompt(ECHO_KEY, echoLine(hers.slice(-ECHO_REPLIES), users.slice(-2), props) ?? '', 1, 0, false, 0);
   }
   let enabled = false;
   /** SillyTavern sends tools only on Chat Completion with function calling on (off by default). */
@@ -109,12 +158,13 @@ export function mountRoomTools({ room, cast, rooms, meta, current, goTo, idle })
           await idle();
           const scene = room.scene();
           if (!scene) return 'no room is loaded';
-          const checked = checkRoomTool(t.name, args, { scene, places: placesOf(speaker()), exits: exitsHere().map((e) => e.folder), rooms });
+          const checked = checkRoomTool(t.name, args, { scene, places: placesOf(speaker()), exits: exitsHere().map((e) => e.folder), rooms, lights: room.state()?.lights });
           if (!checked.ok) return checked.result;
           const a = checked.action;
           if (a.kind === 'mood') room.mood(a.name, a.seconds);
           else if (a.kind === 'atmosphere') room.setAtmosphere(a.patch, a.seconds);
           else if (a.kind === 'light') room.setLight(a.id, a.patch, a.seconds);
+          else if (a.kind === 'lights') for (const x of a.set) room.setLight(x.id, x.patch, a.seconds);
           else if (a.kind === 'go') await goTo(a.folder);
           await stamp();
           refreshLine();
@@ -157,7 +207,9 @@ export function mountRoomTools({ room, cast, rooms, meta, current, goTo, idle })
     return restore(own ?? roomFromChat(c.chat.slice(0, at), home()));
   });
   // Function calling may have been switched on or off since: her rules follow it before each generation.
-  eventSource.on(eventTypes.GENERATION_AFTER_COMMANDS, () => refreshLine());
+  // Before each generation: the weather, a detail and the echo line for this turn, then the line with them.
+  eventSource.on(eventTypes.GENERATION_AFTER_COMMANDS, () => { turnLines(); refreshLine(); });
+  eventSource.on(eventTypes.CHAT_CHANGED, () => { weatherNews = true; const c = ctx(); c.setExtensionPrompt(DETAIL_KEY, '', 1, 0, false, 0); c.setExtensionPrompt(ECHO_KEY, '', 1, 0, false, 0); });
 
   // Her tool calls are hidden in the Lowlight look (style.css: .ll-room-tool), only when every call in the message is
   // hers, and never when it's the newest message (a follow-up reply that failed would otherwise leave nothing to see).
