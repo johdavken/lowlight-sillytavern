@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.0 · 2026-11-13
+- Her replies keep to one beat; she knows how long you were away; every dozen replies her Residual names what she keeps writing so she leaves it out
+
 ## 1.5.0 · 2026-11-12
 - The whole room dims at once (her lights come in two groups); the room gives her small things to notice; she's told when she repeats herself; the weather comes up when it changes
 
