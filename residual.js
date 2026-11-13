@@ -7,8 +7,9 @@ const LEDGER_KEY = 'lowlight-ledger';
 /** What she keeps writing (the game's Habits): `[worn thin — leave out: …]` before each reply. */
 const HABITS_KEY = 'lowlight-habits';
 const ON_KEY = 'lowlight-residual';
-/** Her answer's cap: SillyTavern can't turn thinking off for one call, so a thinking model needs room before it answers. */
-const MAX_TOKENS = { turn: 1500, recap: 1800 };
+/** Her answer's cap: SillyTavern can't turn thinking off for one call, so a thinking model needs room before it answers.
+ * Habits too: the game's 400 (HABITS_MAX_TOKENS, thinking off there) ran out mid-thought on GLM, both runs of a live night. */
+const MAX_TOKENS = { turn: 1500, recap: 1800, habits: Math.max(HABITS_MAX_TOKENS, 1500) };
 /** How many of the newest lines her notes' keywords are looked for in. */
 const RECENT = 5;
 
@@ -119,7 +120,7 @@ export function mountResidual({ room, roomTools }) {
     if (habitsDue(c.chat, at) && tokenOf(at) === token) {
       const { input, hers } = habitsInput(c.chat, at, who.name, c.name1, l.habits);
       try {
-        const text = answerText(await complete(habitsMessages(input), HABITS_MAX_TOKENS));
+        const text = answerText(await complete(habitsMessages(input), MAX_TOKENS.habits));
         const parsed = text ? parseHabitsAnswer(text, hers) : null;
         change.habits = parsed ? { rules: parsed.rules } : { failed: text ? 'not JSON' : 'no answer' };
       } catch (e) {

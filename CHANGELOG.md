@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.6.1 · 2026-11-13
+- UPDATE CARDS works again (the new cards since 1.4.0 can now be applied); her habits pass has room to answer on thinking models like GLM
+
 ## 1.6.0 · 2026-11-13
 - Her replies keep to one beat; she knows how long you were away; every dozen replies her Residual names what she keeps writing so she leaves it out
 
